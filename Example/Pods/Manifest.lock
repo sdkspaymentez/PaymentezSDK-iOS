@@ -1,0 +1,16 @@
+PODS:
+  - PaymentezSDK (0.1.0)
+
+DEPENDENCIES:
+  - PaymentezSDK (from `../`)
+
+EXTERNAL SOURCES:
+  PaymentezSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PaymentezSDK: 05321b3e98aa1500cf93eca965433d8b23c1f6d9
+
+PODFILE CHECKSUM: 8026e446cec271bd44aa688dbc3454c8684963da
+
+COCOAPODS: 1.8.4
