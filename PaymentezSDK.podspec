@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PaymentezSDK'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'Boceto del SDK para Paymentez'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '13.0'
 
-  s.source_files = 'PaymentezSDK/Source/**/*'
+  s.source_files = 'Source/**/*.{swift,xib,xcassets}'
   s.swift_version = '5.0'
   # s.resource_bundles = {
   #   'PaymentezSDK' => ['PaymentezSDK/Assets/*.png']
