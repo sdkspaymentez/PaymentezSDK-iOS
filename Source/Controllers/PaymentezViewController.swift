@@ -30,6 +30,8 @@ class PaymentezViewController: UIViewController {
         if let buttonColor = PaymentezSDK.shared.buttonBackgroundColor {
             headerBar.backgroundColor = buttonColor
             nextButtonBackground.backgroundColor = buttonColor
+        } else {
+            nextButtonTextColor.backgroundColor = UIColor(named: "orange")
         }
         if let textColor = PaymentezSDK.shared.textColor {
             mainText.textColor = textColor
