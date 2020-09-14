@@ -142,8 +142,7 @@
 		51FD386137C07C01B419574847F190DC /* PaymentezSDK */ = {
 			isa = PBXGroup;
 			children = (
-				CFB1F279250BAF6A00670418 /* Presenter */,
-				CFB1F274250BAC7500670418 /* Controllers */,
+				CFE674D7251001F7004AACCF /* Source */,
 				B77D29EB0E4F725C964EC075B987D5A4 /* Pod */,
 				C9083F52F16751BEC74237082A3DCD54 /* Support Files */,
 			);
@@ -256,6 +255,15 @@
 				CFB1F27A250BAF7800670418 /* PaymentezSDK.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CFE674D7251001F7004AACCF /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CFB1F279250BAF6A00670418 /* Presenter */,
+				CFB1F274250BAC7500670418 /* Controllers */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		CFF263B3250BBC6700DA9DBD /* Resources */ = {
