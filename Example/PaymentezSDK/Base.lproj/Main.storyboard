@@ -94,7 +94,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" name="orange"/>
+                                <color key="backgroundColor" red="1" green="0.46666666666666667" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="0c7-g6-dEd"/>
                                     <constraint firstItem="4pQ-pU-K61" firstAttribute="centerY" secondItem="Kfb-Ot-P0i" secondAttribute="centerY" id="5bt-Fg-HbP"/>
