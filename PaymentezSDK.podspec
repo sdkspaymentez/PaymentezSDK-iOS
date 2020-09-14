@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 'Un SDK para paymentez de cuatro pantallas.'
                        DESC
 
-  s.homepage         = 'https://github.com/ftamburri/PaymentezSDK'
+  s.homepage         = 'https://github.com/ftamburri/PaymentezSDK-iOS'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ftamburri' => 'ftamburri@fennoma.com.ar' }
-  s.source           = { :git => 'https://github.com/ftamburri/PaymentezSDK.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/ftamburri/PaymentezSDK-iOS.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '13.0'
