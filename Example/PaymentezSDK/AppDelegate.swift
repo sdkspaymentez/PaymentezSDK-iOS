@@ -12,11 +12,23 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var oldController: UINavigationController?
+    var currentController: UINavigationController?
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+    displayFirstStory()
+        
         return true
+    }
+    
+    func displayFirstStory() {
+        currentController = UINavigationController()
+        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateInitialViewController()!
+        currentController?.pushViewController(vc, animated: true)
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = currentController
+        window?.makeKeyAndVisible()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -41,6 +53,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func switchNavController(newNav: UINavigationController) {
+        oldController = currentController;
+        self.window!.rootViewController = newNav;
+        self.window!.makeKeyAndVisible()
+    }
 
 }
 
