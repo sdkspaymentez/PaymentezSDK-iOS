@@ -32,9 +32,6 @@ Pod::Spec.new do |s|
 
   s.source_files = 'PaymentezSDK/Source/**/*'
   s.swift_version = '5.0'
-  s.platforms = {
-      "ios" : "13.0"
-  }
   # s.resource_bundles = {
   #   'PaymentezSDK' => ['PaymentezSDK/Assets/*.png']
   # }
