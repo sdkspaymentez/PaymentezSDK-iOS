@@ -28,7 +28,7 @@ class FourthController: PaymentezViewController {
     }
     
     @objc func finishFlow() {
-        PaymentezSDK.shared.onFlowFinished()
+        PaymentezSDK.shared.onSearchFinished()
     }
     
     @IBAction func backDidPressed(_ sender: Any) {

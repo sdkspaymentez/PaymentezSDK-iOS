@@ -12,6 +12,14 @@
 		58E4CFAEC0783C617FED7BA4F24D7B33 /* Pods-PaymentezSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1D1CA11A9FBD86990AE70D2D351DC9 /* Pods-PaymentezSDK_Example-dummy.m */; };
 		85202B5E807F297E91E6E9FA6C3B1C7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		C58D29BB06029AFF522387A3D1CE4DD5 /* Pods-PaymentezSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9964324CC094BB023C1FA9909DB099 /* Pods-PaymentezSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF06F03B2518CBAD0057AD2E /* PmzOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06F03A2518CBAD0057AD2E /* PmzOrder.swift */; };
+		CF06F03D2518CBB70057AD2E /* PmzError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06F03C2518CBB70057AD2E /* PmzError.swift */; };
+		CF06F03F2518CFE60057AD2E /* PmzItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06F03E2518CFE60057AD2E /* PmzItem.swift */; };
+		CF06F0412518D0630057AD2E /* PmzConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06F0402518D0630057AD2E /* PmzConfiguration.swift */; };
+		CF06F0432518D1FD0057AD2E /* PaymentCheckerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF06F0422518D1FD0057AD2E /* PaymentCheckerController.xib */; };
+		CF06F0452518D3680057AD2E /* PaymentCheckerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06F0442518D3680057AD2E /* PaymentCheckerViewController.swift */; };
+		CF06F0472518D7CA0057AD2E /* PaymentDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF06F0462518D7CA0057AD2E /* PaymentDetailController.xib */; };
+		CF06F0492518D8E20057AD2E /* PaymentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06F0482518D8E20057AD2E /* PaymentDetailViewController.swift */; };
 		CF2D94D0250BBC8C002CE102 /* FirstController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2D94CF250BBC8C002CE102 /* FirstController.xib */; };
 		CF2D94D2250BDD8A002CE102 /* SecondController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2D94D1250BDD8A002CE102 /* SecondController.xib */; };
 		CF2D94D4250BDE98002CE102 /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D94D3250BDE98002CE102 /* SecondController.swift */; };
@@ -74,6 +82,14 @@
 		C3C4DB6CCAB9776F2B435A4A3FF97613 /* PaymentezSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PaymentezSDK-prefix.pch"; sourceTree = "<group>"; };
 		C6F132BBC5010EA39AE86F7A0B8C86D4 /* Pods-PaymentezSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PaymentezSDK_Example-Info.plist"; sourceTree = "<group>"; };
 		CDE1634F1DB7269AC79B4A6B763CF976 /* PaymentezSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PaymentezSDK-dummy.m"; sourceTree = "<group>"; };
+		CF06F03A2518CBAD0057AD2E /* PmzOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PmzOrder.swift; sourceTree = "<group>"; };
+		CF06F03C2518CBB70057AD2E /* PmzError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PmzError.swift; sourceTree = "<group>"; };
+		CF06F03E2518CFE60057AD2E /* PmzItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PmzItem.swift; sourceTree = "<group>"; };
+		CF06F0402518D0630057AD2E /* PmzConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PmzConfiguration.swift; sourceTree = "<group>"; };
+		CF06F0422518D1FD0057AD2E /* PaymentCheckerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentCheckerController.xib; sourceTree = "<group>"; };
+		CF06F0442518D3680057AD2E /* PaymentCheckerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCheckerViewController.swift; sourceTree = "<group>"; };
+		CF06F0462518D7CA0057AD2E /* PaymentDetailController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentDetailController.xib; sourceTree = "<group>"; };
+		CF06F0482518D8E20057AD2E /* PaymentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetailViewController.swift; sourceTree = "<group>"; };
 		CF2D94CF250BBC8C002CE102 /* FirstController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstController.xib; sourceTree = "<group>"; };
 		CF2D94D1250BDD8A002CE102 /* SecondController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondController.xib; sourceTree = "<group>"; };
 		CF2D94D3250BDE98002CE102 /* SecondController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
@@ -224,6 +240,17 @@
 			path = "Example/Pods/Target Support Files/PaymentezSDK";
 			sourceTree = "<group>";
 		};
+		CF06F0392518CB940057AD2E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF06F03A2518CBAD0057AD2E /* PmzOrder.swift */,
+				CF06F03C2518CBB70057AD2E /* PmzError.swift */,
+				CF06F03E2518CFE60057AD2E /* PmzItem.swift */,
+				CF06F0402518D0630057AD2E /* PmzConfiguration.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +272,8 @@
 				CF2D94D9250BEA95002CE102 /* PaymentezViewController.swift */,
 				CF2D94DD250BFB46002CE102 /* ThirdController.swift */,
 				CF2D94DF250BFB52002CE102 /* FourthController.swift */,
+				CF06F0442518D3680057AD2E /* PaymentCheckerViewController.swift */,
+				CF06F0482518D8E20057AD2E /* PaymentDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -260,6 +289,7 @@
 		CFE674D7251001F7004AACCF /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				CF06F0392518CB940057AD2E /* Models */,
 				CFB1F279250BAF6A00670418 /* Presenter */,
 				CFB1F274250BAC7500670418 /* Controllers */,
 			);
@@ -274,6 +304,8 @@
 				CF2D94D5250BE7DD002CE102 /* Image.xcassets */,
 				CF2D94DB250BFAEE002CE102 /* ThirdController.xib */,
 				CF2D94E1250BFBCD002CE102 /* FourthController.xib */,
+				CF06F0422518D1FD0057AD2E /* PaymentCheckerController.xib */,
+				CF06F0462518D7CA0057AD2E /* PaymentDetailController.xib */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -427,8 +459,10 @@
 			files = (
 				CF2D94D0250BBC8C002CE102 /* FirstController.xib in Resources */,
 				CF2D94D6250BE7DD002CE102 /* Image.xcassets in Resources */,
+				CF06F0432518D1FD0057AD2E /* PaymentCheckerController.xib in Resources */,
 				CF2D94D2250BDD8A002CE102 /* SecondController.xib in Resources */,
 				CF2D94E2250BFBCD002CE102 /* FourthController.xib in Resources */,
+				CF06F0472518D7CA0057AD2E /* PaymentDetailController.xib in Resources */,
 				CF2D94DC250BFAEE002CE102 /* ThirdController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,12 +497,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF06F0492518D8E20057AD2E /* PaymentDetailViewController.swift in Sources */,
 				CF2D94DA250BEA95002CE102 /* PaymentezViewController.swift in Sources */,
 				CF2D94DE250BFB46002CE102 /* ThirdController.swift in Sources */,
 				CFB1F27B250BAF7800670418 /* PaymentezSDK.swift in Sources */,
 				CF2D94D4250BDE98002CE102 /* SecondController.swift in Sources */,
+				CF06F03D2518CBB70057AD2E /* PmzError.swift in Sources */,
+				CF06F03B2518CBAD0057AD2E /* PmzOrder.swift in Sources */,
 				CFB1F278250BAE3200670418 /* FirstController.swift in Sources */,
+				CF06F0452518D3680057AD2E /* PaymentCheckerViewController.swift in Sources */,
 				CF2D94E0250BFB52002CE102 /* FourthController.swift in Sources */,
+				CF06F0412518D0630057AD2E /* PmzConfiguration.swift in Sources */,
+				CF06F03F2518CFE60057AD2E /* PmzItem.swift in Sources */,
 				CF2D94D8250BE8CF002CE102 /* UIExtension.swift in Sources */,
 				DEBFA160BEDF1D066D93EEC1CB356D34 /* PaymentezSDK-dummy.m in Sources */,
 			);

@@ -9,17 +9,20 @@
 import UIKit
 import PaymentezSDK
 
-class ViewController: UIViewController, PaymentezCallback, UITextFieldDelegate {
+class ViewController: UIViewController, PmzSearchCallback, PmzPaymentCheckerCallback, UITextFieldDelegate {
     
     @IBOutlet var backgroundColorInput: UITextField!
     @IBOutlet var textColorInput: UITextField!
     @IBOutlet var buttonColorInput: UITextField!
+    @IBOutlet var buttonTextColorInput: UITextField!
     
     @IBOutlet var backgroundColorShower: UIView!
     @IBOutlet var textColorShower: UIView!
     @IBOutlet var buttonColorShower: UIView!
+    @IBOutlet var buttonTextColorShower: UIView!
     
-    @IBOutlet var sdkButton: UIView!
+    @IBOutlet var searchButton: UIView!
+    @IBOutlet var detailButton: UIView!
     @IBOutlet var randomizeButton: UIView!
     
     var lastSelectedTextField: UITextField?
@@ -27,6 +30,7 @@ class ViewController: UIViewController, PaymentezCallback, UITextFieldDelegate {
     var backgroundColorSelected: Color?
     var textColorSelected: Color?
     var buttonColorSelected: Color?
+    var buttonTextColorSelected: Color?
     
     var colors: [Color]?
     
@@ -36,7 +40,8 @@ class ViewController: UIViewController, PaymentezCallback, UITextFieldDelegate {
         colors = Color.getColors()
         setDelegates()
         self.view?.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector (self.dismissKeyboard)))
-        sdkButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goToSDK)))
+        searchButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goToSearch)))
+        detailButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goToPaymentChecking)))
         randomizeButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.randomizeColors)))
         randomizeColors()
     }
@@ -45,6 +50,7 @@ class ViewController: UIViewController, PaymentezCallback, UITextFieldDelegate {
         didPickBackgroundColor(colors![getRandom()])
         didPickTextColor(colors![getRandom()])
         didPickButtonColor(colors![getRandom()])
+        didPickButtonTextColor(colors![getRandom()])
     }
     
     func getRandom() -> Int {
@@ -55,22 +61,50 @@ class ViewController: UIViewController, PaymentezCallback, UITextFieldDelegate {
         backgroundColorInput.delegate = self
         textColorInput.delegate = self
         buttonColorInput.delegate = self
+        buttonTextColorInput.delegate = self
     }
     
-    @objc func goToSDK() {
-        PaymentezSDK.shared.setBackgroundColor(backgroundColor: backgroundColorSelected!.color!)
+    @objc func goToSearch() {
+        PaymentezSDK.shared
+                .setBackgroundColor(backgroundColor: backgroundColorSelected!.color!)
                 .setTextColor(textColor: textColorSelected!.color!)
                 .setButtonBackgroundColor(buttonBackgroundColor: buttonColorSelected!.color!)
-                .setCallback(callback: self)
-                .startSDK(navigationController: navigationController!)
+                .setButtonTextColor(buttonTextColor: buttonTextColorSelected!.color!)
+                .startSearch(navigationController: navigationController!, callback: self)
     }
     
-    func flowFinishedSuccessfully() {
+    @objc func goToPaymentChecking() {
+        PaymentezSDK.shared
+                .setBackgroundColor(backgroundColor: backgroundColorSelected!.color!)
+                .setTextColor(textColor: textColorSelected!.color!)
+                .setButtonBackgroundColor(buttonBackgroundColor: buttonColorSelected!.color!)
+                .setButtonTextColor(buttonTextColor: buttonTextColorSelected!.color!)
+                .startPaymentChecking(order: PmzOrder.hardcoded(), navigationController: navigationController!, callback: self)
+    }
+    
+    func searchFinishedSuccessfully(order: PmzOrder) {
         showToast(controller: self, message: "Flujo terminado exitosamente.", seconds: 1)
     }
     
-    func flowCancelled() {
+    func searchCancelled() {
         showToast(controller: self, message: "Flujo cancelado.", seconds: 1)
+    }
+    
+    func paymentCheckingFinishedSuccessfully(order: PmzOrder) {
+        showToast(controller: self, message: "Flujo terminado exitosamente.", seconds: 1)
+    }
+    
+    func paymentCheckingOnError(order: PmzOrder, error: PmzError) {
+        if let error = error.type {
+            switch error {
+            case PmzError.PAYMENT_ERROR_KEY:
+                showToast(controller: self, message: "Ocurrió un error con el Pago de la orden", seconds: 2)
+            case PmzError.PLACE_ERROR_KEY:
+                showToast(controller: self, message: "Ocurrió un error con el Place de la orden", seconds: 2)
+            default:
+                showToast(controller: self, message: "Ocurrió un error inesperado", seconds: 2)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -100,6 +134,13 @@ class ViewController: UIViewController, PaymentezCallback, UITextFieldDelegate {
             view.endEditing(true)
             return false
         }
+        if(textField == buttonTextColorInput) {
+            textField.tintColor = UIColor.clear
+            showButtonTextColorPicker()
+            textField.resignFirstResponder()
+            view.endEditing(true)
+            return false
+        }
         return true
     }
     
@@ -125,6 +166,12 @@ class ViewController: UIViewController, PaymentezCallback, UITextFieldDelegate {
         })
     }
     
+    func showButtonTextColorPicker() {
+        showPicker(title: "Seleccione el color del Texto del Botón", items: colors!, completion: { colorSelected in
+            self.didPickButtonTextColor(colorSelected)
+        })
+    }
+    
     func didPickBackgroundColor(_ color: Color) {
         self.backgroundColorSelected = color
         self.backgroundColorInput.text = self.backgroundColorSelected!.name!
@@ -141,6 +188,12 @@ class ViewController: UIViewController, PaymentezCallback, UITextFieldDelegate {
         self.buttonColorSelected = color
         self.buttonColorInput.text = self.buttonColorSelected!.name!
         self.buttonColorShower.backgroundColor = self.buttonColorSelected!.color!
+    }
+    
+    func didPickButtonTextColor(_ color: Color) {
+        self.buttonTextColorSelected = color
+        self.buttonTextColorInput.text = self.buttonTextColorSelected!.name!
+        self.buttonTextColorShower.backgroundColor = self.buttonTextColorSelected!.color!
     }
     
     func showPicker(title: String, items: [Color], completion: @escaping (Color)->()) {

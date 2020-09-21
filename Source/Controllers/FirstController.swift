@@ -34,6 +34,6 @@ class FirstController: PaymentezViewController {
     
     @IBAction func backDidPressed(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
-        PaymentezSDK.shared.onFlowCancelled()
+        PaymentezSDK.shared.onSearchCancelled()
     }
 }

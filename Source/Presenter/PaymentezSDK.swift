@@ -7,9 +7,14 @@
 
 import Foundation
 
-public protocol PaymentezCallback {
-    func flowFinishedSuccessfully()
-    func flowCancelled()
+public protocol PmzSearchCallback {
+    func searchFinishedSuccessfully(order: PmzOrder)
+    func searchCancelled()
+}
+
+public protocol PmzPaymentCheckerCallback {
+    func paymentCheckingFinishedSuccessfully(order: PmzOrder)
+    func paymentCheckingOnError(order: PmzOrder, error: PmzError)
 }
 
 public class PaymentezSDK {
@@ -21,7 +26,9 @@ public class PaymentezSDK {
     var backgroundColor: UIColor?
     var textColor: UIColor?
     var buttonBackgroundColor: UIColor?
-    var callback: PaymentezCallback?
+    var buttonTextColor: UIColor?
+    var searchCallback: PmzSearchCallback?
+    var paymentCheckerCallback: PmzPaymentCheckerCallback?
     
     private init(){}
     
@@ -40,17 +47,28 @@ public class PaymentezSDK {
         return self
     }
     
-    public func setCallback(callback: PaymentezCallback) -> PaymentezSDK {
-        self.callback = callback
+    public func setButtonTextColor(buttonTextColor: UIColor) -> PaymentezSDK {
+        self.buttonTextColor = buttonTextColor
         return self
     }
     
-    public func startSDK(navigationController: UINavigationController) {
+    public func startSearch(navigationController: UINavigationController, callback: PmzSearchCallback) {
+        searchCallback = callback
         let firstController = FirstController.init()
         navController = navigationController
         navigationController.isNavigationBarHidden = true
         presentingVC = navigationController.viewControllers.last
         navigationController.pushViewController(firstController, animated: true)
+    }
+    
+    public func startPaymentChecking(order: PmzOrder, navigationController: UINavigationController, callback: PmzPaymentCheckerCallback) {
+        paymentCheckerCallback = callback
+        let paymentChecker = PaymentCheckerViewController.init()
+        paymentChecker.order = order
+        navController = navigationController
+        navigationController.isNavigationBarHidden = true
+        presentingVC = navigationController.viewControllers.last
+        navigationController.pushViewController(paymentChecker, animated: true)
     }
     
     func pushVC(vc: UIViewController) {
@@ -63,16 +81,34 @@ public class PaymentezSDK {
         return Bundle(for: PaymentezSDK.self)
     }
     
-    func onFlowCancelled() {
-        callback?.flowCancelled()
+    func onSearchCancelled() {
+        searchCallback?.searchCancelled()
     }
     
-    func onFlowFinished() {
+    func onSearchFinished() {
         if(presentingVC != nil) {
             navController?.popToViewController(presentingVC!, animated: true)
         } else {
             navController?.popToRootViewController(animated: true)
         }
-        callback?.flowFinishedSuccessfully()
+        searchCallback?.searchFinishedSuccessfully(order: PmzOrder())
+    }
+    
+    func onPaymentCheckingFinished(order: PmzOrder) {
+        if(presentingVC != nil) {
+            navController?.popToViewController(presentingVC!, animated: true)
+        } else {
+            navController?.popToRootViewController(animated: true)
+        }
+        paymentCheckerCallback?.paymentCheckingFinishedSuccessfully(order: PmzOrder())
+    }
+    
+    func onPaymentCheckingError(order: PmzOrder, error: PmzError) {
+        if(presentingVC != nil) {
+            navController?.popToViewController(presentingVC!, animated: true)
+        } else {
+            navController?.popToRootViewController(animated: true)
+        }
+        paymentCheckerCallback?.paymentCheckingOnError(order: order, error: error)
     }
 }
