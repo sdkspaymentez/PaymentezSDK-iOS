@@ -22,6 +22,7 @@ class ViewController: UIViewController, PmzSearchCallback, PmzPaymentCheckerCall
     @IBOutlet var buttonTextColorShower: UIView!
     
     @IBOutlet var searchButton: UIView!
+    @IBOutlet var searchWithStoreIdButton: UIView!
     @IBOutlet var detailButton: UIView!
     @IBOutlet var randomizeButton: UIView!
     
@@ -41,6 +42,7 @@ class ViewController: UIViewController, PmzSearchCallback, PmzPaymentCheckerCall
         setDelegates()
         self.view?.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector (self.dismissKeyboard)))
         searchButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goToSearch)))
+        searchWithStoreIdButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goToSearchWithId)))
         detailButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goToPaymentChecking)))
         randomizeButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.randomizeColors)))
         randomizeColors()
@@ -71,6 +73,15 @@ class ViewController: UIViewController, PmzSearchCallback, PmzPaymentCheckerCall
                 .setButtonBackgroundColor(buttonBackgroundColor: buttonColorSelected!.color!)
                 .setButtonTextColor(buttonTextColor: buttonTextColorSelected!.color!)
                 .startSearch(navigationController: navigationController!, callback: self)
+    }
+    
+    @objc func goToSearchWithId() {
+        PaymentezSDK.shared
+                .setBackgroundColor(backgroundColor: backgroundColorSelected!.color!)
+                .setTextColor(textColor: textColorSelected!.color!)
+                .setButtonBackgroundColor(buttonBackgroundColor: buttonColorSelected!.color!)
+                .setButtonTextColor(buttonTextColor: buttonTextColorSelected!.color!)
+                .startSearch(navigationController: navigationController!, storeId: 120, callback: self)
     }
     
     @objc func goToPaymentChecking() {

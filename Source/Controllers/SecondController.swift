@@ -14,6 +14,8 @@ class SecondController: PaymentezViewController {
     @IBOutlet var innerBackButton: UIView!
     @IBOutlet var nextButton: UIView!
     
+    var storeId: CLong?
+    
     init() {
         super.init(nibName: SecondController.SECOND_CONTROLLER_VIEW_NAME, bundle: PaymentezSDK.shared.getBundle())
     }
@@ -35,5 +37,8 @@ class SecondController: PaymentezViewController {
     
     @IBAction func backDidPressed(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
+        if(storeId != nil) {
+            PaymentezSDK.shared.onSearchCancelled()
+        }
     }
 }
