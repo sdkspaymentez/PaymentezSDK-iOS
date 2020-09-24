@@ -52,19 +52,23 @@ public class PaymentezSDK {
         return self
     }
     
-    public func startSearch(navigationController: UINavigationController, storeId: CLong? = nil, callback: PmzSearchCallback) {
+    public func startSearch(navigationController: UINavigationController, callback: PmzSearchCallback) {
         searchCallback = callback
         navController = navigationController
         navigationController.isNavigationBarHidden = true
         presentingVC = navigationController.viewControllers.last
-        if storeId != nil {
-            let secondController = SecondController.init()
-            secondController.storeId = storeId
-            navigationController.pushViewController(secondController, animated: true)
-        } else {
-            let firstController = FirstController.init()
-            navigationController.pushViewController(firstController, animated: true)
-        }
+        let firstController = FirstController.init()
+        navigationController.pushViewController(firstController, animated: true)
+    }
+    
+    public func startSearch(navigationController: UINavigationController, storeId: CLong, callback: PmzSearchCallback) {
+        searchCallback = callback
+        navController = navigationController
+        navigationController.isNavigationBarHidden = true
+        presentingVC = navigationController.viewControllers.last
+        let secondController = SecondController.init()
+        secondController.storeId = storeId
+        navigationController.pushViewController(secondController, animated: true)
     }
     
     public func startPaymentChecking(order: PmzOrder, navigationController: UINavigationController, callback: PmzPaymentCheckerCallback) {
