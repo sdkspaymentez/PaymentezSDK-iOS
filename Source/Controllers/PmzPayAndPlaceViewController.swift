@@ -7,8 +7,8 @@
 
 import Foundation
 
-class PmzPaymentCheckerViewController: PaymentezViewController {
-    static let PMZ_PAYMENT_CHECKER_VC = "PmzPaymentCheckerVC"
+class PmzPayAndPlaceViewController: PaymentezViewController {
+    static let PMZ_PAY_AND_PLACE_VC = "PmzPayAndPlaceVC"
     
     @IBOutlet var paymentErrorButton: UIView!
     @IBOutlet var placeErrorButton: UIView!
@@ -18,9 +18,10 @@ class PmzPaymentCheckerViewController: PaymentezViewController {
     @IBOutlet var successText: UILabel!
     
     var order: PmzOrder?
+    var paymentReference: String?
     
     init() {
-        super.init(nibName: PmzPaymentCheckerViewController.PMZ_PAYMENT_CHECKER_VC, bundle: PaymentezSDK.shared.getBundle())
+        super.init(nibName: PmzPayAndPlaceViewController.PMZ_PAY_AND_PLACE_VC, bundle: PaymentezSDK.shared.getBundle())
     }
     
     override func viewDidLoad() {

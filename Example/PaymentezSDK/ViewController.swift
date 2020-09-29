@@ -9,7 +9,7 @@
 import UIKit
 import PaymentezSDK
 
-class ViewController: UIViewController, PmzSearchCallback, PmzPaymentCheckerCallback, UITextFieldDelegate {
+class ViewController: UIViewController, PmzSearchCallback, PmzPayAndPlaceCallback, UITextFieldDelegate {
     
     @IBOutlet var backgroundColorInput: UITextField!
     @IBOutlet var textColorInput: UITextField!
@@ -90,7 +90,7 @@ class ViewController: UIViewController, PmzSearchCallback, PmzPaymentCheckerCall
                 .setTextColor(textColor: textColorSelected!.color!)
                 .setButtonBackgroundColor(buttonBackgroundColor: buttonColorSelected!.color!)
                 .setButtonTextColor(buttonTextColor: buttonTextColorSelected!.color!)
-                .startPaymentChecking(order: PmzOrder.hardcoded(), navigationController: navigationController!, callback: self)
+                .startPayAndPlace(order: PmzOrder.hardcoded(), paymentReference: "paymentReference", navigationController: navigationController!, callback: self)
     }
     
     func searchFinishedSuccessfully(order: PmzOrder) {
@@ -101,11 +101,11 @@ class ViewController: UIViewController, PmzSearchCallback, PmzPaymentCheckerCall
         showToast(controller: self, message: "Flujo cancelado.", seconds: 1)
     }
     
-    func paymentCheckingFinishedSuccessfully(order: PmzOrder) {
+    func payAndPlaceFinishedSuccessfully(order: PmzOrder) {
         showToast(controller: self, message: "Flujo terminado exitosamente.", seconds: 1)
     }
     
-    func paymentCheckingOnError(order: PmzOrder, error: PmzError) {
+    func payAndPlaceOnError(order: PmzOrder, error: PmzError) {
         if let error = error.type {
             switch error {
             case PmzError.PAYMENT_ERROR_KEY:

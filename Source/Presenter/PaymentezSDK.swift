@@ -12,9 +12,9 @@ public protocol PmzSearchCallback {
     func searchCancelled()
 }
 
-public protocol PmzPaymentCheckerCallback {
-    func paymentCheckingFinishedSuccessfully(order: PmzOrder)
-    func paymentCheckingOnError(order: PmzOrder, error: PmzError)
+public protocol PmzPayAndPlaceCallback {
+    func payAndPlaceFinishedSuccessfully(order: PmzOrder)
+    func payAndPlaceOnError(order: PmzOrder, error: PmzError)
 }
 
 public class PaymentezSDK {
@@ -28,7 +28,7 @@ public class PaymentezSDK {
     var buttonBackgroundColor: UIColor?
     var buttonTextColor: UIColor?
     var searchCallback: PmzSearchCallback?
-    var paymentCheckerCallback: PmzPaymentCheckerCallback?
+    var paymentCheckerCallback: PmzPayAndPlaceCallback?
     
     private init(){}
     
@@ -71,14 +71,15 @@ public class PaymentezSDK {
         navigationController.pushViewController(secondController, animated: true)
     }
     
-    public func startPaymentChecking(order: PmzOrder, navigationController: UINavigationController, callback: PmzPaymentCheckerCallback) {
+    public func startPayAndPlace(order: PmzOrder, paymentReference: String, navigationController: UINavigationController, callback: PmzPayAndPlaceCallback) {
         paymentCheckerCallback = callback
-        let paymentChecker = PmzPaymentCheckerViewController.init()
-        paymentChecker.order = order
+        let payAndPlace = PmzPayAndPlaceViewController.init()
+        payAndPlace.order = order
+        payAndPlace.paymentReference = paymentReference
         navController = navigationController
         navigationController.isNavigationBarHidden = true
         presentingVC = navigationController.viewControllers.last
-        navigationController.pushViewController(paymentChecker, animated: true)
+        navigationController.pushViewController(payAndPlace, animated: true)
     }
     
     func pushVC(vc: UIViewController) {
@@ -110,7 +111,7 @@ public class PaymentezSDK {
         } else {
             navController?.popToRootViewController(animated: true)
         }
-        paymentCheckerCallback?.paymentCheckingFinishedSuccessfully(order: PmzOrder())
+        paymentCheckerCallback?.payAndPlaceFinishedSuccessfully(order: PmzOrder())
     }
     
     func onPaymentCheckingError(order: PmzOrder, error: PmzError) {
@@ -119,6 +120,6 @@ public class PaymentezSDK {
         } else {
             navController?.popToRootViewController(animated: true)
         }
-        paymentCheckerCallback?.paymentCheckingOnError(order: order, error: error)
+        paymentCheckerCallback?.payAndPlaceOnError(order: order, error: error)
     }
 }
