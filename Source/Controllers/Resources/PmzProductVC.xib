@@ -13,7 +13,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThirdController" customModule="PaymentezSDK" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PmzProductViewController" customModule="PaymentezSDK" customModuleProvider="target">
             <connections>
                 <outlet property="backButton" destination="LXQ-ja-7Dn" id="NIa-uX-ote"/>
                 <outlet property="backTextColor" destination="Ble-x1-lIp" id="cW1-OE-0Eb"/>

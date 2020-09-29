@@ -7,16 +7,16 @@
 
 import Foundation
 
-class PaymentDetailViewController: PaymentezViewController {
+class PmzResultViewController: PaymentezViewController {
     
-    static let PAYMENT_DETAIL_CONTROLLER_VIEW_NAME = "PaymentDetailController"
+    static let PMZ_RESULT_VC = "PmzResultVC"
     
     @IBOutlet var nextButton: UIView!
     
     var order: PmzOrder?
     
     init() {
-        super.init(nibName: PaymentDetailViewController.PAYMENT_DETAIL_CONTROLLER_VIEW_NAME, bundle: PaymentezSDK.shared.getBundle())
+        super.init(nibName: PmzResultViewController.PMZ_RESULT_VC, bundle: PaymentezSDK.shared.getBundle())
     }
     
     override func viewDidLoad() {

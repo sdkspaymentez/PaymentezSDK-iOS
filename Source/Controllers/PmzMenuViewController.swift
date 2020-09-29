@@ -7,9 +7,9 @@
 
 import Foundation
 
-class SecondController: PaymentezViewController {
+class PmzMenuViewController: PaymentezViewController {
     
-    static let SECOND_CONTROLLER_VIEW_NAME = "SecondController"
+    static let PMZ_MENU_VC = "PmzMenuVC"
     
     @IBOutlet var innerBackButton: UIView!
     @IBOutlet var nextButton: UIView!
@@ -17,7 +17,7 @@ class SecondController: PaymentezViewController {
     var storeId: CLong?
     
     init() {
-        super.init(nibName: SecondController.SECOND_CONTROLLER_VIEW_NAME, bundle: PaymentezSDK.shared.getBundle())
+        super.init(nibName: PmzMenuViewController.PMZ_MENU_VC, bundle: PaymentezSDK.shared.getBundle())
     }
     
     required init?(coder: NSCoder) {
@@ -31,7 +31,7 @@ class SecondController: PaymentezViewController {
     }
     
     @objc func goToThirdPage() {
-        let vc = ThirdController.init()
+        let vc = PmzProductViewController.init()
         PaymentezSDK.shared.pushVC(vc: vc)
     }
     

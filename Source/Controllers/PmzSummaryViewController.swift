@@ -7,14 +7,14 @@
 
 import Foundation
 
-class FourthController: PaymentezViewController {
+class PmzSummaryViewController: PaymentezViewController {
     
-    static let FOURTH_CONTROLLER_VIEW_NAME = "FourthController"
+    static let PMZ_SUMMARY_VC = "PmzSummaryVC"
     
     @IBOutlet var innerBackButton: UIView!
     @IBOutlet var nextButton: UIView!
     init() {
-        super.init(nibName: FourthController.FOURTH_CONTROLLER_VIEW_NAME, bundle: PaymentezSDK.shared.getBundle())
+        super.init(nibName: PmzSummaryViewController.PMZ_SUMMARY_VC, bundle: PaymentezSDK.shared.getBundle())
     }
     
     required init?(coder: NSCoder) {

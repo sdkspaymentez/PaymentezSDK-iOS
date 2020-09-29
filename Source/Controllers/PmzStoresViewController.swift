@@ -8,14 +8,14 @@
 import Foundation
 import UIKit
 
-class FirstController: PaymentezViewController {
+class PmzStoresViewController: PaymentezViewController {
     
-    static let FIRST_CONTROLLER_VIEW_NAME = "FirstController"
+    static let PMZ_STORES_VC = "PmzStoresVC"
     
     @IBOutlet var nextButton: UIView!
     
     init() {
-        super.init(nibName: FirstController.FIRST_CONTROLLER_VIEW_NAME, bundle: PaymentezSDK.shared.getBundle())
+        super.init(nibName: PmzStoresViewController.PMZ_STORES_VC, bundle: PaymentezSDK.shared.getBundle())
     }
     
     override func viewDidLoad() {
@@ -28,7 +28,7 @@ class FirstController: PaymentezViewController {
     }
     
     @objc func goToSecondPage() {
-        let secondController = SecondController.init()
+        let secondController = PmzMenuViewController.init()
         PaymentezSDK.shared.pushVC(vc: secondController)
     }
     

@@ -57,7 +57,7 @@ public class PaymentezSDK {
         navController = navigationController
         navigationController.isNavigationBarHidden = true
         presentingVC = navigationController.viewControllers.last
-        let firstController = FirstController.init()
+        let firstController = PmzStoresViewController.init()
         navigationController.pushViewController(firstController, animated: true)
     }
     
@@ -66,14 +66,14 @@ public class PaymentezSDK {
         navController = navigationController
         navigationController.isNavigationBarHidden = true
         presentingVC = navigationController.viewControllers.last
-        let secondController = SecondController.init()
+        let secondController = PmzMenuViewController.init()
         secondController.storeId = storeId
         navigationController.pushViewController(secondController, animated: true)
     }
     
     public func startPaymentChecking(order: PmzOrder, navigationController: UINavigationController, callback: PmzPaymentCheckerCallback) {
         paymentCheckerCallback = callback
-        let paymentChecker = PaymentCheckerViewController.init()
+        let paymentChecker = PmzPaymentCheckerViewController.init()
         paymentChecker.order = order
         navController = navigationController
         navigationController.isNavigationBarHidden = true

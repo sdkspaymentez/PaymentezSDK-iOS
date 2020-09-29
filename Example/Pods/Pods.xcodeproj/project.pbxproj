@@ -16,21 +16,21 @@
 		CF06F03D2518CBB70057AD2E /* PmzError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06F03C2518CBB70057AD2E /* PmzError.swift */; };
 		CF06F03F2518CFE60057AD2E /* PmzItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06F03E2518CFE60057AD2E /* PmzItem.swift */; };
 		CF06F0412518D0630057AD2E /* PmzConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06F0402518D0630057AD2E /* PmzConfiguration.swift */; };
-		CF06F0432518D1FD0057AD2E /* PaymentCheckerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF06F0422518D1FD0057AD2E /* PaymentCheckerController.xib */; };
-		CF06F0452518D3680057AD2E /* PaymentCheckerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06F0442518D3680057AD2E /* PaymentCheckerViewController.swift */; };
-		CF06F0472518D7CA0057AD2E /* PaymentDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF06F0462518D7CA0057AD2E /* PaymentDetailController.xib */; };
-		CF06F0492518D8E20057AD2E /* PaymentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06F0482518D8E20057AD2E /* PaymentDetailViewController.swift */; };
-		CF2D94D0250BBC8C002CE102 /* FirstController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2D94CF250BBC8C002CE102 /* FirstController.xib */; };
-		CF2D94D2250BDD8A002CE102 /* SecondController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2D94D1250BDD8A002CE102 /* SecondController.xib */; };
-		CF2D94D4250BDE98002CE102 /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D94D3250BDE98002CE102 /* SecondController.swift */; };
+		CF06F0432518D1FD0057AD2E /* PmzPaymentCheckerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF06F0422518D1FD0057AD2E /* PmzPaymentCheckerVC.xib */; };
+		CF06F0452518D3680057AD2E /* PmzPaymentCheckerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06F0442518D3680057AD2E /* PmzPaymentCheckerViewController.swift */; };
+		CF06F0472518D7CA0057AD2E /* PmzResultVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF06F0462518D7CA0057AD2E /* PmzResultVC.xib */; };
+		CF06F0492518D8E20057AD2E /* PmzResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06F0482518D8E20057AD2E /* PmzResultViewController.swift */; };
+		CF2D94D0250BBC8C002CE102 /* PmzStoresVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2D94CF250BBC8C002CE102 /* PmzStoresVC.xib */; };
+		CF2D94D2250BDD8A002CE102 /* PmzMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2D94D1250BDD8A002CE102 /* PmzMenuVC.xib */; };
+		CF2D94D4250BDE98002CE102 /* PmzMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D94D3250BDE98002CE102 /* PmzMenuViewController.swift */; };
 		CF2D94D6250BE7DD002CE102 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2D94D5250BE7DD002CE102 /* Image.xcassets */; };
 		CF2D94D8250BE8CF002CE102 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D94D7250BE8CF002CE102 /* UIExtension.swift */; };
 		CF2D94DA250BEA95002CE102 /* PaymentezViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D94D9250BEA95002CE102 /* PaymentezViewController.swift */; };
-		CF2D94DC250BFAEE002CE102 /* ThirdController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2D94DB250BFAEE002CE102 /* ThirdController.xib */; };
-		CF2D94DE250BFB46002CE102 /* ThirdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D94DD250BFB46002CE102 /* ThirdController.swift */; };
-		CF2D94E0250BFB52002CE102 /* FourthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D94DF250BFB52002CE102 /* FourthController.swift */; };
-		CF2D94E2250BFBCD002CE102 /* FourthController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2D94E1250BFBCD002CE102 /* FourthController.xib */; };
-		CFB1F278250BAE3200670418 /* FirstController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB1F277250BAE3200670418 /* FirstController.swift */; };
+		CF2D94DC250BFAEE002CE102 /* PmzProductVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2D94DB250BFAEE002CE102 /* PmzProductVC.xib */; };
+		CF2D94DE250BFB46002CE102 /* PmzProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D94DD250BFB46002CE102 /* PmzProductViewController.swift */; };
+		CF2D94E0250BFB52002CE102 /* PmzSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D94DF250BFB52002CE102 /* PmzSummaryViewController.swift */; };
+		CF2D94E2250BFBCD002CE102 /* PmzSummaryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2D94E1250BFBCD002CE102 /* PmzSummaryVC.xib */; };
+		CFB1F278250BAE3200670418 /* PmzStoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB1F277250BAE3200670418 /* PmzStoresViewController.swift */; };
 		CFB1F27B250BAF7800670418 /* PaymentezSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB1F27A250BAF7800670418 /* PaymentezSDK.swift */; };
 		D9DCD6EDECADC3DB671A18EAD9EF5214 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		DEBFA160BEDF1D066D93EEC1CB356D34 /* PaymentezSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE1634F1DB7269AC79B4A6B763CF976 /* PaymentezSDK-dummy.m */; };
@@ -86,21 +86,21 @@
 		CF06F03C2518CBB70057AD2E /* PmzError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PmzError.swift; sourceTree = "<group>"; };
 		CF06F03E2518CFE60057AD2E /* PmzItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PmzItem.swift; sourceTree = "<group>"; };
 		CF06F0402518D0630057AD2E /* PmzConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PmzConfiguration.swift; sourceTree = "<group>"; };
-		CF06F0422518D1FD0057AD2E /* PaymentCheckerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentCheckerController.xib; sourceTree = "<group>"; };
-		CF06F0442518D3680057AD2E /* PaymentCheckerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCheckerViewController.swift; sourceTree = "<group>"; };
-		CF06F0462518D7CA0057AD2E /* PaymentDetailController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentDetailController.xib; sourceTree = "<group>"; };
-		CF06F0482518D8E20057AD2E /* PaymentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetailViewController.swift; sourceTree = "<group>"; };
-		CF2D94CF250BBC8C002CE102 /* FirstController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstController.xib; sourceTree = "<group>"; };
-		CF2D94D1250BDD8A002CE102 /* SecondController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondController.xib; sourceTree = "<group>"; };
-		CF2D94D3250BDE98002CE102 /* SecondController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
+		CF06F0422518D1FD0057AD2E /* PmzPaymentCheckerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PmzPaymentCheckerVC.xib; sourceTree = "<group>"; };
+		CF06F0442518D3680057AD2E /* PmzPaymentCheckerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PmzPaymentCheckerViewController.swift; sourceTree = "<group>"; };
+		CF06F0462518D7CA0057AD2E /* PmzResultVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PmzResultVC.xib; sourceTree = "<group>"; };
+		CF06F0482518D8E20057AD2E /* PmzResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PmzResultViewController.swift; sourceTree = "<group>"; };
+		CF2D94CF250BBC8C002CE102 /* PmzStoresVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PmzStoresVC.xib; sourceTree = "<group>"; };
+		CF2D94D1250BDD8A002CE102 /* PmzMenuVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PmzMenuVC.xib; sourceTree = "<group>"; };
+		CF2D94D3250BDE98002CE102 /* PmzMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PmzMenuViewController.swift; sourceTree = "<group>"; };
 		CF2D94D5250BE7DD002CE102 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		CF2D94D7250BE8CF002CE102 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 		CF2D94D9250BEA95002CE102 /* PaymentezViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentezViewController.swift; sourceTree = "<group>"; };
-		CF2D94DB250BFAEE002CE102 /* ThirdController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdController.xib; sourceTree = "<group>"; };
-		CF2D94DD250BFB46002CE102 /* ThirdController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdController.swift; sourceTree = "<group>"; };
-		CF2D94DF250BFB52002CE102 /* FourthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthController.swift; sourceTree = "<group>"; };
-		CF2D94E1250BFBCD002CE102 /* FourthController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthController.xib; sourceTree = "<group>"; };
-		CFB1F277250BAE3200670418 /* FirstController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstController.swift; sourceTree = "<group>"; };
+		CF2D94DB250BFAEE002CE102 /* PmzProductVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PmzProductVC.xib; sourceTree = "<group>"; };
+		CF2D94DD250BFB46002CE102 /* PmzProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PmzProductViewController.swift; sourceTree = "<group>"; };
+		CF2D94DF250BFB52002CE102 /* PmzSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PmzSummaryViewController.swift; sourceTree = "<group>"; };
+		CF2D94E1250BFBCD002CE102 /* PmzSummaryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PmzSummaryVC.xib; sourceTree = "<group>"; };
+		CFB1F277250BAE3200670418 /* PmzStoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PmzStoresViewController.swift; sourceTree = "<group>"; };
 		CFB1F27A250BAF7800670418 /* PaymentezSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentezSDK.swift; sourceTree = "<group>"; };
 		CFBA98EE420D73A278F75EF65AC2D256 /* PaymentezSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PaymentezSDK.xcconfig; sourceTree = "<group>"; };
 		D2073433B225F8B0882756758B359050 /* Pods-PaymentezSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaymentezSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -266,14 +266,14 @@
 			isa = PBXGroup;
 			children = (
 				CFF263B3250BBC6700DA9DBD /* Resources */,
-				CFB1F277250BAE3200670418 /* FirstController.swift */,
-				CF2D94D3250BDE98002CE102 /* SecondController.swift */,
+				CFB1F277250BAE3200670418 /* PmzStoresViewController.swift */,
+				CF2D94D3250BDE98002CE102 /* PmzMenuViewController.swift */,
 				CF2D94D7250BE8CF002CE102 /* UIExtension.swift */,
 				CF2D94D9250BEA95002CE102 /* PaymentezViewController.swift */,
-				CF2D94DD250BFB46002CE102 /* ThirdController.swift */,
-				CF2D94DF250BFB52002CE102 /* FourthController.swift */,
-				CF06F0442518D3680057AD2E /* PaymentCheckerViewController.swift */,
-				CF06F0482518D8E20057AD2E /* PaymentDetailViewController.swift */,
+				CF2D94DD250BFB46002CE102 /* PmzProductViewController.swift */,
+				CF2D94DF250BFB52002CE102 /* PmzSummaryViewController.swift */,
+				CF06F0442518D3680057AD2E /* PmzPaymentCheckerViewController.swift */,
+				CF06F0482518D8E20057AD2E /* PmzResultViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -299,13 +299,13 @@
 		CFF263B3250BBC6700DA9DBD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CF2D94CF250BBC8C002CE102 /* FirstController.xib */,
-				CF2D94D1250BDD8A002CE102 /* SecondController.xib */,
+				CF2D94CF250BBC8C002CE102 /* PmzStoresVC.xib */,
+				CF2D94D1250BDD8A002CE102 /* PmzMenuVC.xib */,
 				CF2D94D5250BE7DD002CE102 /* Image.xcassets */,
-				CF2D94DB250BFAEE002CE102 /* ThirdController.xib */,
-				CF2D94E1250BFBCD002CE102 /* FourthController.xib */,
-				CF06F0422518D1FD0057AD2E /* PaymentCheckerController.xib */,
-				CF06F0462518D7CA0057AD2E /* PaymentDetailController.xib */,
+				CF2D94DB250BFAEE002CE102 /* PmzProductVC.xib */,
+				CF2D94E1250BFBCD002CE102 /* PmzSummaryVC.xib */,
+				CF06F0422518D1FD0057AD2E /* PmzPaymentCheckerVC.xib */,
+				CF06F0462518D7CA0057AD2E /* PmzResultVC.xib */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -457,13 +457,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF2D94D0250BBC8C002CE102 /* FirstController.xib in Resources */,
+				CF2D94D0250BBC8C002CE102 /* PmzStoresVC.xib in Resources */,
 				CF2D94D6250BE7DD002CE102 /* Image.xcassets in Resources */,
-				CF06F0432518D1FD0057AD2E /* PaymentCheckerController.xib in Resources */,
-				CF2D94D2250BDD8A002CE102 /* SecondController.xib in Resources */,
-				CF2D94E2250BFBCD002CE102 /* FourthController.xib in Resources */,
-				CF06F0472518D7CA0057AD2E /* PaymentDetailController.xib in Resources */,
-				CF2D94DC250BFAEE002CE102 /* ThirdController.xib in Resources */,
+				CF06F0432518D1FD0057AD2E /* PmzPaymentCheckerVC.xib in Resources */,
+				CF2D94D2250BDD8A002CE102 /* PmzMenuVC.xib in Resources */,
+				CF2D94E2250BFBCD002CE102 /* PmzSummaryVC.xib in Resources */,
+				CF06F0472518D7CA0057AD2E /* PmzResultVC.xib in Resources */,
+				CF2D94DC250BFAEE002CE102 /* PmzProductVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,16 +497,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF06F0492518D8E20057AD2E /* PaymentDetailViewController.swift in Sources */,
+				CF06F0492518D8E20057AD2E /* PmzResultViewController.swift in Sources */,
 				CF2D94DA250BEA95002CE102 /* PaymentezViewController.swift in Sources */,
-				CF2D94DE250BFB46002CE102 /* ThirdController.swift in Sources */,
+				CF2D94DE250BFB46002CE102 /* PmzProductViewController.swift in Sources */,
 				CFB1F27B250BAF7800670418 /* PaymentezSDK.swift in Sources */,
-				CF2D94D4250BDE98002CE102 /* SecondController.swift in Sources */,
+				CF2D94D4250BDE98002CE102 /* PmzMenuViewController.swift in Sources */,
 				CF06F03D2518CBB70057AD2E /* PmzError.swift in Sources */,
 				CF06F03B2518CBAD0057AD2E /* PmzOrder.swift in Sources */,
-				CFB1F278250BAE3200670418 /* FirstController.swift in Sources */,
-				CF06F0452518D3680057AD2E /* PaymentCheckerViewController.swift in Sources */,
-				CF2D94E0250BFB52002CE102 /* FourthController.swift in Sources */,
+				CFB1F278250BAE3200670418 /* PmzStoresViewController.swift in Sources */,
+				CF06F0452518D3680057AD2E /* PmzPaymentCheckerViewController.swift in Sources */,
+				CF2D94E0250BFB52002CE102 /* PmzSummaryViewController.swift in Sources */,
 				CF06F0412518D0630057AD2E /* PmzConfiguration.swift in Sources */,
 				CF06F03F2518CFE60057AD2E /* PmzItem.swift in Sources */,
 				CF2D94D8250BE8CF002CE102 /* UIExtension.swift in Sources */,

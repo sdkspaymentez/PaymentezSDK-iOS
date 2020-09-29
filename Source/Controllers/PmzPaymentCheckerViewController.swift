@@ -7,8 +7,8 @@
 
 import Foundation
 
-class PaymentCheckerViewController: PaymentezViewController {
-    static let PAYMENT_CHECKER_VIEW_NAME = "PaymentCheckerController"
+class PmzPaymentCheckerViewController: PaymentezViewController {
+    static let PMZ_PAYMENT_CHECKER_VC = "PmzPaymentCheckerVC"
     
     @IBOutlet var paymentErrorButton: UIView!
     @IBOutlet var placeErrorButton: UIView!
@@ -20,7 +20,7 @@ class PaymentCheckerViewController: PaymentezViewController {
     var order: PmzOrder?
     
     init() {
-        super.init(nibName: PaymentCheckerViewController.PAYMENT_CHECKER_VIEW_NAME, bundle: PaymentezSDK.shared.getBundle())
+        super.init(nibName: PmzPaymentCheckerViewController.PMZ_PAYMENT_CHECKER_VC, bundle: PaymentezSDK.shared.getBundle())
     }
     
     override func viewDidLoad() {
@@ -61,7 +61,7 @@ class PaymentCheckerViewController: PaymentezViewController {
     }
     
     @objc func onSuccess() {
-        let paymentDetailController = PaymentDetailViewController.init()
+        let paymentDetailController = PmzResultViewController.init()
         paymentDetailController.order = order
         PaymentezSDK.shared.pushVC(vc: paymentDetailController)
     }

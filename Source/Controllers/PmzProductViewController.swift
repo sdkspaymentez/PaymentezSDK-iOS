@@ -7,14 +7,14 @@
 
 import Foundation
 
-class ThirdController: PaymentezViewController {
+class PmzProductViewController: PaymentezViewController {
     
-    static let THIRD_CONTROLLER_VIEW_NAME = "ThirdController"
+    static let PMZ_PRODUCT_VC = "PmzProductVC"
     
     @IBOutlet var innerBackButton: UIView!
     @IBOutlet var nextButton: UIView!
     init() {
-        super.init(nibName: ThirdController.THIRD_CONTROLLER_VIEW_NAME, bundle: PaymentezSDK.shared.getBundle())
+        super.init(nibName: PmzProductViewController.PMZ_PRODUCT_VC, bundle: PaymentezSDK.shared.getBundle())
     }
     
     required init?(coder: NSCoder) {
@@ -28,7 +28,7 @@ class ThirdController: PaymentezViewController {
     }
     
     @objc func goToFourthPage() {
-        let vc = FourthController.init()
+        let vc = PmzSummaryViewController.init()
         PaymentezSDK.shared.pushVC(vc: vc)
     }
     
