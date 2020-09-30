@@ -40,4 +40,14 @@ public class PmzConfiguration {
             self.discount = discount
         }
     }
+    
+    static func getJSON(configurations: [PmzConfiguration]?) -> NSArray {
+        let array = NSMutableArray()
+        if(configurations != nil) {
+            for configuration in configurations! {
+                array.add([API.K.ParameterKey.configurationId: configuration.id!])
+            }
+        }
+        return array
+    }
 }

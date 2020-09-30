@@ -12,11 +12,6 @@ public class PmzOrder {
     public var id: CLong?
     public var status: Int?
     public var tax: Double?
-    public var buyerEmail: String?
-    public var buyerName: String?
-    public var buyerPhone: String?
-    public var buyerFiscalNumber: String?
-    public var userReference: String?
     public var orderAppReference: String?
     public var confirmationCode: String?
     public var tableReference: String?
@@ -26,18 +21,21 @@ public class PmzOrder {
     public var dateStarted: String?
     public var orderType: Int?
     public var totalAmount: CLong?
-    public var addressLine1: String?
-    public var addressLine2: String?
-    public var addressCity: String?
-    public var addressState: String?
-    public var addressZip: String?
-    public var addressCountry: String?
-    public var addressLatitude: Double?
-    public var addressLongitude: Double?
     public var deliveryInstructions: String?
     public var deliveryPrice: Double?
     public var statusDescription: String?
+    
+    public var annotations: String?
+    public var storeId: CLong?
+    public var typeOrder: Int?
+    public var currency: String?
+    public var paymentMethodReference: String?
+    public var paymentReference: String?
+    public var service: Int?
+    
     public var items: [PmzItem]?
+    public var buyer: PmzBuyer?
+    public var address: PmzAddress?
     
     init(){}
     
@@ -50,18 +48,6 @@ public class PmzOrder {
         }
         if let tax = dictionary["tax"] as? Double {
             self.tax = tax
-        }
-        if let buyerEmail = dictionary["buyer_email"] as? String {
-            self.buyerEmail = buyerEmail
-        }
-        if let buyerName = dictionary["buyer_name"] as? String {
-            self.buyerName = buyerName
-        }
-        if let buyerFiscalNumber = dictionary["buyer_fiscal_number"] as? String {
-            self.buyerFiscalNumber = buyerFiscalNumber
-        }
-        if let userReference = dictionary["user_reference"] as? String {
-            self.userReference = userReference
         }
         if let orderAppReference = dictionary["order_app_reference"] as? String {
             self.orderAppReference = orderAppReference
@@ -90,32 +76,8 @@ public class PmzOrder {
         if let totalAmount = dictionary["total_amount"] as? CLong {
             self.totalAmount = totalAmount
         }
-        if let addressLine1 = dictionary["address_line1"] as? String {
-            self.addressLine1 = addressLine1
-        }
-        if let addressLine2 = dictionary["address_line2"] as? String {
-            self.addressLine2 = addressLine2
-        }
-        if let addressCity = dictionary["address_city"] as? String {
-            self.addressCity = addressCity
-        }
-        if let addressState = dictionary["address_state"] as? String {
-            self.addressState = addressState
-        }
-        if let addressZip = dictionary["address_zip"] as? String {
-            self.addressZip = addressZip
-        }
-        if let addressCountry = dictionary["address_country"] as? String {
-            self.addressCountry = addressCountry
-        }
         if let deliveryInstructions = dictionary["delivery_instructions"] as? String {
             self.deliveryInstructions = deliveryInstructions
-        }
-        if let addressLatitude = dictionary["address_latitude"] as? Double {
-            self.addressLatitude = addressLatitude
-        }
-        if let addressLongitude = dictionary["address_longitude"] as? Double {
-            self.addressLongitude = addressLongitude
         }
         if let deliveryPrice = dictionary["delivery_price"] as? Double {
             self.deliveryPrice = deliveryPrice
@@ -128,10 +90,56 @@ public class PmzOrder {
                 PmzItem(dictionary: $0 as! [String: Any])
             })
         }
+        self.buyer = PmzBuyer(dictionary: dictionary)
+        self.address = PmzAddress(dictionary: dictionary)
+        
+        if let annotations = dictionary["Annotations"] as? String {
+            self.annotations = annotations
+        }
+        if let storeId = dictionary["id_store"] as? CLong {
+            self.storeId = storeId
+        }
+        if let typeOrder = dictionary["type_order"] as? Int {
+            self.typeOrder = typeOrder
+        }
+        if let currency = dictionary["currency"] as? String {
+            self.currency = currency
+        }
+        if let paymentMethodReference = dictionary["payment_method_reference"] as? String {
+            self.paymentMethodReference = paymentMethodReference
+        }
+        if let paymentReference = dictionary["payment_reference"] as? String {
+            self.paymentReference = paymentReference
+        }
+        if let service = dictionary["service"] as? Int {
+            self.service = service
+        }
+    }
+    
+    func getJSONForPayment() -> [String: Any] {
+        return [API.K.ParameterKey.amount: totalAmount!,
+                API.K.ParameterKey.orderId: id!,
+                API.K.ParameterKey.paymentMethodReference: paymentMethodReference!,
+                API.K.ParameterKey.paymentReference: paymentReference!,
+                API.K.ParameterKey.service: service!,
+                API.K.ParameterKey.token: PaymentezSDK.shared.token!]
+    }
+    
+    func getJSONForPlace() -> [String: Any] {
+        return [API.K.ParameterKey.orderId: id!,
+                API.K.ParameterKey.token: PaymentezSDK.shared.token!]
     }
     
     public static func hardcoded() -> PmzOrder {
         if let dic = convertStringToDictionary(text: PmzOrder.json) {
+            return PmzOrder(dictionary: dic)
+        } else {
+            return PmzOrder()
+        }
+    }
+    
+    public static func hardcodedForOrderStart() -> PmzOrder {
+        if let dic = convertStringToDictionary(text: PmzOrder.jsonForOrderStart) {
             return PmzOrder(dictionary: dic)
         } else {
             return PmzOrder()
@@ -212,4 +220,26 @@ public class PmzOrder {
     "    \"delivery_price\": 0,\n" +
     "    \"status_description\": null\n" +
     "  }"
+    
+    static let jsonForOrderStart = "{\n" +
+    "    \"address_city\": \"Bogotá\",\n" +
+    "    \"address_country\": \"Colombia\",\n" +
+    "    \"address_latitude\": 4.6568103,\n" +
+    "    \"address_line1\": \"Calle 75 20C-81\",\n" +
+    "    \"address_line2\": \"Calle 75 - 20C-81\",\n" +
+    "    \"address_longitude\": -74.0561968,\n" +
+    "    \"address_state\": \"DC\",\n" +
+    "    \"address_zip\": \"\",\n" +
+    "    \"delivery_instructions\": \"Apto 206\",\n" +
+    "    \"Annotations\": \"\",\n" +
+    "    \"buyer_email\": \"breyes@paymentez.com\",\n" +
+    "    \"buyer_fiscal_number\": \"1054092666\",\n" +
+    "    \"buyer_name\": \"Bruno Reyes\",\n" +
+    "    \"buyer_phone\": \"3212000915\",\n" +
+    "    \"buyer_user_reference\": \"f6dc275d-5e64-4127-bf5c-dbbfac02aacd\",\n" +
+    "    \"app_order_reference\": \"test-1744\",\n" +
+    "    \"id_store\":120,\n" +
+    "    \"session\": \"{{token}}\",\n" +
+    "    \"type_order\": 0\n" +
+    "}";
 }

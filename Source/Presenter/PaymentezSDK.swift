@@ -22,6 +22,8 @@ public class PaymentezSDK {
     public static let shared: PaymentezSDK = PaymentezSDK()
     var navController: UINavigationController?
     var presentingVC: UIViewController?
+    var session: PmzSession?
+    var token: String?
     
     var backgroundColor: UIColor?
     var textColor: UIColor?
@@ -31,6 +33,10 @@ public class PaymentezSDK {
     var paymentCheckerCallback: PmzPayAndPlaceCallback?
     
     private init(){}
+    
+    public func initialize(appCode: String, appKey: String) {
+        session = PmzSession(appCode: appCode, appKey: appKey)
+    }
     
     public func setBackgroundColor(backgroundColor: UIColor) -> PaymentezSDK {
         self.backgroundColor = backgroundColor
@@ -52,34 +58,48 @@ public class PaymentezSDK {
         return self
     }
     
+    func isInitialized() -> Bool {
+        if session != nil {
+            return true
+        } else {
+            fatalError("PaymentezSDK not initialized")
+        }
+    }
+    
     public func startSearch(navigationController: UINavigationController, callback: PmzSearchCallback) {
-        searchCallback = callback
-        navController = navigationController
-        navigationController.isNavigationBarHidden = true
-        presentingVC = navigationController.viewControllers.last
-        let firstController = PmzStoresViewController.init()
-        navigationController.pushViewController(firstController, animated: true)
+        if isInitialized() {
+            searchCallback = callback
+            navController = navigationController
+            navigationController.isNavigationBarHidden = true
+            presentingVC = navigationController.viewControllers.last
+            let firstController = PmzStoresViewController.init()
+            navigationController.pushViewController(firstController, animated: true)
+        }
     }
     
     public func startSearch(navigationController: UINavigationController, storeId: CLong, callback: PmzSearchCallback) {
-        searchCallback = callback
-        navController = navigationController
-        navigationController.isNavigationBarHidden = true
-        presentingVC = navigationController.viewControllers.last
-        let secondController = PmzMenuViewController.init()
-        secondController.storeId = storeId
-        navigationController.pushViewController(secondController, animated: true)
+        if isInitialized() {
+            searchCallback = callback
+            navController = navigationController
+            navigationController.isNavigationBarHidden = true
+            presentingVC = navigationController.viewControllers.last
+            let secondController = PmzMenuViewController.init()
+            secondController.storeId = storeId
+            navigationController.pushViewController(secondController, animated: true)
+        }
     }
     
     public func startPayAndPlace(order: PmzOrder, paymentReference: String, navigationController: UINavigationController, callback: PmzPayAndPlaceCallback) {
-        paymentCheckerCallback = callback
-        let payAndPlace = PmzPayAndPlaceViewController.init()
-        payAndPlace.order = order
-        payAndPlace.paymentReference = paymentReference
-        navController = navigationController
-        navigationController.isNavigationBarHidden = true
-        presentingVC = navigationController.viewControllers.last
-        navigationController.pushViewController(payAndPlace, animated: true)
+        if isInitialized() {
+            paymentCheckerCallback = callback
+            let payAndPlace = PmzPayAndPlaceViewController.init()
+            payAndPlace.order = order
+            payAndPlace.paymentReference = paymentReference
+            navController = navigationController
+            navigationController.isNavigationBarHidden = true
+            presentingVC = navigationController.viewControllers.last
+            navigationController.pushViewController(payAndPlace, animated: true)
+        }
     }
     
     func pushVC(vc: UIViewController) {

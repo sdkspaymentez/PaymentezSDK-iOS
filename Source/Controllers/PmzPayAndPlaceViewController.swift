@@ -54,11 +54,11 @@ class PmzPayAndPlaceViewController: PaymentezViewController {
     }
     
     @objc func onPaymentError() {
-        PaymentezSDK.shared.onPaymentCheckingError(order: order!, error: PmzError(type: PmzError.PAYMENT_ERROR_KEY))
+        PaymentezSDK.shared.onPaymentCheckingError(order: order!, error: PmzError(PmzError.PAYMENT_ERROR_KEY))
     }
     
     @objc func onPlaceError() {
-        PaymentezSDK.shared.onPaymentCheckingError(order: order!, error: PmzError(type: PmzError.PLACE_ERROR_KEY))
+        PaymentezSDK.shared.onPaymentCheckingError(order: order!, error: PmzError(PmzError.PLACE_ERROR_KEY))
     }
     
     @objc func onSuccess() {

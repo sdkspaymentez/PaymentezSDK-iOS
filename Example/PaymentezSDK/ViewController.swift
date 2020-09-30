@@ -106,7 +106,7 @@ class ViewController: UIViewController, PmzSearchCallback, PmzPayAndPlaceCallbac
     }
     
     func payAndPlaceOnError(order: PmzOrder, error: PmzError) {
-        if let error = error.type {
+        if let error = error.errorCode {
             switch error {
             case PmzError.PAYMENT_ERROR_KEY:
                 showToast(controller: self, message: "Ocurrió un error con el Pago de la orden", seconds: 2)

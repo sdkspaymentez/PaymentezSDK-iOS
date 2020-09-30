@@ -9,6 +9,7 @@ import Foundation
 
 public class PmzItem {
     public var id: CLong?
+    public var orderId: CLong?
     public var tax: Double?
     public var annotation: String?
     public var status: Int?
@@ -56,5 +57,14 @@ public class PmzItem {
                 PmzConfiguration(dictionary: $0 as! [String: Any])
             })
         }
+    }
+    
+    func getJSONWithConf() -> [String: Any] {
+        return [API.K.ParameterKey.annotations: annotation!,
+                API.K.ParameterKey.orderId: orderId!,
+                API.K.ParameterKey.productId: productId!,
+                API.K.ParameterKey.quantity: quantity!,
+                API.K.ParameterKey.configurations: PmzConfiguration.getJSON(configurations: configurations),
+                API.K.ParameterKey.token: PaymentezSDK.shared.token!]
     }
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PaymentezSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-    displayFirstStory()
+        displayFirstStory()
+        PaymentezSDK.shared.initialize(appCode: "PMTZ-SDK-LM-CO-SERVER", appKey: "S72CVybhzWRTMFJHnyLLMJS0cXXRpQ4")
         
         return true
     }
