@@ -67,30 +67,50 @@ class ViewController: UIViewController, PmzSearchCallback, PmzPayAndPlaceCallbac
     }
     
     @objc func goToSearch() {
+        let buyer = PmzBuyer()
+            .setName("Buyer Test")
+            .setEmail("buyer@test.com.ar")
+            .setPhone("01112345678")
+            .setFiscalNumber("fiscalNumber")
+            .setUserReference("userReference")
+        
         PaymentezSDK.shared
                 .setBackgroundColor(backgroundColor: backgroundColorSelected!.color!)
                 .setTextColor(textColor: textColorSelected!.color!)
                 .setButtonBackgroundColor(buttonBackgroundColor: buttonColorSelected!.color!)
                 .setButtonTextColor(buttonTextColor: buttonTextColorSelected!.color!)
-                .startSearch(navigationController: navigationController!, callback: self)
+                .startSearch(navigationController: navigationController!, buyer: buyer, appOrderReference: "appOrderReference", callback: self)
     }
     
     @objc func goToSearchWithId() {
+        let buyer = PmzBuyer()
+        .setName("Buyer Test")
+        .setEmail("buyer@test.com.ar")
+        .setPhone("01112345678")
+        .setFiscalNumber("fiscalNumber")
+        .setUserReference("userReference")
+        
         PaymentezSDK.shared
                 .setBackgroundColor(backgroundColor: backgroundColorSelected!.color!)
                 .setTextColor(textColor: textColorSelected!.color!)
                 .setButtonBackgroundColor(buttonBackgroundColor: buttonColorSelected!.color!)
                 .setButtonTextColor(buttonTextColor: buttonTextColorSelected!.color!)
-                .startSearch(navigationController: navigationController!, storeId: 120, callback: self)
+                .startSearch(navigationController: navigationController!, buyer: buyer, appOrderReference: "appOrderReference", storeId: 120, callback: self)
     }
     
     @objc func goToPaymentChecking() {
+        let paymentData = PmzPaymentData()
+            .setPaymentMethodReference("paymentMethodReference")
+            .setPaymentReference("paymentReference")
+            .setAmount(20000)
+            .setService(200)
+        
         PaymentezSDK.shared
                 .setBackgroundColor(backgroundColor: backgroundColorSelected!.color!)
                 .setTextColor(textColor: textColorSelected!.color!)
                 .setButtonBackgroundColor(buttonBackgroundColor: buttonColorSelected!.color!)
                 .setButtonTextColor(buttonTextColor: buttonTextColorSelected!.color!)
-                .startPayAndPlace(order: PmzOrder.hardcoded(), paymentReference: "paymentReference", navigationController: navigationController!, callback: self)
+                .startPayAndPlace(order: PmzOrder.hardcoded(), paymentData: paymentData, navigationController: navigationController!, callback: self)
     }
     
     func searchFinishedSuccessfully(order: PmzOrder) {

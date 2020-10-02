@@ -18,7 +18,7 @@ class PmzPayAndPlaceViewController: PaymentezViewController {
     @IBOutlet var successText: UILabel!
     
     var order: PmzOrder?
-    var paymentReference: String?
+    var paymentData: PmzPaymentData?
     
     init() {
         super.init(nibName: PmzPayAndPlaceViewController.PMZ_PAY_AND_PLACE_VC, bundle: PaymentezSDK.shared.getBundle())
