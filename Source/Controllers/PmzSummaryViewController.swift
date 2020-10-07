@@ -36,9 +36,9 @@ class PmzSummaryViewController: PaymentezViewController {
     }
     
     @IBAction func backDidPressed(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
         if justSummary {
             PaymentezSDK.shared.onSearchCancelled()
         }
-        self.navigationController?.popViewController(animated: true)
     }
 }

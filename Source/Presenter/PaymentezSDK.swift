@@ -141,8 +141,8 @@ public class PaymentezSDK {
         }
     }
     
-    public func getStores() {
-        
+    public func getStores(callback: PmzGetStoresCallback) {
+        callback.gotStores(stores: PmzStore.hardcoded())
     }
     
     public func initialize(appCode: String, appKey: String) {

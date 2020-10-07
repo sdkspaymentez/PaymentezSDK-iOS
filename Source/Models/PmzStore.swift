@@ -158,7 +158,7 @@ public class PmzStore {
         do {
             let data: Data = text.data(using: String.Encoding.utf8)!
             return try JSONSerialization.jsonObject(with: data, options: []) as? NSArray
-        } catch let _ as NSError {
+        } catch _ {
             return nil
         }
     }
