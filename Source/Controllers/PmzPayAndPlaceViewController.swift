@@ -18,7 +18,9 @@ class PmzPayAndPlaceViewController: PaymentezViewController {
     @IBOutlet var successText: UILabel!
     
     var order: PmzOrder?
+    var orders: [PmzOrder]?
     var paymentData: PmzPaymentData?
+    var skipSummary: Bool = false
     
     init() {
         super.init(nibName: PmzPayAndPlaceViewController.PMZ_PAY_AND_PLACE_VC, bundle: PaymentezSDK.shared.getBundle())
@@ -54,17 +56,34 @@ class PmzPayAndPlaceViewController: PaymentezViewController {
     }
     
     @objc func onPaymentError() {
-        PaymentezSDK.shared.onPaymentCheckingError(order: order!, error: PmzError(type: PmzError.PAYMENT_ERROR_KEY))
+        if order != nil {
+            PaymentezSDK.shared.onPaymentCheckingError(order: order!, error: PmzError(type: PmzError.PAYMENT_ERROR_KEY))
+        } else if orders != nil {
+            PaymentezSDK.shared.onPaymentCheckingError(orders: orders!, error: PmzError(type: PmzError.PAYMENT_ERROR_KEY))
+        }
     }
     
     @objc func onPlaceError() {
-        PaymentezSDK.shared.onPaymentCheckingError(order: order!, error: PmzError(type: PmzError.PLACE_ERROR_KEY))
+        if order != nil {
+            PaymentezSDK.shared.onPaymentCheckingError(order: order!, error: PmzError(type: PmzError.PLACE_ERROR_KEY))
+        } else if orders != nil {
+            PaymentezSDK.shared.onPaymentCheckingError(orders: orders!, error: PmzError(type: PmzError.PLACE_ERROR_KEY))
+        }
     }
     
     @objc func onSuccess() {
-        let paymentDetailController = PmzResultViewController.init()
-        paymentDetailController.order = order
-        PaymentezSDK.shared.pushVC(vc: paymentDetailController)
+        if skipSummary {
+            if order != nil {
+                PaymentezSDK.shared.onPaymentCheckingFinished(order: order!)
+            } else if orders != nil {
+                PaymentezSDK.shared.onPaymentCheckingFinished(orders: orders!)
+            }
+        } else {
+            let paymentDetailController = PmzResultViewController.init()
+            paymentDetailController.order = order
+            paymentDetailController.orders = orders
+            PaymentezSDK.shared.pushVC(vc: paymentDetailController)
+        }
     }
     
 }

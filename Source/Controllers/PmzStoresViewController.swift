@@ -14,6 +14,8 @@ class PmzStoresViewController: PaymentezViewController {
     
     @IBOutlet var nextButton: UIView!
     
+    var searchFilter: String?
+    
     init() {
         super.init(nibName: PmzStoresViewController.PMZ_STORES_VC, bundle: PaymentezSDK.shared.getBundle())
     }

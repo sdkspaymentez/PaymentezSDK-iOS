@@ -14,6 +14,7 @@ class PmzResultViewController: PaymentezViewController {
     @IBOutlet var nextButton: UIView!
     
     var order: PmzOrder?
+    var orders: [PmzOrder]?
     
     init() {
         super.init(nibName: PmzResultViewController.PMZ_RESULT_VC, bundle: PaymentezSDK.shared.getBundle())

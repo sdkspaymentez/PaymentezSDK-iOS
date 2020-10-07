@@ -17,6 +17,16 @@ public protocol PmzPayAndPlaceCallback {
     func payAndPlaceOnError(order: PmzOrder, error: PmzError)
 }
 
+public protocol PmzPayAndPlaceMultipleOrdersCallback {
+    func payAndPlaceFinishedSuccessfully(orders: [PmzOrder])
+    func payAndPlaceOnError(orders: [PmzOrder], error: PmzError)
+}
+
+public protocol PmzGetStoresCallback {
+    func gotStores(stores: [PmzStore])
+    func gettingStoresFailed()
+}
+
 public class PaymentezSDK {
     
     public static let shared: PaymentezSDK = PaymentezSDK()
@@ -31,6 +41,7 @@ public class PaymentezSDK {
     var buttonTextColor: UIColor?
     var searchCallback: PmzSearchCallback?
     var paymentCheckerCallback: PmzPayAndPlaceCallback?
+    var paymentCheckerMultipleOrdersCallback: PmzPayAndPlaceMultipleOrdersCallback?
     
     private init(){}
     
@@ -65,6 +76,18 @@ public class PaymentezSDK {
         }
     }
     
+    public func startSearch(navigationController: UINavigationController, buyer: PmzBuyer, appOrderReference: String, searchStoresFilter: String, callback: PmzSearchCallback) {
+        if isInitialized() && isBuyerUsable(buyer) && isAppOrderReferenceUsable(appOrderReference){
+            searchCallback = callback
+            navController = navigationController
+            navigationController.isNavigationBarHidden = true
+            presentingVC = navigationController.viewControllers.last
+            let firstController = PmzStoresViewController.init()
+            firstController.searchFilter = searchStoresFilter
+            navigationController.pushViewController(firstController, animated: true)
+        }
+    }
+    
     public func startSearch(navigationController: UINavigationController, buyer: PmzBuyer, appOrderReference: String, storeId: CLong, callback: PmzSearchCallback) {
         if isInitialized() && isBuyerUsable(buyer) && isAppOrderReferenceUsable(appOrderReference) {
             searchCallback = callback
@@ -77,17 +100,49 @@ public class PaymentezSDK {
         }
     }
     
-    public func startPayAndPlace(order: PmzOrder, paymentData: PmzPaymentData, navigationController: UINavigationController, callback: PmzPayAndPlaceCallback) {
+    public func showSummary(navigationController: UINavigationController, appOrderReference: String, order: PmzOrder, callback: PmzSearchCallback) {
+        if isInitialized() && isAppOrderReferenceUsable(appOrderReference){
+            searchCallback = callback
+            navController = navigationController
+            navigationController.isNavigationBarHidden = true
+            presentingVC = navigationController.viewControllers.last
+            let summaryController = PmzSummaryViewController.init()
+            summaryController.order = order
+            summaryController.justSummary = true
+            navigationController.pushViewController(summaryController, animated: true)
+        }
+    }
+    
+    public func startPayAndPlace(navigationController: UINavigationController, order: PmzOrder, paymentData: PmzPaymentData, skipSummary: Bool = false, callback: PmzPayAndPlaceCallback) {
         if isInitialized() && isPaymentDataUsable(paymentData) {
             paymentCheckerCallback = callback
             let payAndPlace = PmzPayAndPlaceViewController.init()
             payAndPlace.order = order
             payAndPlace.paymentData = paymentData
+            payAndPlace.skipSummary = skipSummary
             navController = navigationController
             navigationController.isNavigationBarHidden = true
             presentingVC = navigationController.viewControllers.last
             navigationController.pushViewController(payAndPlace, animated: true)
         }
+    }
+    
+    public func startPayAndPlace(navigationController: UINavigationController, orders: [PmzOrder], paymentData: PmzPaymentData, skipSummary: Bool = false, callback: PmzPayAndPlaceMultipleOrdersCallback) {
+        if isInitialized() && isPaymentDataUsable(paymentData) {
+            paymentCheckerMultipleOrdersCallback = callback
+            let payAndPlace = PmzPayAndPlaceViewController.init()
+            payAndPlace.orders = orders
+            payAndPlace.paymentData = paymentData
+            payAndPlace.skipSummary = skipSummary
+            navController = navigationController
+            navigationController.isNavigationBarHidden = true
+            presentingVC = navigationController.viewControllers.last
+            navigationController.pushViewController(payAndPlace, animated: true)
+        }
+    }
+    
+    public func getStores() {
+        
     }
     
     public func initialize(appCode: String, appKey: String) {
@@ -152,21 +207,30 @@ public class PaymentezSDK {
         searchCallback?.searchFinishedSuccessfully(order: PmzOrder())
     }
     
-    func onPaymentCheckingFinished(order: PmzOrder) {
+    func onPaymentCheckingFinished(order: PmzOrder? = nil, orders: [PmzOrder]? = nil) {
         if(presentingVC != nil) {
             navController?.popToViewController(presentingVC!, animated: true)
         } else {
             navController?.popToRootViewController(animated: true)
         }
-        paymentCheckerCallback?.payAndPlaceFinishedSuccessfully(order: PmzOrder())
+        if order != nil {
+            paymentCheckerCallback?.payAndPlaceFinishedSuccessfully(order: PmzOrder())
+        } else if orders != nil {
+            paymentCheckerMultipleOrdersCallback?.payAndPlaceFinishedSuccessfully(orders: orders!)
+        }
     }
     
-    func onPaymentCheckingError(order: PmzOrder, error: PmzError) {
+    func onPaymentCheckingError(order: PmzOrder? = nil, orders: [PmzOrder]? = nil, error: PmzError) {
         if(presentingVC != nil) {
             navController?.popToViewController(presentingVC!, animated: true)
         } else {
             navController?.popToRootViewController(animated: true)
         }
-        paymentCheckerCallback?.payAndPlaceOnError(order: order, error: error)
+        if order != nil {
+            paymentCheckerCallback?.payAndPlaceOnError(order: order!, error: error)
+        } else if orders != nil {
+            paymentCheckerMultipleOrdersCallback?.payAndPlaceOnError(orders: orders!, error: error)
+        }
     }
+    
 }

@@ -13,6 +13,10 @@ class PmzSummaryViewController: PaymentezViewController {
     
     @IBOutlet var innerBackButton: UIView!
     @IBOutlet var nextButton: UIView!
+    
+    var order: PmzOrder?
+    var justSummary: Bool = false
+    
     init() {
         super.init(nibName: PmzSummaryViewController.PMZ_SUMMARY_VC, bundle: PaymentezSDK.shared.getBundle())
     }
@@ -32,6 +36,9 @@ class PmzSummaryViewController: PaymentezViewController {
     }
     
     @IBAction func backDidPressed(_ sender: Any) {
+        if justSummary {
+            PaymentezSDK.shared.onSearchCancelled()
+        }
         self.navigationController?.popViewController(animated: true)
     }
 }

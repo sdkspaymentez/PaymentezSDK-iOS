@@ -127,7 +127,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDm-Hv-JXL" userLabel="Search Button">
-                                <rect key="frame" x="20" y="492" width="335" height="45"/>
+                                <rect key="frame" x="20" y="415" width="335" height="45"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BÚSQUEDA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqM-nb-anW">
                                         <rect key="frame" x="122.5" y="12" width="90.5" height="21"/>
@@ -149,7 +149,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SxN-pj-0hJ" userLabel="Search Button">
-                                <rect key="frame" x="20" y="547" width="335" height="45"/>
+                                <rect key="frame" x="20" y="470" width="335" height="45"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BÚSQUEDA CON ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vug-qI-o69">
                                         <rect key="frame" x="91.5" y="12" width="152.5" height="21"/>
@@ -171,7 +171,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mg4-O6-Dbb" userLabel="Detail Button">
-                                <rect key="frame" x="20" y="602" width="335" height="45"/>
+                                <rect key="frame" x="20" y="525" width="335" height="45"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DETALLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hui-7n-R4u">
                                         <rect key="frame" x="132.5" y="12" width="70.5" height="21"/>
@@ -200,8 +200,8 @@
                             <constraint firstItem="1hV-Ek-Sig" firstAttribute="bottom" secondItem="8NP-Ps-U7C" secondAttribute="bottom" id="1UZ-Ql-vcz"/>
                             <constraint firstItem="4cB-LW-SAf" firstAttribute="bottom" secondItem="G1d-m3-z3E" secondAttribute="bottom" id="1d4-OP-wqO"/>
                             <constraint firstItem="vrg-rx-s44" firstAttribute="leading" secondItem="tdC-NO-ERB" secondAttribute="trailing" constant="10" id="2nP-kM-sX5"/>
+                            <constraint firstItem="oDm-Hv-JXL" firstAttribute="top" secondItem="Kfb-Ot-P0i" secondAttribute="bottom" constant="30" id="3E7-7k-soe"/>
                             <constraint firstItem="eUF-4u-SDs" firstAttribute="top" secondItem="2Uz-Ei-2br" secondAttribute="top" id="4OD-ce-oXe"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Mg4-O6-Dbb" secondAttribute="bottom" constant="20" id="77X-wT-KoZ"/>
                             <constraint firstItem="SxN-pj-0hJ" firstAttribute="leading" secondItem="Mg4-O6-Dbb" secondAttribute="leading" id="9qt-zS-ZeY"/>
                             <constraint firstAttribute="trailing" secondItem="Mg4-O6-Dbb" secondAttribute="trailing" constant="20" id="Agc-3Q-7ae"/>
                             <constraint firstItem="tdC-NO-ERB" firstAttribute="leading" secondItem="ZO3-o2-vNK" secondAttribute="leading" id="DwR-1t-zRA"/>

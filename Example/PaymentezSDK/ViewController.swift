@@ -110,7 +110,7 @@ class ViewController: UIViewController, PmzSearchCallback, PmzPayAndPlaceCallbac
                 .setTextColor(textColor: textColorSelected!.color!)
                 .setButtonBackgroundColor(buttonBackgroundColor: buttonColorSelected!.color!)
                 .setButtonTextColor(buttonTextColor: buttonTextColorSelected!.color!)
-                .startPayAndPlace(order: PmzOrder.hardcoded(), paymentData: paymentData, navigationController: navigationController!, callback: self)
+                .startPayAndPlace(navigationController: navigationController!, order: PmzOrder.hardcoded(), paymentData: paymentData, callback: self)
     }
     
     func searchFinishedSuccessfully(order: PmzOrder) {
