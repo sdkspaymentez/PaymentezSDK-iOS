@@ -1,10 +1,3 @@
-//
-//  PmzStore.swift
-//  PaymentezSDK
-//
-//  Created by Fennoma on 07/10/2020.
-//
-
 import Foundation
 
 public class PmzStore {

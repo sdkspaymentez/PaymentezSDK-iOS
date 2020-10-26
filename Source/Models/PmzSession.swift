@@ -1,10 +1,3 @@
-//
-//  PmzSession.swift
-//  PaymentezSDK
-//
-//  Created by Fennoma on 02/10/2020.
-//
-
 import Foundation
 
 class PmzSession {
