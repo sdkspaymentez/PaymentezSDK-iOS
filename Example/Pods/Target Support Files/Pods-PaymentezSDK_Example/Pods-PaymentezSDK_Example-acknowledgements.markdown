@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## PaymentezSDK
 
-Copyright (c) 2020 ftamburri <ftamburri@fennoma.com.ar>
+Copyright (c) 2020 sdkspaymentez <sdks@paymentez.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  PaymentezSDK
-//
-//  Created by ftamburri on 09/11/2020.
-//  Copyright (c) 2020 ftamburri. All rights reserved.
-//
-
 import UIKit
 import PaymentezSDK
 
