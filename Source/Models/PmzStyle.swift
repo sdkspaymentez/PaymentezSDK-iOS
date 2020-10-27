@@ -1,10 +1,3 @@
-//
-//  PmzStyle.swift
-//  PaymentezSDK
-//
-//  Created by Fennoma on 27/10/2020.
-//
-
 import Foundation
 
 public class PmzStyle {
