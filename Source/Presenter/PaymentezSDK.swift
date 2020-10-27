@@ -28,33 +28,15 @@ public class PaymentezSDK {
     var session: PmzSession?
     var token: String?
     
-    var backgroundColor: UIColor?
-    var textColor: UIColor?
-    var buttonBackgroundColor: UIColor?
-    var buttonTextColor: UIColor?
+    var style: PmzStyle?
     var searchCallback: PmzSearchCallback?
     var paymentCheckerCallback: PmzPayAndPlaceCallback?
     var paymentCheckerMultipleOrdersCallback: PmzPayAndPlaceMultipleOrdersCallback?
     
     private init(){}
     
-    public func setBackgroundColor(backgroundColor: UIColor) -> PaymentezSDK {
-        self.backgroundColor = backgroundColor
-        return self
-    }
-    
-    public func setTextColor(textColor: UIColor) -> PaymentezSDK {
-        self.textColor = textColor
-        return self
-    }
-    
-    public func setButtonBackgroundColor(buttonBackgroundColor: UIColor) -> PaymentezSDK {
-        self.buttonBackgroundColor = buttonBackgroundColor
-        return self
-    }
-    
-    public func setButtonTextColor(buttonTextColor: UIColor) -> PaymentezSDK {
-        self.buttonTextColor = buttonTextColor
+    public func setStyle(style: PmzStyle) -> PaymentezSDK {
+        self.style = style
         return self
     }
     

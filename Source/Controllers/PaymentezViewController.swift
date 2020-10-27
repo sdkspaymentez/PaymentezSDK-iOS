@@ -17,20 +17,20 @@ class PaymentezViewController: UIViewController {
     }
     
     func setPropperColors() {
-        if let bgColor = PaymentezSDK.shared.backgroundColor {
+        if let bgColor = PaymentezSDK.shared.style?.backgroundColor {
             mainView?.backgroundColor = bgColor
         }
-        if let textColor = PaymentezSDK.shared.textColor {
+        if let textColor = PaymentezSDK.shared.style?.textColor {
             mainText?.textColor = textColor
             backTextColor?.textColor = textColor
         }
-        if let buttonColor = PaymentezSDK.shared.buttonBackgroundColor {
+        if let buttonColor = PaymentezSDK.shared.style?.buttonBackgroundColor {
             headerBar?.backgroundColor = buttonColor
             nextButtonBackground?.backgroundColor = buttonColor
         } else {
             nextButtonTextColor?.backgroundColor = UIColor(named: "orange")
         }
-        if let buttonTextColor = PaymentezSDK.shared.buttonTextColor {
+        if let buttonTextColor = PaymentezSDK.shared.style?.buttonTextColor {
             nextButtonTextColor?.textColor = buttonTextColor
             backButton?.imageView?.tintColor = buttonTextColor
             headerTitle?.textColor = buttonTextColor

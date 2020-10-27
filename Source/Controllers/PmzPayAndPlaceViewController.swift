@@ -28,7 +28,7 @@ class PmzPayAndPlaceViewController: PaymentezViewController {
     }
     
     func setButtonColors(){
-        if let buttonColor = PaymentezSDK.shared.buttonBackgroundColor {
+        if let buttonColor = PaymentezSDK.shared.style?.buttonBackgroundColor {
             paymentErrorButton.backgroundColor = buttonColor
             placeErrorButton.backgroundColor = buttonColor
             successButton.backgroundColor = buttonColor
@@ -37,7 +37,7 @@ class PmzPayAndPlaceViewController: PaymentezViewController {
             placeErrorButton.backgroundColor = UIColor(named: "orange")
             successButton.backgroundColor = UIColor(named: "orange")
         }
-        if let buttonTextColor = PaymentezSDK.shared.buttonTextColor {
+        if let buttonTextColor = PaymentezSDK.shared.style?.buttonTextColor {
             paymentErrorText.textColor = buttonTextColor
             placeErrorText.textColor = buttonTextColor
             successText.textColor = buttonTextColor

@@ -76,47 +76,57 @@ class ViewController: UIViewController, PmzSearchCallback, PmzPayAndPlaceCallbac
     }
     
     @objc func goToSearch() {
+        let style = PmzStyle().setBackgroundColor(backgroundColorSelected!.color!)
+                .setTextColor(textColorSelected!.color!)
+                .setButtonBackgroundColor(buttonColorSelected!.color!)
+                .setButtonTextColor(buttonTextColorSelected!.color!)
+        
         PaymentezSDK.shared
-                .setBackgroundColor(backgroundColor: backgroundColorSelected!.color!)
-                .setTextColor(textColor: textColorSelected!.color!)
-                .setButtonBackgroundColor(buttonBackgroundColor: buttonColorSelected!.color!)
-                .setButtonTextColor(buttonTextColor: buttonTextColorSelected!.color!)
+                .setStyle(style: style)
                 .startSearch(navigationController: navigationController!, buyer: getBuyer(), appOrderReference: "appOrderReference", callback: self)
     }
     
     @objc func goToSearchWithId() {
+        let style = PmzStyle().setBackgroundColor(backgroundColorSelected!.color!)
+                .setTextColor(textColorSelected!.color!)
+                .setButtonBackgroundColor(buttonColorSelected!.color!)
+                .setButtonTextColor(buttonTextColorSelected!.color!)
+        
         PaymentezSDK.shared
-                .setBackgroundColor(backgroundColor: backgroundColorSelected!.color!)
-                .setTextColor(textColor: textColorSelected!.color!)
-                .setButtonBackgroundColor(buttonBackgroundColor: buttonColorSelected!.color!)
-                .setButtonTextColor(buttonTextColor: buttonTextColorSelected!.color!)
+                .setStyle(style: style)
                 .startSearch(navigationController: navigationController!, buyer: getBuyer(), appOrderReference: "appOrderReference", storeId: 120, callback: self)
     }
     
     @objc func showSummary() {
+        let style = PmzStyle().setBackgroundColor(backgroundColorSelected!.color!)
+                .setTextColor(textColorSelected!.color!)
+                .setButtonBackgroundColor(buttonColorSelected!.color!)
+                .setButtonTextColor(buttonTextColorSelected!.color!)
+        
         PaymentezSDK.shared
-                .setBackgroundColor(backgroundColor: backgroundColorSelected!.color!)
-                .setTextColor(textColor: textColorSelected!.color!)
-                .setButtonBackgroundColor(buttonBackgroundColor: buttonColorSelected!.color!)
-                .setButtonTextColor(buttonTextColor: buttonTextColorSelected!.color!)
+                .setStyle(style: style)
                 .showSummary(navigationController: navigationController!, appOrderReference: "appOrderReference", order: PmzOrder.hardcoded(), callback: self)
     }
     
     @objc func goToPaymentChecking() {
+        let style = PmzStyle().setBackgroundColor(backgroundColorSelected!.color!)
+                .setTextColor(textColorSelected!.color!)
+                .setButtonBackgroundColor(buttonColorSelected!.color!)
+                .setButtonTextColor(buttonTextColorSelected!.color!)
+        
         PaymentezSDK.shared
-                .setBackgroundColor(backgroundColor: backgroundColorSelected!.color!)
-                .setTextColor(textColor: textColorSelected!.color!)
-                .setButtonBackgroundColor(buttonBackgroundColor: buttonColorSelected!.color!)
-                .setButtonTextColor(buttonTextColor: buttonTextColorSelected!.color!)
+                .setStyle(style: style)
                 .startPayAndPlace(navigationController: navigationController!, order: PmzOrder.hardcoded(), paymentData: getPaymentData(), callback: self)
     }
     
     @objc func goToPaymentWOSummaryChecking() {
+        let style = PmzStyle().setBackgroundColor(backgroundColorSelected!.color!)
+                .setTextColor(textColorSelected!.color!)
+                .setButtonBackgroundColor(buttonColorSelected!.color!)
+                .setButtonTextColor(buttonTextColorSelected!.color!)
+        
         PaymentezSDK.shared
-                .setBackgroundColor(backgroundColor: backgroundColorSelected!.color!)
-                .setTextColor(textColor: textColorSelected!.color!)
-                .setButtonBackgroundColor(buttonBackgroundColor: buttonColorSelected!.color!)
-                .setButtonTextColor(buttonTextColor: buttonTextColorSelected!.color!)
+                .setStyle(style: style)
                 .startPayAndPlace(navigationController: navigationController!, order: PmzOrder.hardcoded(), paymentData: getPaymentData(), skipSummary: true, callback: self)
     }
     
