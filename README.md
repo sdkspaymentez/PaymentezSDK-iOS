@@ -1,6 +1,6 @@
 # PaymentezSDK
 
-[![CI Status](https://img.shields.io/travis/ftamburri/PaymentezSDK.svg?style=flat)](https://travis-ci.org/ftamburri/PaymentezSDK)
+[![CI Status](https://img.shields.io/travis/sdkspaymentez/PaymentezSDK.svg?style=flat)](https://travis-ci.org/sdkspaymentez/PaymentezSDK)
 [![Version](https://img.shields.io/cocoapods/v/PaymentezSDK.svg?style=flat)](https://cocoapods.org/pods/PaymentezSDK)
 [![License](https://img.shields.io/cocoapods/l/PaymentezSDK.svg?style=flat)](https://cocoapods.org/pods/PaymentezSDK)
 [![Platform](https://img.shields.io/cocoapods/p/PaymentezSDK.svg?style=flat)](https://cocoapods.org/pods/PaymentezSDK)
@@ -22,7 +22,7 @@ pod 'PaymentezSDK'
 
 ## Author
 
-ftamburri, ftamburri@fennoma.com.ar
+sdkspaymentez, sdks@paymentez.com
 
 ## License
 
