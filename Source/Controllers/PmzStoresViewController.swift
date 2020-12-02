@@ -17,6 +17,7 @@ class PmzStoresViewController: PaymentezViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         nextButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goToSecondPage)))
+        startSession()
     }
     
     required init?(coder: NSCoder) {
@@ -41,7 +42,7 @@ class PmzStoresViewController: PaymentezViewController {
             self.getStores()
             }, failure: { [weak self] (error) in
                 guard let self = self else { return }
-                self.nextButton.backgroundColor = UIColor(named: "black")
+                self.goBackToHostApp()
         })
     }
     
@@ -49,21 +50,20 @@ class PmzStoresViewController: PaymentezViewController {
         API.sharedInstance.getStores(callback: { [weak self] (stores) in
             guard let self = self else { return }
             self.stores = stores
-            self.getMenu(storeId: stores[0].id!)
             }, failure: { [weak self] (error) in
                 guard let self = self else { return }
-                self.nextButton.backgroundColor = UIColor(named: "black")
+                self.goBackToHostApp()
         })
     }
     
-    func getMenu(storeId: CLong) {
+    /*func getMenu(storeId: CLong) {
         API.sharedInstance.getMenu(storeId: storeId, callback: { [weak self] (menu) in
             guard let self = self else { return }
             self.menu = menu
             
             }, failure: { [weak self] (error) in
                 guard let self = self else { return }
-                self.nextButton.backgroundColor = UIColor(named: "black")
+                
         })
-    }
+    }*/
 }

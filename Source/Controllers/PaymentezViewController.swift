@@ -36,4 +36,17 @@ class PaymentezViewController: UIViewController {
             headerTitle?.textColor = buttonTextColor
         }
     }
+    
+    func showGenericError() {
+        
+    }
+    
+    func showGenericErrorWithBack() {
+        
+    
+    }
+    
+    func goBackToHostApp() {
+        PaymentezSDK.shared.goBackWithServiceError()
+    }
 }

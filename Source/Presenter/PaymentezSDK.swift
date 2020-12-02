@@ -2,12 +2,13 @@ import Foundation
 
 public protocol PmzSearchCallback {
     func searchFinishedSuccessfully(order: PmzOrder)
+    func searchFinishedWithError(error: PmzError)
     func searchCancelled()
 }
 
 public protocol PmzPayAndPlaceCallback {
     func payAndPlaceFinishedSuccessfully(order: PmzOrder)
-    func payAndPlaceOnError(order: PmzOrder, error: PmzError)
+    func payAndPlaceOnError(order: PmzOrder?, error: PmzError)
 }
 
 public class PaymentezSDK {
@@ -106,33 +107,46 @@ public class PaymentezSDK {
     }
     
     func onSearchCancelled() {
+        goBackToHostApp()
         searchCallback?.searchCancelled()
+        searchCallback = nil
     }
     
     func onSearchFinished() {
-        if(presentingVC != nil) {
-            navController?.popToViewController(presentingVC!, animated: true)
-        } else {
-            navController?.popToRootViewController(animated: true)
-        }
+        goBackToHostApp()
         searchCallback?.searchFinishedSuccessfully(order: PmzOrder())
+        searchCallback = nil
     }
     
     func onPaymentCheckingFinished(order: PmzOrder) {
-        if(presentingVC != nil) {
-            navController?.popToViewController(presentingVC!, animated: true)
-        } else {
-            navController?.popToRootViewController(animated: true)
-        }
+        goBackToHostApp()
         paymentCheckerCallback?.payAndPlaceFinishedSuccessfully(order: PmzOrder())
+        paymentCheckerCallback = nil
     }
     
     func onPaymentCheckingError(order: PmzOrder, error: PmzError) {
+        goBackToHostApp()
+        paymentCheckerCallback?.payAndPlaceOnError(order: order, error: error)
+        paymentCheckerCallback = nil
+    }
+    
+    private func goBackToHostApp() {
         if(presentingVC != nil) {
             navController?.popToViewController(presentingVC!, animated: true)
         } else {
             navController?.popToRootViewController(animated: true)
         }
-        paymentCheckerCallback?.payAndPlaceOnError(order: order, error: error)
+    }
+    
+    public func goBackWithServiceError() {
+        goBackToHostApp()
+        if(paymentCheckerCallback != nil) {
+            paymentCheckerCallback?.payAndPlaceOnError(order: nil, error: PmzError(PmzError.SERVICE_ERROR))
+            paymentCheckerCallback = nil
+        }
+        if(searchCallback != nil) {
+            searchCallback?.searchFinishedWithError(error: PmzError(PmzError.SERVICE_ERROR))
+            searchCallback = nil
+        }
     }
 }

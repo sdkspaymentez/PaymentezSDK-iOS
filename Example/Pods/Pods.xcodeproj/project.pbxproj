@@ -43,6 +43,8 @@
 		CF2D94E2250BFBCD002CE102 /* PmzSummaryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2D94E1250BFBCD002CE102 /* PmzSummaryVC.xib */; };
 		CFB1F278250BAE3200670418 /* PmzStoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB1F277250BAE3200670418 /* PmzStoresViewController.swift */; };
 		CFB1F27B250BAF7800670418 /* PaymentezSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB1F27A250BAF7800670418 /* PaymentezSDK.swift */; };
+		CFCB00E0257822C3004E2045 /* StoreItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCB00DF257822C3004E2045 /* StoreItemView.swift */; };
+		CFCB00E2257822D8004E2045 /* StoreCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFCB00E1257822D8004E2045 /* StoreCellView.xib */; };
 		D9DCD6EDECADC3DB671A18EAD9EF5214 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		DEBFA160BEDF1D066D93EEC1CB356D34 /* PaymentezSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE1634F1DB7269AC79B4A6B763CF976 /* PaymentezSDK-dummy.m */; };
 		E7B87F27F79E043E939FB1954BB44F2F /* PaymentezSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8856312A08E2DC969DCA0B19EF225FF8 /* PaymentezSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -125,6 +127,8 @@
 		CFB1F277250BAE3200670418 /* PmzStoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PmzStoresViewController.swift; sourceTree = "<group>"; };
 		CFB1F27A250BAF7800670418 /* PaymentezSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentezSDK.swift; sourceTree = "<group>"; };
 		CFBA98EE420D73A278F75EF65AC2D256 /* PaymentezSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PaymentezSDK.xcconfig; sourceTree = "<group>"; };
+		CFCB00DF257822C3004E2045 /* StoreItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItemView.swift; sourceTree = "<group>"; };
+		CFCB00E1257822D8004E2045 /* StoreCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreCellView.xib; sourceTree = "<group>"; };
 		D2073433B225F8B0882756758B359050 /* Pods-PaymentezSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaymentezSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EB57D04126563116577154EF5023B85E /* Pods-PaymentezSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PaymentezSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
 		F616BF1BA33A892CA445E788EC7DE8FD /* PaymentezSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PaymentezSDK.modulemap; sourceTree = "<group>"; };
@@ -326,9 +330,19 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		CFCB00DE257822B1004E2045 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFCB00DF257822C3004E2045 /* StoreItemView.swift */,
+				CFCB00E1257822D8004E2045 /* StoreCellView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CFE674D7251001F7004AACCF /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				CFCB00DE257822B1004E2045 /* Views */,
 				CF0F87302524A753004C13EE /* API */,
 				CF06F0392518CB940057AD2E /* Models */,
 				CFB1F279250BAF6A00670418 /* Presenter */,
@@ -500,6 +514,7 @@
 			files = (
 				CF2D94D0250BBC8C002CE102 /* PmzStoresVC.xib in Resources */,
 				CF2D94D6250BE7DD002CE102 /* Image.xcassets in Resources */,
+				CFCB00E2257822D8004E2045 /* StoreCellView.xib in Resources */,
 				CF06F0432518D1FD0057AD2E /* PmzPayAndPlaceVC.xib in Resources */,
 				CF2D94D2250BDD8A002CE102 /* PmzMenuVC.xib in Resources */,
 				CF2D94E2250BFBCD002CE102 /* PmzSummaryVC.xib in Resources */,
@@ -551,6 +566,7 @@
 				CF06F03B2518CBAD0057AD2E /* PmzOrder.swift in Sources */,
 				CF0F872125249A6C004C13EE /* PmzCapacity.swift in Sources */,
 				CF0F871D25249679004C13EE /* PmzBuyer.swift in Sources */,
+				CFCB00E0257822C3004E2045 /* StoreItemView.swift in Sources */,
 				CF0F871F2524978A004C13EE /* PmzAddress.swift in Sources */,
 				CF0F872925249EFD004C13EE /* PmzMenu.swift in Sources */,
 				CF0F872D25249FC9004C13EE /* PmzSponsor.swift in Sources */,
