@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PaymentezSDK'
-  s.version          = '0.2.8'
-  s.summary          = 'Paymentez SDK'
+  s.version          = '0.3.1'
+  s.summary          = 'Paymentez Order Ahead SDK'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-'Paymentez SDK'
+'Paymentez Order Ahead SDK'
                        DESC
 
-  s.homepage         = 'https://github.com/sdkspaymentez/PaymentezSDK-iOS'
+  s.homepage         = 'https://github.com/paymentez/order_ahead_sdk_ios'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'sdkspaymentez' => 'sdks@paymentez.com' }
-  s.source           = { :git => 'https://github.com/sdkspaymentez/PaymentezSDK-iOS', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/paymentez/order_ahead_sdk_ios', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '12.4'
