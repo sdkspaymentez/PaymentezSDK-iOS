@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="u7V-ny-VYV" customClass="SummaryFooterView" customModule="PaymentezSDK">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nXf-rm-G0m">
+                    <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="749" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MoA-iM-TWs">
+                            <rect key="frame" x="15" y="21" width="35.5" height="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="200" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="$ 19,000" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxa-ir-1M7">
+                            <rect key="frame" x="50.5" y="18.5" width="348.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Oxa-ir-1M7" firstAttribute="centerY" secondItem="MoA-iM-TWs" secondAttribute="centerY" id="A8G-rW-VQg"/>
+                        <constraint firstAttribute="bottom" secondItem="MoA-iM-TWs" secondAttribute="bottom" constant="21" id="Nwo-Xv-hE1"/>
+                        <constraint firstItem="MoA-iM-TWs" firstAttribute="top" secondItem="nXf-rm-G0m" secondAttribute="top" constant="21" id="ZcS-wU-g9h"/>
+                        <constraint firstItem="Oxa-ir-1M7" firstAttribute="leading" secondItem="MoA-iM-TWs" secondAttribute="trailing" id="bMW-ma-WEV"/>
+                        <constraint firstItem="MoA-iM-TWs" firstAttribute="leading" secondItem="nXf-rm-G0m" secondAttribute="leading" constant="15" id="tfH-o7-OzY"/>
+                        <constraint firstAttribute="trailing" secondItem="Oxa-ir-1M7" secondAttribute="trailing" constant="15" id="w8F-SC-BxD"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="l0W-Qb-1kP" firstAttribute="bottom" secondItem="nXf-rm-G0m" secondAttribute="bottom" id="4TB-gy-xre"/>
+                <constraint firstItem="l0W-Qb-1kP" firstAttribute="top" secondItem="nXf-rm-G0m" secondAttribute="top" id="DTy-HB-eMi"/>
+                <constraint firstItem="l0W-Qb-1kP" firstAttribute="trailing" secondItem="nXf-rm-G0m" secondAttribute="trailing" id="F2Z-0R-iif"/>
+                <constraint firstItem="nXf-rm-G0m" firstAttribute="leading" secondItem="l0W-Qb-1kP" secondAttribute="leading" id="OAD-CH-h4U"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="l0W-Qb-1kP"/>
+            <connections>
+                <outlet property="totalPayment" destination="Oxa-ir-1M7" id="Upa-df-nMe"/>
+                <outlet property="totalPaymentTitle" destination="MoA-iM-TWs" id="O8v-oJ-pQD"/>
+            </connections>
+            <point key="canvasLocation" x="-77" y="182"/>
+        </view>
+    </objects>
+</document>

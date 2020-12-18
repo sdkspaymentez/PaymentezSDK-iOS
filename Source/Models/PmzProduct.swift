@@ -7,8 +7,8 @@ class PmzProduct {
     var description: String?
     var imageUrl: String?
     var status: Int?
-    var listPrice: CLong?
-    var currentPrice: CLong?
+    var listPrice: Double?
+    var currentPrice: Double?
     var appDisplayName: String?
     var displayOrder: CLong?
     var coverImageUrl: String?
@@ -36,10 +36,10 @@ class PmzProduct {
         if let status = dictionary["status"] as? Int {
             self.status = status
         }
-        if let listPrice = dictionary["list_price"] as? CLong {
+        if let listPrice = dictionary["list_price"] as? Double {
             self.listPrice = listPrice
         }
-        if let currentPrice = dictionary["current_price"] as? CLong {
+        if let currentPrice = dictionary["current_price"] as? Double {
             self.currentPrice = currentPrice
         }
         if let displayOrder = dictionary["display_order"] as? CLong {

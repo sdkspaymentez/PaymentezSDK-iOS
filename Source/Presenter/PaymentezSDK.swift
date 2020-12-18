@@ -11,44 +11,35 @@ public protocol PmzPayAndPlaceCallback {
     func payAndPlaceOnError(order: PmzOrder?, error: PmzError)
 }
 
+public protocol PmzGetStoresCallback {
+    func getStoresOnSuccess(stores: [PmzStore])
+    func getStoresOnError(error: PmzError)
+}
+
 public class PaymentezSDK {
     
     public static let shared: PaymentezSDK = PaymentezSDK()
     var navController: UINavigationController?
     var presentingVC: UIViewController?
     var session: PmzSession?
+    var style: PmzStyle?
     var token: String?
+    var buyer: PmzBuyer?
+    var appOrderReference: String?
     
-    var backgroundColor: UIColor?
-    var textColor: UIColor?
-    var buttonBackgroundColor: UIColor?
-    var buttonTextColor: UIColor?
     var searchCallback: PmzSearchCallback?
     var paymentCheckerCallback: PmzPayAndPlaceCallback?
+    var getStoresCallback: PmzGetStoresCallback?
     
     private init(){}
     
     public func initialize(appCode: String, appKey: String) {
         session = PmzSession(appCode: appCode, appKey: appKey)
+        style = PmzStyle()
     }
     
-    public func setBackgroundColor(backgroundColor: UIColor) -> PaymentezSDK {
-        self.backgroundColor = backgroundColor
-        return self
-    }
-    
-    public func setTextColor(textColor: UIColor) -> PaymentezSDK {
-        self.textColor = textColor
-        return self
-    }
-    
-    public func setButtonBackgroundColor(buttonBackgroundColor: UIColor) -> PaymentezSDK {
-        self.buttonBackgroundColor = buttonBackgroundColor
-        return self
-    }
-    
-    public func setButtonTextColor(buttonTextColor: UIColor) -> PaymentezSDK {
-        self.buttonTextColor = buttonTextColor
+    public func setStyle(style: PmzStyle) -> PaymentezSDK {
+        self.style = style
         return self
     }
     
@@ -56,12 +47,34 @@ public class PaymentezSDK {
         if session != nil {
             return true
         } else {
-            fatalError("PaymentezSDK not initialized")
+            fatalError("PaymentezSDK: not initialized")
         }
     }
     
-    public func startSearch(navigationController: UINavigationController, callback: PmzSearchCallback) {
-        if isInitialized() {
+    func isBuyerWellInitialized(_ buyer: PmzBuyer) -> Bool {
+        if buyer.email != nil && buyer.email! != ""
+            && buyer.fiscalNumber != nil && buyer.fiscalNumber! != ""
+            && buyer.name != nil && buyer.name! != ""
+            && buyer.phone != nil && buyer.phone! != ""
+            && buyer.userReference != nil && buyer.userReference! != "" {
+            return true
+        } else {
+            fatalError("PaymentezSDK: PmzBuyer malformed")
+        }
+    }
+    
+    func isAppOrderReferenceUsable(_ appOrderReference: String) -> Bool {
+        if appOrderReference != "" {
+            return true
+        } else {
+            fatalError("PaymentezSDK: appOrderReference is empty")
+        }
+    }
+    
+    public func startSearch(navigationController: UINavigationController, buyer: PmzBuyer, appOrderReference: String, callback: PmzSearchCallback) {
+        if isInitialized() && isBuyerWellInitialized(buyer) && isAppOrderReferenceUsable(appOrderReference){
+            self.buyer = buyer
+            self.appOrderReference = appOrderReference
             searchCallback = callback
             navController = navigationController
             navigationController.isNavigationBarHidden = true
@@ -71,8 +84,10 @@ public class PaymentezSDK {
         }
     }
     
-    public func startSearch(navigationController: UINavigationController, storeId: CLong, callback: PmzSearchCallback) {
-        if isInitialized() {
+    public func startSearch(navigationController: UINavigationController, buyer: PmzBuyer, appOrderReference: String, storeId: CLong, callback: PmzSearchCallback) {
+        if isInitialized() && isBuyerWellInitialized(buyer) && isAppOrderReferenceUsable(appOrderReference) {
+            self.buyer = buyer
+            self.appOrderReference = appOrderReference
             searchCallback = callback
             navController = navigationController
             navigationController.isNavigationBarHidden = true
@@ -83,17 +98,87 @@ public class PaymentezSDK {
         }
     }
     
-    public func startPayAndPlace(order: PmzOrder, paymentReference: String, navigationController: UINavigationController, callback: PmzPayAndPlaceCallback) {
-        if isInitialized() {
-            paymentCheckerCallback = callback
-            let payAndPlace = PmzPayAndPlaceViewController.init()
-            payAndPlace.order = order
-            payAndPlace.paymentReference = paymentReference
+    public func showSummary(navigationController: UINavigationController, order: PmzOrder, callback: PmzSearchCallback) {
+        if(isInitialized()) {
+            searchCallback = callback
             navController = navigationController
             navigationController.isNavigationBarHidden = true
             presentingVC = navigationController.viewControllers.last
-            navigationController.pushViewController(payAndPlace, animated: true)
+            let summaryController = PmzSummaryViewController.init()
+            summaryController.order = order
+            navigationController.pushViewController(summaryController, animated: true)
         }
+    }
+    
+    public func getStores(filter: String?, callback: PmzGetStoresCallback) {
+        if isInitialized() {
+            if token != nil {
+                doGetStores(filter: filter, callback: callback)
+            } else {
+                API.sharedInstance.startSession(session: PaymentezSDK.shared.session!, callback: { [weak self] (token) in
+                    guard let self = self else { return }
+                    PaymentezSDK.shared.token = token
+                    self.doGetStores(filter: filter, callback: callback)
+                    }, failure: { (error) in
+                        callback.getStoresOnError(error: error)
+                })
+            }
+        }
+    }
+    
+    func doGetStores(filter: String?, callback: PmzGetStoresCallback) {
+        self.getStoresCallback = callback
+        API.sharedInstance.getStores(callback: { (stores) in
+            callback.getStoresOnSuccess(stores: stores)
+            }, failure: { (error) in
+                callback.getStoresOnError(error: error)
+        })
+    }
+    
+    public func startPayAndPlace(navigationController: UINavigationController, order: PmzOrder, paymentData: PmzPaymentData, callback: PmzPayAndPlaceCallback) {
+        if isInitialized() {
+            paymentCheckerCallback = callback
+            let payAndPlace = PmzPayAndPlaceViewController.init()
+            payAndPlace.paymentData = paymentData
+            startPayPlaceGeneric(navigationController: navigationController, vc: payAndPlace, order: order)
+        }
+    }
+    
+    public func startPayAndPlace(navigationController: UINavigationController, order: PmzOrder, paymentData: PmzPaymentData, skipSummary: Bool, callback: PmzPayAndPlaceCallback) {
+        if isInitialized() {
+            paymentCheckerCallback = callback
+            let payAndPlace = PmzPayAndPlaceViewController.init()
+            payAndPlace.paymentData = paymentData
+            payAndPlace.skipSummary = skipSummary
+            startPayPlaceGeneric(navigationController: navigationController, vc: payAndPlace, order: order)
+        }
+    }
+    
+    public func startPayAndPlace(navigationController: UINavigationController, order: PmzOrder, paymentsData: [PmzPaymentData], callback: PmzPayAndPlaceCallback) {
+        if isInitialized() {
+            paymentCheckerCallback = callback
+            let payAndPlace = PmzPayAndPlaceViewController.init()
+            payAndPlace.paymentsData = paymentsData
+            startPayPlaceGeneric(navigationController: navigationController, vc: payAndPlace, order: order)
+        }
+    }
+    
+    public func startPayAndPlace(navigationController: UINavigationController, order: PmzOrder, paymentsData: [PmzPaymentData], skipSummary: Bool, callback: PmzPayAndPlaceCallback) {
+        if isInitialized() {
+            paymentCheckerCallback = callback
+            let payAndPlace = PmzPayAndPlaceViewController.init()
+            payAndPlace.skipSummary = skipSummary
+            payAndPlace.paymentsData = paymentsData
+            startPayPlaceGeneric(navigationController: navigationController, vc: payAndPlace, order: order)
+        }
+    }
+    
+    func startPayPlaceGeneric(navigationController: UINavigationController, vc: PmzPayAndPlaceViewController, order: PmzOrder) {
+        vc.order = order
+        navController = navigationController
+        navigationController.isNavigationBarHidden = true
+        presentingVC = navigationController.viewControllers.last
+        navigationController.pushViewController(vc, animated: true)
     }
     
     func pushVC(vc: UIViewController) {
@@ -112,9 +197,9 @@ public class PaymentezSDK {
         searchCallback = nil
     }
     
-    func onSearchFinished() {
+    func onSearchFinished(order: PmzOrder) {
         goBackToHostApp()
-        searchCallback?.searchFinishedSuccessfully(order: PmzOrder())
+        searchCallback?.searchFinishedSuccessfully(order: order)
         searchCallback = nil
     }
     

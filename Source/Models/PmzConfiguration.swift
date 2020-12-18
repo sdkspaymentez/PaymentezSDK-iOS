@@ -10,6 +10,10 @@ public class PmzConfiguration {
     public var configurationId: CLong?
     public var discount: Double?
     
+    init(configId: CLong) {
+        configurationId = configId
+    }
+    
     init(dictionary: [String: Any]) {
         if let id = dictionary["id"] as? CLong {
             self.id = id
@@ -38,7 +42,7 @@ public class PmzConfiguration {
         let array = NSMutableArray()
         if(configurations != nil) {
             for configuration in configurations! {
-                array.add([API.K.ParameterKey.configurationId: configuration.id!])
+                array.add([API.K.ParameterKey.configurationId: configuration.configurationId!])
             }
         }
         return array

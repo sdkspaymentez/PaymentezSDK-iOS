@@ -1,13 +1,14 @@
 import Foundation
 
-class PmzProductConfiguration {
+class PmzProductConfiguration: NSObject, PmzProductDisplayProtocol {
     
     var id: CLong?
     var name: String?
     var defaultValue: Bool?
     var annotation: String?
-    var extraPrice: CLong?
+    var extraPrice: Double?
     var typeName: String?
+    var appDisplayName: String?
     var subtypeName: String?
     var subTypeInternalName: String?
     var minConfiguration: Int?
@@ -16,7 +17,9 @@ class PmzProductConfiguration {
     var subtypeDisplayOrder: CLong?
     var isDefault: Bool?
     
-    init(){}
+    var checked: Bool = false
+    
+    override init(){}
     
     init(dictionary: [String: Any]) {
         if let id = dictionary["id"] as? CLong {
@@ -31,8 +34,11 @@ class PmzProductConfiguration {
         if let annotation = dictionary["annotations"] as? String {
             self.annotation = annotation
         }
-        if let extraPrice = dictionary["app_display_name"] as? CLong {
+        if let extraPrice = dictionary["extra_price"] as? Double {
             self.extraPrice = extraPrice
+        }
+        if let appDisplayName = dictionary["app_display_name"] as? String {
+            self.appDisplayName = appDisplayName
         }
         if let typeName = dictionary["type_name"] as? String {
             self.typeName = typeName
@@ -60,4 +66,11 @@ class PmzProductConfiguration {
         }
     }
     
+    func getType() -> Int {
+        return 1
+    }
+    
+    func isChecked() -> Bool {
+        return checked
+    }
 }

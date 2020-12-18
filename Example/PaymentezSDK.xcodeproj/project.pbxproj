@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		CFE674D6250FFA60004AACCF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE674D5250FFA60004AACCF /* Color.swift */; };
+		CFF1385C258D2CB600126DF6 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF1385B258D2CB600126DF6 /* UIViewControllerExtension.swift */; };
 		D1707A2FC705F8B0BCDC2A8D /* Pods_PaymentezSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783DB8B8EFA7E242F7FF094F /* Pods_PaymentezSDK_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		8F036AD7E5CB37E5018F2AE3 /* Pods-PaymentezSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentezSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-PaymentezSDK_Example/Pods-PaymentezSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9F80D4F1178E7C834319FFFA /* PaymentezSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PaymentezSDK.podspec; path = ../PaymentezSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CFE674D5250FFA60004AACCF /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		CFF1385B258D2CB600126DF6 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		F72CBAE6ECD056EBDE5CF8BA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 			children = (
 				CFE674D4250FFA53004AACCF /* Models */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				CFF1385B258D2CB600126DF6 /* UIViewControllerExtension.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -326,11 +329,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PaymentezSDK_Example/Pods-PaymentezSDK_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/PaymentezSDK/PaymentezSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PaymentezSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -344,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFF1385C258D2CB600126DF6 /* UIViewControllerExtension.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				CFE674D6250FFA60004AACCF /* Color.swift in Sources */,

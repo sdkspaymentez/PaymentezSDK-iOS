@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="jNh-fR-uPu" customClass="CartFooterView" customModule="PaymentezSDK">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="175"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yM1-Qm-VOO">
+                    <rect key="frame" x="0.0" y="44" width="414" height="131"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6FI-xE-c2c">
+                            <rect key="frame" x="0.0" y="29" width="414" height="1"/>
+                            <color key="backgroundColor" name="separator"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="UbV-nr-PiO"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="749" text="Total a pagar" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOj-sw-cxI">
+                            <rect key="frame" x="15" y="59" width="94" height="21.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="200" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="$ 19,000" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fG7-rB-qXV">
+                            <rect key="frame" x="109" y="60" width="290" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nzh-na-D9W">
+                            <rect key="frame" x="15" y="99.5" width="384" height="12.5"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Agregar comentarios del pedido" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Jw-qx-Yzg">
+                                    <rect key="frame" x="7" y="3" width="370" height="3.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILM-l6-zYe">
+                                    <rect key="frame" x="0.0" y="11.5" width="384" height="1"/>
+                                    <color key="backgroundColor" name="separator"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="3hX-8J-7mQ"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" name="product_amount_gray"/>
+                            <constraints>
+                                <constraint firstItem="7Jw-qx-Yzg" firstAttribute="leading" secondItem="Nzh-na-D9W" secondAttribute="leading" constant="7" id="06e-If-3NG"/>
+                                <constraint firstItem="ILM-l6-zYe" firstAttribute="leading" secondItem="Nzh-na-D9W" secondAttribute="leading" id="8Uw-cx-fFh"/>
+                                <constraint firstAttribute="bottom" secondItem="ILM-l6-zYe" secondAttribute="bottom" id="CMy-AP-rsZ"/>
+                                <constraint firstAttribute="trailing" secondItem="ILM-l6-zYe" secondAttribute="trailing" id="Phr-Lh-X7l"/>
+                                <constraint firstItem="7Jw-qx-Yzg" firstAttribute="top" secondItem="Nzh-na-D9W" secondAttribute="top" constant="3" id="SkM-7E-Wuq"/>
+                                <constraint firstAttribute="trailing" secondItem="7Jw-qx-Yzg" secondAttribute="trailing" constant="7" id="czE-BX-NuH"/>
+                                <constraint firstItem="ILM-l6-zYe" firstAttribute="top" secondItem="7Jw-qx-Yzg" secondAttribute="bottom" constant="5" id="umb-aN-O1H"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="6FI-xE-c2c" firstAttribute="leading" secondItem="yM1-Qm-VOO" secondAttribute="leading" id="0xg-gs-hNs"/>
+                        <constraint firstAttribute="trailing" secondItem="fG7-rB-qXV" secondAttribute="trailing" constant="15" id="4Lh-5m-qG7"/>
+                        <constraint firstAttribute="trailing" secondItem="6FI-xE-c2c" secondAttribute="trailing" id="GDh-Wz-0Qd"/>
+                        <constraint firstItem="iOj-sw-cxI" firstAttribute="leading" secondItem="yM1-Qm-VOO" secondAttribute="leading" constant="15" id="HHc-wz-0dL"/>
+                        <constraint firstAttribute="bottom" secondItem="Nzh-na-D9W" secondAttribute="bottom" constant="19" id="Pcp-L2-LJf"/>
+                        <constraint firstItem="Nzh-na-D9W" firstAttribute="top" secondItem="iOj-sw-cxI" secondAttribute="bottom" constant="19" id="UAN-pc-u5i"/>
+                        <constraint firstItem="6FI-xE-c2c" firstAttribute="top" secondItem="yM1-Qm-VOO" secondAttribute="top" constant="29" id="Xkd-kq-Qvr"/>
+                        <constraint firstItem="fG7-rB-qXV" firstAttribute="leading" secondItem="iOj-sw-cxI" secondAttribute="trailing" id="ZyB-Au-hFC"/>
+                        <constraint firstItem="Nzh-na-D9W" firstAttribute="trailing" secondItem="fG7-rB-qXV" secondAttribute="trailing" id="cry-aT-abd"/>
+                        <constraint firstItem="iOj-sw-cxI" firstAttribute="top" secondItem="6FI-xE-c2c" secondAttribute="bottom" constant="29" id="pP8-jW-1Qg"/>
+                        <constraint firstItem="Nzh-na-D9W" firstAttribute="top" secondItem="fG7-rB-qXV" secondAttribute="bottom" constant="20" id="q9C-bT-fwj"/>
+                        <constraint firstItem="Nzh-na-D9W" firstAttribute="leading" secondItem="iOj-sw-cxI" secondAttribute="leading" id="qHU-SB-ioE"/>
+                        <constraint firstItem="fG7-rB-qXV" firstAttribute="centerY" secondItem="iOj-sw-cxI" secondAttribute="centerY" id="yzb-Yh-8Wz"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="aNE-Jd-KXD" firstAttribute="top" secondItem="yM1-Qm-VOO" secondAttribute="top" id="GqM-mN-V4S"/>
+                <constraint firstItem="aNE-Jd-KXD" firstAttribute="bottom" secondItem="yM1-Qm-VOO" secondAttribute="bottom" id="GvM-SO-GNe"/>
+                <constraint firstItem="yM1-Qm-VOO" firstAttribute="leading" secondItem="aNE-Jd-KXD" secondAttribute="leading" id="cSW-5m-VjY"/>
+                <constraint firstItem="aNE-Jd-KXD" firstAttribute="trailing" secondItem="yM1-Qm-VOO" secondAttribute="trailing" id="gvU-Er-uLg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="aNE-Jd-KXD"/>
+            <connections>
+                <outlet property="comment" destination="7Jw-qx-Yzg" id="5qG-Ez-QxN"/>
+                <outlet property="totalPayment" destination="fG7-rB-qXV" id="NeC-uv-orf"/>
+                <outlet property="totalPaymentTitle" destination="iOj-sw-cxI" id="bLN-jl-6DK"/>
+            </connections>
+            <point key="canvasLocation" x="-77" y="182"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="product_amount_gray">
+            <color red="0.94117647058823528" green="0.95294117647058818" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="separator">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.60182611196319014" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

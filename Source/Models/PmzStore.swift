@@ -1,40 +1,40 @@
 import Foundation
 
-class PmzStore {
+public class PmzStore {
     
-    var id: CLong?
-    var commerceId: CLong?
-    var name: String?
-    var address: String?
-    var latitude: Double?
-    var longitude: Double?
-    var country: String?
-    var city: String?
-    var website: String?
-    var phone: String?
-    var imageUrl: String?
-    var enablePayAtTheTableOrders: Bool?
-    var type: Int?
-    var commerceImage: String?
-    var commerceFiscalNumber: Int?
-    var subsidiaryId: CLong?
-    var zipCode: String?
-    var companyName: String?
-    var status: Int?
-    var commercePaymentezAppCode: String?
-    var internalName: String?
-    var commerceName: String?
-    var showStock: Bool?
-    var print: String?
-    var menuId: CLong?
-    var deliveryPrice: CLong?
-    var maxDeliveryDistance: Int?
-    var acceptsDelivery: Bool?
-    var timePreparing: Int?
-    var extraPaymentCodes: [String]?
-    var serverAppCode: String?
-    var clientAppCode: String?
-    var sponsor: PmzSponsor?
+    public var id: CLong?
+    public var commerceId: CLong?
+    public var name: String?
+    public var address: String?
+    public var latitude: Double?
+    public var longitude: Double?
+    public var country: String?
+    public var city: String?
+    public var website: String?
+    public var phone: String?
+    public var imageUrl: String?
+    public var enablePayAtTheTableOrders: Bool?
+    public var type: Int?
+    public var commerceImage: String?
+    public var commerceFiscalNumber: Int?
+    public var subsidiaryId: CLong?
+    public var zipCode: String?
+    public var companyName: String?
+    public var status: Int?
+    public var commercePaymentezAppCode: String?
+    public var internalName: String?
+    public var commerceName: String?
+    public var showStock: Bool?
+    public var print: String?
+    public var menuId: CLong?
+    public var deliveryPrice: CLong?
+    public var maxDeliveryDistance: Int?
+    public var acceptsDelivery: Bool?
+    public var timePreparing: Int?
+    public var extraPaymentCodes: [String]?
+    public var serverAppCode: String?
+    public var clientAppCode: String?
+    public var sponsor: PmzSponsor?
     
     init(){}
     

@@ -6,15 +6,25 @@ public class PmzItem {
     public var tax: Double?
     public var annotation: String?
     public var status: Int?
-    public var totalAmount: CLong?
+    public var totalAmount: Double?
     public var unitAmount: CLong?
     public var quantity: Int?
     public var productId: CLong?
     public var productName: String?
     public var discount: Double?
+    public var imageUrl: String?
     public var configurations: [PmzConfiguration]?
     
-    init(dictionary: [String: Any]) {
+    init(product: PmzProduct, orderId: CLong) {
+        self.orderId = orderId
+        self.productId = product.id
+        self.annotation = product.description
+        self.productName = product.name
+        self.quantity = 1
+    }
+    
+    init(dictionary: [String: Any], orderId: CLong? = 0) {
+        self.orderId = orderId
         if let id = dictionary["id"] as? CLong {
             self.id = id
         }
@@ -27,7 +37,7 @@ public class PmzItem {
         if let status = dictionary["status"] as? Int {
             self.status = status
         }
-        if let totalAmount = dictionary["total_amount"] as? CLong {
+        if let totalAmount = dictionary["total_amount"] as? Double {
             self.totalAmount = totalAmount
         }
         if let unitAmount = dictionary["unit_amount"] as? CLong {
@@ -42,6 +52,9 @@ public class PmzItem {
         if let productName = dictionary["product_name"] as? String {
             self.productName = productName
         }
+        if let image = dictionary["image"] as? String {
+            self.imageUrl = image
+        }
         if let discount = dictionary["discount"] as? Double {
             self.discount = discount
         }
@@ -52,12 +65,27 @@ public class PmzItem {
         }
     }
     
+    func setConfigurations(organizer: PmzProductOrganizer) {
+        self.configurations = organizer.getConfigurations()
+    }
+    
     func getJSONWithConf() -> [String: Any] {
-        return [API.K.ParameterKey.annotations: annotation!,
+        //TODO: RIGHT HERE "PmzEncoder.toUTF8(string: annotation!)"
+        var annotationToSend = ""
+        if let annotation = annotation {
+            annotationToSend = annotation
+        }
+        return [API.K.ParameterKey.annotations: annotationToSend,
                 API.K.ParameterKey.orderId: orderId!,
                 API.K.ParameterKey.productId: productId!,
                 API.K.ParameterKey.quantity: quantity!,
                 API.K.ParameterKey.configurations: PmzConfiguration.getJSON(configurations: configurations),
+                API.K.ParameterKey.token: PaymentezSDK.shared.token!]
+    }
+    
+    func getJSONForDelete() -> [String: Any] {
+        return [API.K.ParameterKey.orderId: orderId!,
+                API.K.ParameterKey.idOrderItem: id!,
                 API.K.ParameterKey.token: PaymentezSDK.shared.token!]
     }
 }

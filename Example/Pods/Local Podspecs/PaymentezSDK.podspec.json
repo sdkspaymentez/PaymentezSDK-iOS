@@ -1,22 +1,33 @@
 {
   "name": "PaymentezSDK",
-  "version": "0.1.0",
-  "summary": "A short description of PaymentezSDK.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/ftamburri/PaymentezSDK",
+  "version": "0.2.8",
+  "summary": "Paymentez SDK",
+  "description": "'Paymentez SDK'",
+  "homepage": "https://github.com/sdkspaymentez/PaymentezSDK-iOS",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "ftamburri": "ftamburri@fennoma.com.ar"
+    "sdkspaymentez": "sdks@paymentez.com"
   },
   "source": {
-    "git": "https://github.com/ftamburri/PaymentezSDK.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/sdkspaymentez/PaymentezSDK-iOS",
+    "tag": "0.2.8"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "12.4"
   },
-  "source_files": "PaymentezSDK/Classes/**/*"
+  "source_files": "Source/**/*.{swift,xib,xcassets}",
+  "resources": "Source/Controllers/Resources/**/*.xcassets",
+  "swift_versions": "5.0",
+  "dependencies": {
+    "AlamofireImage": [
+      "~> 4.1"
+    ],
+    "XLPagerTabStrip": [
+      "~> 9.0"
+    ]
+  },
+  "swift_version": "5.0"
 }

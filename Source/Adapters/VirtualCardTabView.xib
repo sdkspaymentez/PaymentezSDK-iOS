@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Xa4-Rs-MI2" customClass="CustomTabItemCollectionViewCell" customModule="PaymentezSDK" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="98" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="98" height="40"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbb-Ry-Sa0">
+                        <rect key="frame" x="33.5" y="13" width="31" height="14.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x51-1J-pDW">
+                                <rect key="frame" x="0.0" y="0.0" width="31" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" name="black"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="x51-1J-pDW" secondAttribute="trailing" id="C3V-fn-l2u"/>
+                            <constraint firstItem="x51-1J-pDW" firstAttribute="leading" secondItem="sbb-Ry-Sa0" secondAttribute="leading" id="C4O-Yd-yYe"/>
+                            <constraint firstItem="x51-1J-pDW" firstAttribute="top" secondItem="sbb-Ry-Sa0" secondAttribute="top" id="lDB-fi-CqN"/>
+                            <constraint firstAttribute="bottom" secondItem="x51-1J-pDW" secondAttribute="bottom" id="vo8-Wj-RWh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="sbb-Ry-Sa0" firstAttribute="centerY" secondItem="Xa4-Rs-MI2" secondAttribute="centerY" id="UJk-T6-ICx"/>
+                <constraint firstItem="sbb-Ry-Sa0" firstAttribute="centerX" secondItem="Xa4-Rs-MI2" secondAttribute="centerX" id="sPN-aR-ify"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Rgf-3M-kwc"/>
+            <size key="customSize" width="98" height="40"/>
+            <connections>
+                <outlet property="label" destination="x51-1J-pDW" id="eHr-y3-bEL"/>
+            </connections>
+            <point key="canvasLocation" x="425.60000000000002" y="540.62968515742136"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,16 +1,31 @@
 PODS:
-  - PaymentezSDK (0.1.0)
+  - Alamofire (5.4.0)
+  - AlamofireImage (4.1.0):
+    - Alamofire (~> 5.1)
+  - PaymentezSDK (0.2.8):
+    - AlamofireImage (~> 4.1)
+    - XLPagerTabStrip (~> 9.0)
+  - XLPagerTabStrip (9.0.0)
 
 DEPENDENCIES:
   - PaymentezSDK (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - XLPagerTabStrip
 
 EXTERNAL SOURCES:
   PaymentezSDK:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PaymentezSDK: 05321b3e98aa1500cf93eca965433d8b23c1f6d9
+  Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
+  AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
+  PaymentezSDK: 40134a2a010951d8e85fe7101b9b4c348e50925b
+  XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
 
 PODFILE CHECKSUM: 8026e446cec271bd44aa688dbc3454c8684963da
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.0

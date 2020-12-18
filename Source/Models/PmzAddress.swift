@@ -39,4 +39,19 @@ public class PmzAddress {
             self.longitude = addressLongitude
         }
     }
+    
+    //TODO: Encode
+    func addToParams(_ params: [String : Any]) -> [String : Any] {
+        var modified = params
+        
+        modified["address_city"] = city
+        modified["address_country"] = country
+        modified["address_latitude"] = latitude
+        modified["address_longitude"] = longitude
+        modified["address_line1"] = addressLine1
+        modified["address_line2"] = addressLine2
+        modified["address_state"] = state
+        modified["address_zip"] = zip
+        return modified
+    }
 }

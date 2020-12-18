@@ -59,7 +59,7 @@
                                 <constraint firstItem="DgX-qs-Qze" firstAttribute="centerX" secondItem="tB8-dc-We5" secondAttribute="centerX" id="mU7-gJ-Efm"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2k-xY-ZH1">
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2k-xY-ZH1">
                             <rect key="frame" x="16" y="586" width="382" height="155"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sfc-7n-fdT">
@@ -156,8 +156,8 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="35N-1K-gpN" userLabel="Header Bar">
                     <rect key="frame" x="0.0" y="44" width="414" height="60"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Procesando Pago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSh-zA-cnT">
-                            <rect key="frame" x="20" y="20.5" width="128" height="19"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Procesando pago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSh-zA-cnT">
+                            <rect key="frame" x="143.5" y="20.5" width="127" height="19"/>
                             <fontDescription key="fontDescription" name="MuseoSans-300" family="Museo Sans" pointSize="16"/>
                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
@@ -165,7 +165,7 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="LSh-zA-cnT" firstAttribute="leading" secondItem="35N-1K-gpN" secondAttribute="leading" constant="20" id="Ghz-Mq-Bfk"/>
+                        <constraint firstItem="LSh-zA-cnT" firstAttribute="centerX" secondItem="35N-1K-gpN" secondAttribute="centerX" id="Oah-IV-kaT"/>
                         <constraint firstAttribute="height" constant="60" id="Up6-jJ-job"/>
                         <constraint firstItem="LSh-zA-cnT" firstAttribute="centerY" secondItem="35N-1K-gpN" secondAttribute="centerY" id="UwN-Bo-CWY"/>
                     </constraints>

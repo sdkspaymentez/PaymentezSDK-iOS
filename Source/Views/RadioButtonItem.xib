@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="0qU-vF-1lL" customClass="RadioButtonItem" customModule="PaymentezSDK">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AR3-b6-XxM">
+                    <rect key="frame" x="15" y="34" width="384" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="AR3-b6-XxM" firstAttribute="leading" secondItem="4gl-rs-DIH" secondAttribute="leading" constant="15" id="1LJ-Pl-iUx"/>
+                <constraint firstItem="4gl-rs-DIH" firstAttribute="bottom" secondItem="AR3-b6-XxM" secondAttribute="bottom" constant="10" id="Ogw-HY-ZBt"/>
+                <constraint firstItem="4gl-rs-DIH" firstAttribute="top" secondItem="AR3-b6-XxM" secondAttribute="top" constant="10" id="aTL-sO-e0U"/>
+                <constraint firstItem="4gl-rs-DIH" firstAttribute="trailing" secondItem="AR3-b6-XxM" secondAttribute="trailing" constant="15" id="vmQ-hn-9xW"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="4gl-rs-DIH"/>
+            <connections>
+                <outlet property="label" destination="AR3-b6-XxM" id="8p2-UL-XLO"/>
+            </connections>
+            <point key="canvasLocation" x="1007" y="205"/>
+        </view>
+    </objects>
+</document>

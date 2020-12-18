@@ -1,16 +1,16 @@
 import Foundation
 
-class PmzSponsor {
+public class PmzSponsor {
     
-    var name: String?
-    var logoUrl: String?
-    var iconUrl: String?
-    var loaderUrl: String?
-    var headerEmailUrl: String?
-    var colorHex: String?
-    var splashUrl: String?
-    var transactionSuccessUrl: String?
-    var transactionErrorUrl: String?
+    public var name: String?
+    public var logoUrl: String?
+    public var iconUrl: String?
+    public var loaderUrl: String?
+    public var headerEmailUrl: String?
+    public var colorHex: String?
+    public var splashUrl: String?
+    public var transactionSuccessUrl: String?
+    public var transactionErrorUrl: String?
     
     init(){}
     

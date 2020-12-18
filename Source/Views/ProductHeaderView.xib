@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProductHeaderView" customModule="PaymentezSDK">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A7W-AB-ocS">
+                    <rect key="frame" x="0.0" y="44" width="414" height="156"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalCompressionResistancePriority="500" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pgW-gs-irC">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="121.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="pgW-gs-irC" secondAttribute="height" multiplier="375:110" id="Z1G-BW-y9D"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMa-Fo-QAd">
+                            <rect key="frame" x="10" y="131.5" width="341" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4St-Ec-zZt">
+                            <rect key="frame" x="10" y="135.5" width="341" height="8.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="$2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSu-H3-RCL">
+                            <rect key="frame" x="361" y="135.5" width="38" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="bMa-Fo-QAd" firstAttribute="top" secondItem="pgW-gs-irC" secondAttribute="bottom" constant="10" id="1mG-QX-9B8"/>
+                        <constraint firstItem="tSu-H3-RCL" firstAttribute="leading" secondItem="bMa-Fo-QAd" secondAttribute="trailing" constant="10" id="3eC-ds-X3Y"/>
+                        <constraint firstItem="tSu-H3-RCL" firstAttribute="top" secondItem="4St-Ec-zZt" secondAttribute="top" id="Bfy-Ck-Som"/>
+                        <constraint firstItem="4St-Ec-zZt" firstAttribute="top" secondItem="bMa-Fo-QAd" secondAttribute="bottom" constant="4" id="Gvi-b8-OwM"/>
+                        <constraint firstItem="4St-Ec-zZt" firstAttribute="leading" secondItem="A7W-AB-ocS" secondAttribute="leading" constant="10" id="Kmb-wS-mdj"/>
+                        <constraint firstItem="pgW-gs-irC" firstAttribute="leading" secondItem="A7W-AB-ocS" secondAttribute="leading" id="OtD-1M-xdC"/>
+                        <constraint firstItem="tSu-H3-RCL" firstAttribute="leading" secondItem="4St-Ec-zZt" secondAttribute="trailing" constant="10" id="Pc6-K6-vRh"/>
+                        <constraint firstItem="pgW-gs-irC" firstAttribute="top" secondItem="A7W-AB-ocS" secondAttribute="top" id="be0-Qx-qEm"/>
+                        <constraint firstAttribute="bottom" secondItem="4St-Ec-zZt" secondAttribute="bottom" constant="12" id="cmm-FR-MLd"/>
+                        <constraint firstAttribute="trailing" secondItem="tSu-H3-RCL" secondAttribute="trailing" constant="15" id="oR9-ON-Mg7"/>
+                        <constraint firstItem="bMa-Fo-QAd" firstAttribute="leading" secondItem="A7W-AB-ocS" secondAttribute="leading" constant="10" id="rtS-hv-wUg"/>
+                        <constraint firstAttribute="trailing" secondItem="pgW-gs-irC" secondAttribute="trailing" id="yhs-j0-3a1"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="A7W-AB-ocS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="6a2-Dw-ej7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="A7W-AB-ocS" secondAttribute="trailing" id="LWa-0a-sfe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="A7W-AB-ocS" secondAttribute="bottom" id="Sso-ug-Z3m"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="A7W-AB-ocS" secondAttribute="top" id="fL7-WL-Vsj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="desc" destination="4St-Ec-zZt" id="9Gs-CB-Lb5"/>
+                <outlet property="name" destination="bMa-Fo-QAd" id="0u7-LJ-1gB"/>
+                <outlet property="price" destination="tSu-H3-RCL" id="zST-VA-mPw"/>
+                <outlet property="productImage" destination="pgW-gs-irC" id="wFJ-Z8-sHx"/>
+            </connections>
+            <point key="canvasLocation" x="-77" y="182"/>
+        </view>
+    </objects>
+</document>

@@ -1,7 +1,7 @@
 import UIKit
 import PaymentezSDK
 
-class ViewController: UIViewController, PmzSearchCallback, PmzPayAndPlaceCallback, UITextFieldDelegate {
+class ViewController: UIViewController, PmzSearchCallback, PmzPayAndPlaceCallback, UITextFieldDelegate, PmzGetStoresCallback {
     
     @IBOutlet var backgroundColorInput: UITextField!
     @IBOutlet var textColorInput: UITextField!
@@ -15,7 +15,9 @@ class ViewController: UIViewController, PmzSearchCallback, PmzPayAndPlaceCallbac
     
     @IBOutlet var searchButton: UIView!
     @IBOutlet var searchWithStoreIdButton: UIView!
-    @IBOutlet var detailButton: UIView!
+    @IBOutlet var summaryButton: UIView!
+    @IBOutlet var getStoresButton: UIView!
+    @IBOutlet var paymentButton: UIView!
     @IBOutlet var randomizeButton: UIView!
     
     var lastSelectedTextField: UITextField?
@@ -35,16 +37,11 @@ class ViewController: UIViewController, PmzSearchCallback, PmzPayAndPlaceCallbac
         self.view?.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector (self.dismissKeyboard)))
         searchButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goToSearch)))
         searchWithStoreIdButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goToSearchWithId)))
-        detailButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goToPaymentChecking)))
+        summaryButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goToSummary)))
+        getStoresButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.getStores)))
+        paymentButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goToPayment)))
         randomizeButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.randomizeColors)))
-        randomizeColors()
-    }
-    
-    @objc func randomizeColors() {
-        didPickBackgroundColor(colors![getRandom()])
-        didPickTextColor(colors![getRandom()])
-        didPickButtonColor(colors![getRandom()])
-        didPickButtonTextColor(colors![getRandom()])
+        setLMColors()
     }
     
     func getRandom() -> Int {
@@ -60,29 +57,39 @@ class ViewController: UIViewController, PmzSearchCallback, PmzPayAndPlaceCallbac
     
     @objc func goToSearch() {
         PaymentezSDK.shared
-                .setBackgroundColor(backgroundColor: backgroundColorSelected!.color!)
-                .setTextColor(textColor: textColorSelected!.color!)
-                .setButtonBackgroundColor(buttonBackgroundColor: buttonColorSelected!.color!)
-                .setButtonTextColor(buttonTextColor: buttonTextColorSelected!.color!)
-                .startSearch(navigationController: navigationController!, callback: self)
+                .setStyle(style: getStyle())
+                .startSearch(navigationController: navigationController!, buyer: getBuyer(), appOrderReference: "appOrderReference", callback: self)
     }
     
     @objc func goToSearchWithId() {
         PaymentezSDK.shared
-                .setBackgroundColor(backgroundColor: backgroundColorSelected!.color!)
-                .setTextColor(textColor: textColorSelected!.color!)
-                .setButtonBackgroundColor(buttonBackgroundColor: buttonColorSelected!.color!)
-                .setButtonTextColor(buttonTextColor: buttonTextColorSelected!.color!)
-                .startSearch(navigationController: navigationController!, storeId: 120, callback: self)
+                .setStyle(style: getStyle())
+                .startSearch(navigationController: navigationController!, buyer: getBuyer(), appOrderReference: "appOrderReference", storeId: 105, callback: self)
     }
     
-    @objc func goToPaymentChecking() {
+    @objc func goToSummary() {
         PaymentezSDK.shared
-                .setBackgroundColor(backgroundColor: backgroundColorSelected!.color!)
-                .setTextColor(textColor: textColorSelected!.color!)
-                .setButtonBackgroundColor(buttonBackgroundColor: buttonColorSelected!.color!)
-                .setButtonTextColor(buttonTextColor: buttonTextColorSelected!.color!)
-                .startPayAndPlace(order: PmzOrder.hardcoded(), paymentReference: "paymentReference", navigationController: navigationController!, callback: self)
+                .setStyle(style: getStyle())
+                .showSummary(navigationController: navigationController!, order: PmzOrder.hardcoded(), callback: self)
+    }
+    
+    @objc func goToPayment() {
+        PaymentezSDK.shared
+                .setStyle(style: getStyle())
+                .startPayAndPlace(navigationController: navigationController!, order: PmzOrder.hardcoded(), paymentsData: PmzPaymentData.hardcodedList(), callback: self)
+    }
+    
+    func getStyle() -> PmzStyle {
+        return PmzStyle().setBackgroundColor(backgroundColorSelected!.color!)
+            .setTextColor(textColorSelected!.color!)
+            .setButtonBackgroundColor(buttonColorSelected!.color!)
+            .setButtonTextColor(buttonTextColorSelected!.color!)
+            .setFont(PmzFont.SYSTEM)
+    }
+    
+    func getBuyer() -> PmzBuyer {
+        return PmzBuyer().setName("Pepe").setPhone("123123123").setFiscalNumber("fiscalNumber")
+            .setUserReference("userReference").setEmail("pepe@test.com.ar")
     }
     
     func searchFinishedSuccessfully(order: PmzOrder) {
@@ -108,6 +115,29 @@ class ViewController: UIViewController, PmzSearchCallback, PmzPayAndPlaceCallbac
                 showToast(controller: self, message: "Ocurrió un error inesperado", seconds: 2)
             }
         }
+    }
+    
+    @objc func getStores() {
+        showLoading()
+        PaymentezSDK.shared.getStores(filter: nil, callback: self)
+    }
+    
+    func getStoresOnSuccess(stores: [PmzStore]) {
+        dismissLoading()
+        showToast(controller: self, message: "Se obtuvieron los comercios.", seconds: 1)
+    }
+    
+    func getStoresOnError(error: PmzError) {
+        dismissLoading()
+        showToast(controller: self, message: "Ha ocurrido un error obteniendo los comercios.", seconds: 1)
+    }
+    
+    func searchFinishedWithError(error: PmzError) {
+        showToast(controller: self, message: "Ha ocurrido un error con los servicios.", seconds: 1)
+    }
+    
+    func payAndPlaceOnError(order: PmzOrder?, error: PmzError) {
+        showToast(controller: self, message: "Ha ocurrido un error con los servicios.", seconds: 1)
     }
 
     override func didReceiveMemoryWarning() {
@@ -229,6 +259,20 @@ class ViewController: UIViewController, PmzSearchCallback, PmzPayAndPlaceCallbac
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + seconds) {
             alert.dismiss(animated: true)
         }
+    }
+    
+    func setLMColors() {
+        didPickBackgroundColor(Color(name: "Blanco", color: UIColor(named: "LMWhite")!))
+        didPickTextColor(Color(name: "LM Negro", color: UIColor(named: "LMBlack")!))
+        didPickButtonColor(Color(name: "LM Color Principal", color: UIColor(named: "LMRed")!))
+        didPickButtonTextColor(Color(name: "Blanco", color: UIColor(named: "LMWhite")!))
+    }
+    
+    @objc func randomizeColors() {
+        didPickBackgroundColor(colors![getRandom()])
+        didPickTextColor(colors![getRandom()])
+        didPickButtonColor(colors![getRandom()])
+        didPickButtonTextColor(colors![getRandom()])
     }
 
 }

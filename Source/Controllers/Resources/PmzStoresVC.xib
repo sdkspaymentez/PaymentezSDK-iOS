@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,7 +19,11 @@
                 <outlet property="backButton" destination="4CG-Z2-GWP" id="oBl-p9-Yac"/>
                 <outlet property="headerBar" destination="0eX-UI-YRf" id="7g3-9E-ggr"/>
                 <outlet property="headerTitle" destination="GlM-pl-Sjc" id="4zp-Gj-voq"/>
+                <outlet property="magnifyingButton" destination="HOK-QW-dgh" id="cNt-eZ-aXq"/>
                 <outlet property="mainView" destination="ge2-ZP-EXY" id="TxX-fy-lT2"/>
+                <outlet property="searchBar" destination="S5w-Ms-uza" id="bY1-xv-hhf"/>
+                <outlet property="searchBarBackground" destination="mrT-La-l4v" id="ENw-03-bq9"/>
+                <outlet property="tableView" destination="Gam-K0-31j" id="P2o-6e-KiU"/>
                 <outlet property="view" destination="iN0-l3-epB" id="3Rk-up-l21"/>
             </connections>
         </placeholder>
@@ -46,23 +51,56 @@
                                 <action selector="backDidPressed:" destination="-1" eventType="touchUpInside" id="8v8-ll-FH3"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOK-QW-dgh">
+                            <rect key="frame" x="366" y="6" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="OOe-ZO-xCE"/>
+                                <constraint firstAttribute="width" constant="48" id="nZY-2Q-7ai"/>
+                            </constraints>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="menu_magnifying_glass"/>
+                            <connections>
+                                <action selector="onSearchPressed:" destination="-1" eventType="touchUpInside" id="Irk-yH-kjr"/>
+                            </connections>
+                        </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comercios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlM-pl-Sjc">
                             <rect key="frame" x="168.5" y="20.5" width="77.5" height="19"/>
                             <fontDescription key="fontDescription" name="MuseoSans-300" family="Museo Sans" pointSize="16"/>
                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mrT-La-l4v">
+                            <rect key="frame" x="48" y="0.0" width="366" height="60"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </view>
+                        <searchBar hidden="YES" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="S5w-Ms-uza">
+                            <rect key="frame" x="48" y="0.0" width="366" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" name="white"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="mrT-La-l4v" firstAttribute="trailing" secondItem="S5w-Ms-uza" secondAttribute="trailing" id="01E-cq-8Yw"/>
+                        <constraint firstAttribute="trailing" secondItem="S5w-Ms-uza" secondAttribute="trailing" id="5IM-6q-8Th"/>
                         <constraint firstItem="4CG-Z2-GWP" firstAttribute="leading" secondItem="0eX-UI-YRf" secondAttribute="leading" id="7mt-hA-wbh"/>
+                        <constraint firstItem="mrT-La-l4v" firstAttribute="bottom" secondItem="S5w-Ms-uza" secondAttribute="bottom" id="E14-vv-juD"/>
+                        <constraint firstAttribute="bottom" secondItem="HOK-QW-dgh" secondAttribute="bottom" constant="6" id="Guy-jE-vQf"/>
                         <constraint firstAttribute="height" constant="60" id="Lcx-wZ-TEz"/>
+                        <constraint firstAttribute="trailing" secondItem="HOK-QW-dgh" secondAttribute="trailing" id="LnN-hg-xnp"/>
                         <constraint firstItem="GlM-pl-Sjc" firstAttribute="centerX" secondItem="0eX-UI-YRf" secondAttribute="centerX" id="OF0-7w-f0V"/>
+                        <constraint firstAttribute="bottom" secondItem="S5w-Ms-uza" secondAttribute="bottom" id="RxM-eD-5fW"/>
+                        <constraint firstItem="mrT-La-l4v" firstAttribute="leading" secondItem="S5w-Ms-uza" secondAttribute="leading" id="U1V-9x-Gji"/>
+                        <constraint firstItem="HOK-QW-dgh" firstAttribute="top" secondItem="0eX-UI-YRf" secondAttribute="top" constant="6" id="aeM-Qn-1f4"/>
                         <constraint firstItem="4CG-Z2-GWP" firstAttribute="centerY" secondItem="0eX-UI-YRf" secondAttribute="centerY" id="bQC-Vb-VUK"/>
                         <constraint firstItem="GlM-pl-Sjc" firstAttribute="centerY" secondItem="0eX-UI-YRf" secondAttribute="centerY" id="f4R-Ng-fJi"/>
+                        <constraint firstItem="S5w-Ms-uza" firstAttribute="leading" secondItem="4CG-Z2-GWP" secondAttribute="trailing" id="fVo-JL-9ha"/>
+                        <constraint firstItem="mrT-La-l4v" firstAttribute="top" secondItem="S5w-Ms-uza" secondAttribute="top" id="kkH-rH-u16"/>
+                        <constraint firstItem="S5w-Ms-uza" firstAttribute="top" secondItem="0eX-UI-YRf" secondAttribute="top" id="zHE-6n-uZr"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gam-K0-31j">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gam-K0-31j">
                     <rect key="frame" x="0.0" y="104" width="414" height="758"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
@@ -86,6 +124,10 @@
         </view>
     </objects>
     <resources>
+        <image name="menu_magnifying_glass" width="21.333333969116211" height="21.333333969116211"/>
         <image name="paymentezBackButton" width="17" height="17"/>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

@@ -11,7 +11,15 @@ class PmzPayAndPlaceViewController: PaymentezViewController {
     @IBOutlet var successText: UILabel!
     
     var order: PmzOrder?
-    var paymentReference: String?
+    var paymentData: PmzPaymentData?
+    var paymentsData: [PmzPaymentData]?
+    var skipSummary: Bool = false
+    
+    var multiPayment: Bool = false
+    
+    var currentPayment: PmzPaymentData?
+    var currentIndex = 0
+    var orderResult: PmzOrder?
     
     init() {
         super.init(nibName: PmzPayAndPlaceViewController.PMZ_PAY_AND_PLACE_VC, bundle: PaymentezSDK.shared.getBundle())
@@ -19,31 +27,90 @@ class PmzPayAndPlaceViewController: PaymentezViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setButtonColors()
-        paymentErrorButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.onPaymentError)))
-        placeErrorButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.onPlaceError)))
-        successButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.onSuccess)))
-    }
-    
-    func setButtonColors(){
-        if let buttonColor = PaymentezSDK.shared.buttonBackgroundColor {
-            paymentErrorButton.backgroundColor = buttonColor
-            placeErrorButton.backgroundColor = buttonColor
-            successButton.backgroundColor = buttonColor
+        if PaymentezSDK.shared.token != nil && PaymentezSDK.shared.token != "" {
+            decideFlow()
         } else {
-            paymentErrorButton.backgroundColor = UIColor(named: "orange")
-            placeErrorButton.backgroundColor = UIColor(named: "orange")
-            successButton.backgroundColor = UIColor(named: "orange")
-        }
-        if let buttonTextColor = PaymentezSDK.shared.buttonTextColor {
-            paymentErrorText.textColor = buttonTextColor
-            placeErrorText.textColor = buttonTextColor
-            successText.textColor = buttonTextColor
+            startSession()
         }
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func startSession() {
+        API.sharedInstance.startSession(session: PaymentezSDK.shared.session!, callback: { [weak self] (token) in
+            guard let self = self else { return }
+            PaymentezSDK.shared.token = token
+            self.decideFlow()
+            }, failure: { [weak self] (error) in
+                guard let self = self else { return }
+                self.goBackToHostApp()
+        })
+    }
+    
+    func decideFlow() {
+        if paymentsData != nil {
+            multiPayment = true
+            handlePayments()
+        } else {
+            currentPayment = paymentData
+            doPayment()
+        }
+    }
+    
+    func handlePayments() {
+        if currentIndex == 0 {
+            if paymentsData != nil && paymentsData!.count > 0 {
+                currentPayment = paymentsData![0]
+                currentIndex = 1
+            } else {
+                currentPayment = paymentData
+                currentIndex = -1
+            }
+            doPayment()
+        } else if(currentIndex == -1 || paymentsData!.count <= currentIndex){
+            doPlace()
+        } else {
+            currentPayment = paymentsData![currentIndex]
+            currentIndex += 1
+            doPayment()
+        }
+    }
+    
+    func doPayment() {
+        if let currentPayment = currentPayment, let orderId = order?.id {
+            API.sharedInstance.pay(paymentData: currentPayment, orderId: orderId, callback: { [weak self] (order) in
+                guard let self = self else { return }
+                self.orderResult = order.mergeData(self.order!)
+                self.handlePayments()
+                }, failure: { [weak self] (error) in
+                    guard let self = self else { return }
+                    self.onPaymentError()
+            })
+        } else {
+            goBackToHostApp()
+        }
+    }
+    
+    func doPlace() {
+        API.sharedInstance.placeOrder(order: orderResult!, callback: { [weak self] (order) in
+            guard let self = self else { return }
+            self.orderResult = order.mergeData(self.order!)
+            self.showSummary()
+            }, failure: { [weak self] (error) in
+                guard let self = self else { return }
+                self.onPlaceError()
+        })
+    }
+    
+    func showSummary() {
+        if !skipSummary {
+            let summaryVC = PmzSummaryViewController.init()
+            summaryVC.order = orderResult
+            summaryVC.fromPayment = true
+            PaymentezSDK.shared.pushVC(vc: summaryVC)
+        }
     }
     
     @objc func onPaymentError() {
@@ -55,9 +122,7 @@ class PmzPayAndPlaceViewController: PaymentezViewController {
     }
     
     @objc func onSuccess() {
-        let paymentDetailController = PmzResultViewController.init()
-        paymentDetailController.order = order
-        PaymentezSDK.shared.pushVC(vc: paymentDetailController)
+        
     }
     
 }

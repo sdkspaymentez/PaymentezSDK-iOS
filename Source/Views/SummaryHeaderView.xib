@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="WDu-eZ-5I4" customClass="SummaryHeaderView" customModule="PaymentezSDK">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s8q-aq-z7C">
+                    <rect key="frame" x="0.0" y="44" width="414" height="356"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Recibe tu pedido en el mostrador del comercio" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFX-6N-FKy">
+                            <rect key="frame" x="15" y="20" width="384" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Aprox. en 5 minutos puedes recoger tu orden" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZL-CZ-pRj">
+                            <rect key="frame" x="15" y="47" width="384" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalCompressionResistancePriority="500" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8FH-Op-Aaa">
+                            <rect key="frame" x="0.0" y="80.5" width="414" height="165.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="8FH-Op-Aaa" secondAttribute="height" multiplier="375:150" id="ATj-jL-fke"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="240" verticalCompressionResistancePriority="740" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PS4-8s-fE7">
+                            <rect key="frame" x="15" y="265" width="309" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKL-kJ-r90">
+                            <rect key="frame" x="15" y="269" width="309" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ch8-dj-UMc">
+                            <rect key="frame" x="339" y="234" width="58" height="58"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bKS-Ly-exL">
+                                    <rect key="frame" x="0.0" y="0.0" width="58" height="58"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="58" id="DNt-ju-0Cn"/>
+                                        <constraint firstAttribute="width" constant="58" id="sLv-R7-Kzb"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="26"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="58" id="hel-Ng-1in"/>
+                                <constraint firstItem="bKS-Ly-exL" firstAttribute="centerY" secondItem="ch8-dj-UMc" secondAttribute="centerY" id="i5Z-Yv-JJ3"/>
+                                <constraint firstItem="bKS-Ly-exL" firstAttribute="centerX" secondItem="ch8-dj-UMc" secondAttribute="centerX" id="l1M-Xu-XiW"/>
+                                <constraint firstAttribute="width" constant="58" id="pBZ-ez-91F"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="23"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Resumen" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYP-L4-vFn">
+                            <rect key="frame" x="15" y="315" width="67.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="PS4-8s-fE7" firstAttribute="top" secondItem="8FH-Op-Aaa" secondAttribute="bottom" constant="19" id="5Ub-ty-6bI"/>
+                        <constraint firstItem="FZL-CZ-pRj" firstAttribute="trailing" secondItem="SFX-6N-FKy" secondAttribute="trailing" id="7uu-MF-gja"/>
+                        <constraint firstItem="8FH-Op-Aaa" firstAttribute="leading" secondItem="s8q-aq-z7C" secondAttribute="leading" id="Aql-jy-LnR"/>
+                        <constraint firstItem="QYP-L4-vFn" firstAttribute="leading" secondItem="PS4-8s-fE7" secondAttribute="leading" id="CPo-eA-nPN"/>
+                        <constraint firstItem="SKL-kJ-r90" firstAttribute="trailing" secondItem="PS4-8s-fE7" secondAttribute="trailing" id="CbB-tM-sle"/>
+                        <constraint firstItem="QYP-L4-vFn" firstAttribute="top" secondItem="SKL-kJ-r90" secondAttribute="bottom" constant="29" id="D53-P8-MhC"/>
+                        <constraint firstItem="SKL-kJ-r90" firstAttribute="top" secondItem="PS4-8s-fE7" secondAttribute="bottom" constant="4" id="EId-1R-bIt"/>
+                        <constraint firstItem="ch8-dj-UMc" firstAttribute="leading" secondItem="PS4-8s-fE7" secondAttribute="trailing" constant="15" id="Ihn-Rv-yqB"/>
+                        <constraint firstItem="PS4-8s-fE7" firstAttribute="leading" secondItem="s8q-aq-z7C" secondAttribute="leading" constant="15" id="VQM-GW-Cur"/>
+                        <constraint firstItem="SFX-6N-FKy" firstAttribute="leading" secondItem="s8q-aq-z7C" secondAttribute="leading" constant="15" id="Xgp-g9-4nk"/>
+                        <constraint firstItem="SKL-kJ-r90" firstAttribute="leading" secondItem="s8q-aq-z7C" secondAttribute="leading" constant="15" id="ijP-NY-i1D"/>
+                        <constraint firstItem="QYP-L4-vFn" firstAttribute="top" secondItem="ch8-dj-UMc" secondAttribute="bottom" constant="23" id="okf-pC-Ggs"/>
+                        <constraint firstAttribute="trailing" secondItem="ch8-dj-UMc" secondAttribute="trailing" constant="17" id="p7h-r4-ZnK"/>
+                        <constraint firstAttribute="bottom" secondItem="QYP-L4-vFn" secondAttribute="bottom" constant="24" id="pYJ-nY-eWG"/>
+                        <constraint firstAttribute="trailing" secondItem="SFX-6N-FKy" secondAttribute="trailing" constant="15" id="qAc-kS-tBc"/>
+                        <constraint firstItem="FZL-CZ-pRj" firstAttribute="leading" secondItem="SFX-6N-FKy" secondAttribute="leading" id="qqH-ay-xte"/>
+                        <constraint firstAttribute="trailing" secondItem="8FH-Op-Aaa" secondAttribute="trailing" id="qvX-Ya-qt1"/>
+                        <constraint firstItem="FZL-CZ-pRj" firstAttribute="top" secondItem="SFX-6N-FKy" secondAttribute="bottom" constant="10" id="r27-4Y-b2j"/>
+                        <constraint firstItem="SFX-6N-FKy" firstAttribute="top" secondItem="s8q-aq-z7C" secondAttribute="top" constant="20" id="yy6-e1-CbJ"/>
+                        <constraint firstItem="8FH-Op-Aaa" firstAttribute="top" secondItem="FZL-CZ-pRj" secondAttribute="bottom" constant="19" id="z7e-dA-nQC"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="s8q-aq-z7C" firstAttribute="leading" secondItem="1js-Ro-wmh" secondAttribute="leading" id="2fj-a9-uiM"/>
+                <constraint firstItem="1js-Ro-wmh" firstAttribute="bottom" secondItem="s8q-aq-z7C" secondAttribute="bottom" id="EDx-4M-Q19"/>
+                <constraint firstItem="1js-Ro-wmh" firstAttribute="top" secondItem="s8q-aq-z7C" secondAttribute="top" id="rPs-1b-h9k"/>
+                <constraint firstItem="1js-Ro-wmh" firstAttribute="trailing" secondItem="s8q-aq-z7C" secondAttribute="trailing" id="y1M-aZ-nSG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="1js-Ro-wmh"/>
+            <connections>
+                <outlet property="desc" destination="SKL-kJ-r90" id="cTy-t4-Avs"/>
+                <outlet property="firstLine" destination="SFX-6N-FKy" id="LE0-H3-EDS"/>
+                <outlet property="headerImage" destination="8FH-Op-Aaa" id="QdC-dk-mY7"/>
+                <outlet property="logo" destination="bKS-Ly-exL" id="ZiD-TZ-pog"/>
+                <outlet property="name" destination="PS4-8s-fE7" id="NcL-ap-uHp"/>
+                <outlet property="secondLine" destination="FZL-CZ-pRj" id="179-sx-5nI"/>
+                <outlet property="summaryTitle" destination="QYP-L4-vFn" id="QIP-CQ-SYs"/>
+            </connections>
+            <point key="canvasLocation" x="-77" y="182"/>
+        </view>
+    </objects>
+</document>

@@ -17,6 +17,9 @@ class API {
             static let GET_CAPACITIES = "store/capacity"
             static let POST_PAY_ORDER = "payment/pay-order"
             static let POST_PLACE_ORDER = "order/place-order"
+            static let START_ORDER = "order/start-order"
+            static let DELETE_ITEM = "order/delete-item"
+            static let ADD_ITEM_WITH_CONFIGURATIONS = "order/add-item-w-configuration"
         }
         
         struct ParameterKey {
@@ -27,6 +30,7 @@ class API {
             static let storeId = "id_store"
             static let orderId = "id_order"
             static let productId = "id_product"
+            static let idOrderItem = "id_order_item"
             
             static let amount = "amount"
             static let paymentMethodReference = "payment_method_reference"
@@ -37,6 +41,10 @@ class API {
             static let quantity = "quantity"
             static let configurations = "configurations"
             static let configurationId = "id_configuration"
+            
+            static let deliveryInstructions = "delivery_instructions"
+            static let appOrderReference = "app_order_reference"
+            static let typeOrder = "type_order"
         }
         
         struct HTTPHeaderField {
@@ -72,30 +80,48 @@ class API {
             }, failure: failure)
     }
     
-    func payOrder(order: PmzOrder, callback: @escaping (String) -> Void, failure: @escaping ((_ error: PmzError) -> Void)) {
+    func startOrder(order: PmzOrder, callback: @escaping (PmzOrder) -> Void, failure: @escaping ((_ error: PmzError) -> Void)) {
 
-        let request = getJSONRequest(path: K.Path.POST_PAY_ORDER, order.getJSONForPayment())
+        let request = getJSONRequest(path: K.Path.START_ORDER, order.getJSONForStartOrder())
         
-        doRequest(request: request, callback: { (token: String) in
-                callback(token)
+        doRequest(request: request, callback: { (json: [String: Any]) in
+                callback(PmzOrder(dictionary: json))
             }, failure: failure)
     }
     
-    func placeOrder(order: PmzOrder, callback: @escaping (String) -> Void, failure: @escaping ((_ error: PmzError) -> Void)) {
+    func pay(paymentData: PmzPaymentData, orderId: CLong, callback: @escaping (PmzOrder) -> Void, failure: @escaping ((_ error: PmzError) -> Void)) {
+
+        let request = getJSONRequest(path: K.Path.POST_PAY_ORDER, paymentData.getJSONForPayment(orderId: orderId))
+        
+        doRequest(request: request, callback: { (json: [String: Any]) in
+                callback(PmzOrder(dictionary: json))
+            }, failure: failure)
+    }
+    
+    func placeOrder(order: PmzOrder, callback: @escaping (PmzOrder) -> Void, failure: @escaping ((_ error: PmzError) -> Void)) {
 
         let request = getJSONRequest(path: K.Path.POST_PLACE_ORDER, order.getJSONForPlace())
         
-        doRequest(request: request, callback: { (token: String) in
-                callback(token)
+        doRequest(request: request, callback: { (json: [String: Any]) in
+            callback(PmzOrder(dictionary: json))
+        }, failure: failure)
+    }
+    
+    func addItemWithConfigurations(item: PmzItem, callback: @escaping (PmzOrder) -> Void, failure: @escaping ((_ error: PmzError) -> Void)) {
+
+        let request = getJSONRequest(path: K.Path.ADD_ITEM_WITH_CONFIGURATIONS, item.getJSONWithConf())
+        
+        doRequest(request: request, callback: { (json: [String: Any]) in
+                callback(PmzOrder(dictionary: json))
             }, failure: failure)
     }
     
-    func addItemWithConfigurations(item: PmzItem, callback: @escaping (String) -> Void, failure: @escaping ((_ error: PmzError) -> Void)) {
+    func deleteItem(item: PmzItem, callback: @escaping (PmzOrder) -> Void, failure: @escaping ((_ error: PmzError) -> Void)) {
 
-        let request = getJSONRequest(path: K.Path.POST_PLACE_ORDER, item.getJSONWithConf())
+        let request = getJSONRequest(path: K.Path.DELETE_ITEM, item.getJSONForDelete())
         
-        doRequest(request: request, callback: { (token: String) in
-                callback(token)
+        doRequest(request: request, callback: { (json: [String: Any]) in
+                callback(PmzOrder(dictionary: json))
             }, failure: failure)
     }
     
@@ -213,6 +239,8 @@ class API {
                             }
                         } else if let status = json["status"] as? String, let statusMessage = json["status_msg"] as? String, status == K.ServiceGenericAnswers.statusOk && statusMessage == K.ServiceGenericAnswers.messageOk {
                             callback(json["data"] as! T)
+                        } else {
+                            failure(PmzError())
                         }
                     }
 
