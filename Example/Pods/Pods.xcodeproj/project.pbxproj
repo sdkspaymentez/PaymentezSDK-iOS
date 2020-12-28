@@ -8,248 +8,245 @@
 
 /* Begin PBXBuildFile section */
 		00DFBCFB78BD568BD817640DB7C27526 /* Request+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F75C8C53FB8DA179708A4607042A80 /* Request+AlamofireImage.swift */; };
-		012F79EA1B81C951252678EC93237816 /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623ED7D71CF91D4B72078096718DD96A /* SwipeDirection.swift */; };
 		013BAC24F7AC722E59517CB110A9E685 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F673DA92A769E9C28143B0B31DA83D6 /* HTTPMethod.swift */; };
-		01DCE3E8EB9C16ECFCD03970D224B874 /* PmzPayAndPlaceVC.xib in Sources */ = {isa = PBXBuildFile; fileRef = 91C6EA6FAD1B6D78D433F52850F82475 /* PmzPayAndPlaceVC.xib */; };
+		0184E57E9F3AA5B56C112A369908CA2D /* PmzProductConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1720BCED7A025B7028F8C980F810EDBA /* PmzProductConfiguration.swift */; };
+		01EF29CF7D1AADCBA1A65D13F3A52CAA /* RadioButtonItem.xib in Sources */ = {isa = PBXBuildFile; fileRef = D6B436001599A64F48F58D3BFB34E997 /* RadioButtonItem.xib */; };
+		030B9CECAACACCF88A9646D16F78A57C /* ProductConfigurationItemCellView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 073B724397F7471C4531EE6D507167E7 /* ProductConfigurationItemCellView.xib */; };
 		03D82E728B4C9CF710469191B91F638B /* Pods-PaymentezSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 829DE8AABEB4C080632793C2CB1F5C21 /* Pods-PaymentezSDK_Tests-dummy.m */; };
-		08A95F3C7659C17B1831FB8C59DE8DB1 /* PmzMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EEF9558436CF7D2D72D6B340999C36 /* PmzMenu.swift */; };
 		0A1849775CF90D514963187D3A771CF8 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190D9C4520AD4653C91A29387F52926 /* Combine.swift */; };
+		0A7FD9FBFCB4EAEE221D55564675A245 /* BarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AD670FC1CBCA4D4AA962CD458C55 /* BarPagerTabStripViewController.swift */; };
 		0A900DF17E3B64F08AF673E9A0DDD697 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4A7A7163577DB7534DFC2E85A43195 /* OperationQueue+Alamofire.swift */; };
-		0FD435E3A793F50243469BA77EA4534F /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01C392AAFBA0A66B6E1E9D579C319B1C /* ButtonCell.xib */; };
-		11C9FB95B054823B097110F9D731CFC1 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148D6467609D0F2F4B97485A4AFF23F8 /* BarView.swift */; };
+		0C8C38806B5305731D0E4F54B1379037 /* ProductFooterView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 83BF3287A82C25F510B4FC94783DC569 /* ProductFooterView.xib */; };
+		0CEAD7C395FFCE058C64803B52E7C924 /* PmzCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEC494C9CFA0E77BCF5033F864900 /* PmzCartViewController.swift */; };
+		0D5CDB68853898364633E3A7AB7A80F2 /* CartItemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C66EF47ABDBD2FD9B9D8CC616B964D /* CartItemCellView.swift */; };
+		0DA9C803B227F1995D3254BE649778FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB727269AEC419C79FB5EB6A2A97301 /* UIKit.framework */; };
 		11EB2DF28DA884182306B439B8983BE8 /* UIButton+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C094A7049C8CA06394452FFE378F0B /* UIButton+AlamofireImage.swift */; };
 		1208E81DA8B532D0646D627B50290EB6 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEAB7E029FA8995C71B94B43D135447 /* AFError.swift */; };
+		12C6F7E58F1BD8445A3B9EF47336FC39 /* PagerTabStripError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E701A6C662FCEB03A34F93D741061A /* PagerTabStripError.swift */; };
 		140D7AD7F7E817F4D6BB419EB5C7312B /* AlamofireImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7534FF2FB6F884B92632CBDE78176D31 /* AlamofireImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14ED0FFB5067D521198D7F6EB8800296 /* PmzMenuFragmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E624B27F0588B7D4328C6ABBFD5EEC3 /* PmzMenuFragmentVC.swift */; };
+		15C7FF3EF9DFEE57EAC78AA60ED5E22D /* StoreCellView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 3166F5AC218E998C2F5EAB26A34EEE0E /* StoreCellView.xib */; };
+		168C792B09B7AF3B47A51E5D1ACECB84 /* PmzProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58128368D10162DA0E4CA87137C736E5 /* PmzProduct.swift */; };
+		1858A1A9E3E2B26EDEB6F63A110FA438 /* SummaryHeaderView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 459E9BC16C58CA943D9CAEA8532A60B2 /* SummaryHeaderView.xib */; };
 		19D605A3233499828FB6B790869F3E9C /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13F9C53533FA7D27B22CAB28B1D852B /* NetworkReachabilityManager.swift */; };
+		1B6CACFF82C06224E92A6449DDD45202 /* CartFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25741CB68B79F88B788565D6E70EDFED /* CartFooterView.swift */; };
 		1C72803F5585481C87510607FB401AF3 /* Pods-PaymentezSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9964324CC094BB023C1FA9909DB099 /* Pods-PaymentezSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20743FEA683F40FDB4B50D3DA11875EB /* UIImage+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE38F3CC9DD6AF47883110C016860FB2 /* UIImage+AlamofireImage.swift */; };
 		20831966381FED414F9C7EC9AAB49077 /* ImageFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E715563EB56041CB424ACF998207CEBD /* ImageFilter.swift */; };
-		20CF08A51D672264A9BB838518DD3F1B /* PmzConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B9295DBC886D0C4240AE31BAE5080 /* PmzConfiguration.swift */; };
 		212EDC48B68107BEA9247F3464CE696E /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB58CA17B7DD82EF2DFD376492E0BF3 /* StringEncoding+Alamofire.swift */; };
 		218C14EAE5AA31C30314AE0289B732A0 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94BB31704D09F777D58C9B9C13DF34C /* Protected.swift */; };
 		2241A0F4D61C95C8982AEC2D8904D394 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFED1AB387A8F502C465ACE31FBE44 /* Image.swift */; };
 		232E252FDD0CDF1599E000A0DBDA8C82 /* Pods-PaymentezSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6959B3AD5F6B54BB9A365C270E528484 /* Pods-PaymentezSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25F68F8072977B469D2E91376439522F /* PmzProductVC.xib in Sources */ = {isa = PBXBuildFile; fileRef = BBA190CBEE8EDB1C096C2D76B550AB52 /* PmzProductVC.xib */; };
-		261328C44178CB26F822DADD40AA9990 /* StoreCellView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 4B574B1FC4CC9DA5308555A69DCED17D /* StoreCellView.xib */; };
-		265F165CC6413100FA9B44BE3880279C /* ButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341D26064E10C8E451264B82CBEFF454 /* ButtonBarPagerTabStripViewController.swift */; };
-		26A5E031CF8C55E8A6BE19047F80CC69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB727269AEC419C79FB5EB6A2A97301 /* UIKit.framework */; };
+		23AED85CC4E7344ADDA1B1F39C39544F /* PmzConfigurationHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F821DCBF1E933DA36631BA69499D99 /* PmzConfigurationHolder.swift */; };
+		274DE4F128DD46EE31A183F48710735A /* PmzSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E5FDD257EDB9DD31B68DA7E07A3AC9 /* PmzSummaryViewController.swift */; };
+		279E899B3B0C9C3D263A7E2D5A314E31 /* ProductHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9A91C7A10EF6DF8D96C48F12D7DEA4 /* ProductHeaderView.swift */; };
 		27E59A11A2743B0595CDE3A08675EAE1 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531803306D326847F025179F9064643B /* DispatchQueue+Alamofire.swift */; };
-		28148521F929F2609FCCE91DA6265C01 /* PmzItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47ACF60221979DA6AFDC3D935290CF1 /* PmzItem.swift */; };
+		2831F9B40F6A10E84696106CD4AFFD24 /* PmzMenuFragmentVC.xib in Sources */ = {isa = PBXBuildFile; fileRef = DF60590E944EA1818359E148CFCB2E70 /* PmzMenuFragmentVC.xib */; };
 		2889F11AE428238AF3D50723DA38DFB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CE543281E2BFD6A490853D41D1B0A0 /* Foundation.framework */; };
-		293D9F50AF9819341A243CFB750B922A /* FXPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DA1EED0EDB0DC4796C424CBE6C807BA /* FXPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B8844EF2681EC14F39D52D69E191705 /* PaymentezViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD28F35BF7B7402FD01CB56C8D5D8472 /* PaymentezViewController.swift */; };
-		2EE628AC3413CECE0B9BAC5E466A7638 /* PagerTabStripBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859ADB5F1268040250DE04AD8D7DF0F /* PagerTabStripBehaviour.swift */; };
-		32AE99F74337D119F0C6BF6644AC0871 /* PmzProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C4FD1AF4BD6220DDBF8DA7CAA57AB1 /* PmzProductViewController.swift */; };
-		33487FF6FAAF7B32A7360918047F8EFC /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F22DB798FDA73DC6810ED8D435A164D /* AlamofireImage.framework */; };
-		33FD38B7DFAB48163A7C78E1CC9C6E93 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727D0762819A351EE27F706EF6EB8CDF /* UIExtension.swift */; };
-		348DB23695850D4A2041CA3F94D80328 /* PmzResultVC.xib in Sources */ = {isa = PBXBuildFile; fileRef = E20699885A01D8AE414A4D646B84F682 /* PmzResultVC.xib */; };
-		36D27F9C04BDEBF900973C642432F69C /* PaymentezSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B51E78B5A21853ABF444FE4D6E9833 /* PaymentezSDK.swift */; };
+		2904F7FA79A1C82D81408105EA24FD5A /* CurrencyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39420CBC3807E01899CD3229B27A16 /* CurrencyUtils.swift */; };
+		2D22D0408A4A435FCF0E36C7B17EF869 /* PaymentezSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF51AD80B233A52F8AA20A7536D97E4 /* PaymentezSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D9ECAB24366BDEDE966154D27024124 /* SummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853B728EB010EF7498CCF8CE7BFAC4FB /* SummaryHeaderView.swift */; };
+		2EE7F3297C54CE04C9598A24E35CDFD5 /* PmzError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880A35D6E4EE15B54852778669D69B9 /* PmzError.swift */; };
+		33E3187F8CF5E8EF3F69F18ABBBF6817 /* XLPagerTabStrip.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 78BA4BB1A553AB4136F879792D99C87D /* XLPagerTabStrip.bundle */; };
+		378D09B93A0F3DD08F426AE2E338F6EF /* CartItemCellView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 98F7C4058256742037111C77CE707E43 /* CartItemCellView.xib */; };
 		37E04DC7A8A99B2AA82B6318805D1473 /* UIImageView+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FAD4D0508DD5AC6546F664A2ADF06 /* UIImageView+AlamofireImage.swift */; };
 		381FF05F8B4F611EE9C2FDBE4457BB89 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C436441AC4C75F255035837937C677A9 /* SessionDelegate.swift */; };
-		3B8E6B92F9E2C971138E09BF7C4FDDD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CE543281E2BFD6A490853D41D1B0A0 /* Foundation.framework */; };
-		3BC219DCD319EDC87D1B63B8DA925508 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA92E12308E7851B924D77D800758CB5 /* Image.xcassets */; };
-		3F8752DBC8D82ADB9A052A250D6871FF /* PmzSponsor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36324DE8F49C15191A68216A236D1F0E /* PmzSponsor.swift */; };
-		40AEF0E0F0522E139634C4C496E02EEA /* BarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AD670FC1CBCA4D4AA962CD458C55 /* BarPagerTabStripViewController.swift */; };
+		3AEEA6D68409F3DB5804353F28A46706 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A1D6CBDC875E250AD6FCF2E720A04 /* UIViewControllerExtension.swift */; };
+		3B6925DE5F8CB68E9B6A9978B7C3B3E4 /* FXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B552D9A2118DF38B3CD782F02A1FC58 /* FXPageControl.m */; };
+		401E4271EA678FB496D29F174AB60B20 /* CartHeaderView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 9E35C283495CB696A21422822321A4A7 /* CartHeaderView.xib */; };
+		43039868C980F9832E701ECFE2DD2004 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F0F4756096828B7866A7DB31AD768 /* UIExtension.swift */; };
 		45B8CC1C61E7A0BB28CFA8CE7C12FEBC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3D073FCC1039D3360D0B93A60AB39E /* MultipartFormData.swift */; };
+		45F697FBEB2C893BAD4FB495A785FE3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CE543281E2BFD6A490853D41D1B0A0 /* Foundation.framework */; };
 		476D5F33E25386C60D6BD75C4FA97C67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CE543281E2BFD6A490853D41D1B0A0 /* Foundation.framework */; };
 		47FDBBBD2704901588C3A7C56BBC502D /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABF51797CD29D7DB618D36CD520140A /* ServerTrustEvaluation.swift */; };
-		48D520C69E173F506E659D61EEA6163F /* ButtonBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FCA3714D416DBDDF2B6D86B92BFF08 /* ButtonBarView.swift */; };
+		48B5B63B51D02D46CC76B74B2559F62C /* TwitterPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766833D0FED466EFBE67340659D86B67 /* TwitterPagerTabStripViewController.swift */; };
+		49599233703F4C311DAE7EF02244A7D8 /* PmzFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440B08E515C0791184B356733C0A1EA /* PmzFont.swift */; };
 		4AEC050FA7D5ED52FDA9DF50EA3560DF /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65FEA9178E8A97BCADBDE55A5808DB6 /* ParameterEncoder.swift */; };
-		538DDE051357D455E55D0AFF7A465C9C /* FXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B552D9A2118DF38B3CD782F02A1FC58 /* FXPageControl.m */; };
-		5ABADCA1D828E681B91124D707A9FECF /* XLPagerTabStrip.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 78BA4BB1A553AB4136F879792D99C87D /* XLPagerTabStrip.bundle */; };
-		5BBBFE7FD0FCE170276EE3332A6018D2 /* BaseButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFF97553212A35E5560398456126B23 /* BaseButtonBarPagerTabStripViewController.swift */; };
-		5C3CB764EDF309DF23F6F8C59BC14BEF /* XLPagerTabStrip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 14E1EEC50ADF7311E84C98A15442B48E /* XLPagerTabStrip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C913BA34AB6B5BD4B4021B5F26A24DB /* PmzOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA311D6A3DB2500ABFD821D680B54EF2 /* PmzOrder.swift */; };
-		618C9C4E8B01FE886FFF22FAAE9CF09D /* PmzMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03474AE88D05021EC7911DC60B1C5251 /* PmzMenuViewController.swift */; };
-		6364F3E1B168B66E65476F00624B8A6E /* StoreCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5DD896B37C5ABCA99609B1F05EE96B /* StoreCellView.swift */; };
+		51AA4C6E3E484C117DEB02AFC3FCAB5D /* PmzResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C072D34C56E6BA8A436F366AAD129891 /* PmzResultViewController.swift */; };
+		51C45CD74334E5670B7C57FF24F6524A /* SummaryFooterView.xib in Sources */ = {isa = PBXBuildFile; fileRef = ABA07F390CCA1F886B1BC06A4441588F /* SummaryFooterView.xib */; };
+		55E5F2CAD916594AD559CCCCE91DEB1A /* PmzProductConfigurationGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF34E0DF6224B7784231ED03F67114B /* PmzProductConfigurationGroup.swift */; };
+		56BDF85EB2E7F4954013CE276F31352F /* PmzProductOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AACE0E2F7D47346E07C53D079B105C /* PmzProductOrganizer.swift */; };
+		5790EE66BC4A3319BF613723EC24A029 /* TitleCellView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 3A77C45872D88D94B31CF11224DA8E62 /* TitleCellView.xib */; };
+		58FD4BD643AE872B7FE2E7491F0E77C1 /* IndicatorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C710879458FAF7AD63ADD900CAF10 /* IndicatorInfo.swift */; };
+		5BC1D49B4672460CBDE6353F1C37EA71 /* PmzProductVC.xib in Sources */ = {isa = PBXBuildFile; fileRef = E5AFE310A55287B6F69F8213E727C597 /* PmzProductVC.xib */; };
+		5D80263914A8AC1E0F89758AB63883EC /* PmzStoresVC.xib in Sources */ = {isa = PBXBuildFile; fileRef = 5D5E7AA5BFDDCC378463D60FE978CEF3 /* PmzStoresVC.xib */; };
+		638592CFC00D05BC9FAD9725E20C42B1 /* PmzStoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A50140C4F2E3E8334301A2B06057CE /* PmzStoresViewController.swift */; };
 		6546D728B69398F93B506845141EBD61 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3649345B1A4BDBD678049ACC1767CD /* EventMonitor.swift */; };
 		65A161117DC1C41192916756704D99F8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB97973BC7B799C1E51160E90DCFAF16 /* Alamofire.framework */; };
+		65E9A2DE9C9B8D7E3655A139162D073C /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01C392AAFBA0A66B6E1E9D579C319B1C /* ButtonCell.xib */; };
 		666EC5C8356E6D4448A2FE7BEE77AD88 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C144439E70BB2283FD3F7BC4BDA027F8 /* RedirectHandler.swift */; };
-		66A6AA49D646FC6C19409CF377CA651D /* PmzProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB20B6E2D2F6F186F47F7439EBFE0446 /* PmzProduct.swift */; };
 		66B26C6CAE737EC21F4BA1F1851B69C5 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4CAFEEAC50C5AF02857354A64D40A3 /* Result+Alamofire.swift */; };
-		67D0251F2F8B7CBF82C1761D965886AD /* PmzBuyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DF3658E4E649500CAB5A9CB8C7039F /* PmzBuyer.swift */; };
-		683438CA7A4B917A23AED517B7F784F7 /* PmzProductConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E15474CB46A7236A3DFB4A6904EB0B /* PmzProductConfiguration.swift */; };
+		677773015A08DDD0C4C064E72919BF53 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7FB97C9D90413EF6B211DCF94D037C /* CardView.swift */; };
+		6867925EEFD066ED98AEEFF03A84447F /* PmzPayAndPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F78694BA37A8EA5FFDD71711AFE48C8 /* PmzPayAndPlaceViewController.swift */; };
 		6AE407A4FB6C3D6ADD862CC6E3067A17 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CA2F2A9FAC29481511890AD4DD737 /* Session.swift */; };
 		6C08F6A77889651626583100F560153D /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549E6F5252BDD856B4BF0A2D2D5F655 /* RequestTaskMap.swift */; };
-		6C55ABC445FBB390C56E3447A95EFCE9 /* IndicatorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C710879458FAF7AD63ADD900CAF10 /* IndicatorInfo.swift */; };
+		6C3CFF013E73C863AC9A211A38446876 /* PmzCapacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEE3A61CCC6FD419841D584BE3C1168 /* PmzCapacity.swift */; };
 		6E54F64E8DA73F4B0B46C216F9F93F63 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C25A01B28414B7126741555C29D6B4F /* RequestInterceptor.swift */; };
-		70CE5855861389DCBEB96037197F78F9 /* PagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF5AF7840EBC8841BA99F6E927DCFE7 /* PagerTabStripViewController.swift */; };
+		72192172432F5EAE5841A5BBBCBC9AB6 /* StoreCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22392B860D0E02FDDFDA6B948DDE1FE /* StoreCellView.swift */; };
 		72EC2712926E6D28B52360D9AC41668F /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E6B0890EAC53F32050F851BB663ADA /* AlamofireExtended.swift */; };
+		74A03EAE080AB4876DBA563ED938B78B /* PagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF5AF7840EBC8841BA99F6E927DCFE7 /* PagerTabStripViewController.swift */; };
+		74EE7BE635F71AC5EA671433C20FBFB9 /* PmzStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F239AD6A7D75428A1376290862087DB /* PmzStyle.swift */; };
+		798C4CA5612A7ECC99473C439AC87B71 /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623ED7D71CF91D4B72078096718DD96A /* SwipeDirection.swift */; };
+		7B9528FF26CE74C0055792BBFE0500C8 /* XLPagerTabStrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B0ACA0B2573D43254AACA0C1885CE2 /* XLPagerTabStrip.framework */; };
+		7BAC3D4EEE244C532ACE5EBA13FF01A3 /* PmzAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CF51E23334D2D3101109A03304BE5F /* PmzAddress.swift */; };
+		7BFC7B8BCEE504FEB1E3B18B278AD01F /* ProductFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2D4414E372A9C1307424BA1B6D33F /* ProductFooterView.swift */; };
 		7D3DD4A8BB36733BA15868F7FB8C56CE /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 048BAA8AF7D6564D742ACC5564215052 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		802CDF63346C82297E6BD67194CDB3B1 /* PmzSummaryVC.xib in Sources */ = {isa = PBXBuildFile; fileRef = AA39D3259623A59D6FDDC18D67307054 /* PmzSummaryVC.xib */; };
-		80C8418F3EF3399D923F9C090F2BA5C0 /* PmzStoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0698481C0EA5B62E2A4F93A449DFA723 /* PmzStoresViewController.swift */; };
-		83EF6D7107E5316B7D11DD70593C1D48 /* XLPagerTabStrip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32131E784E8D7ED6D215D44F07B88376 /* XLPagerTabStrip-dummy.m */; };
+		7E82BDF3BCA4FDB2F65065C3EB0D227B /* CartFooterView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EB68F079133BBD535127C9C7FEF82 /* CartFooterView.xib */; };
+		804FF21D71915D9CD8B03AA5748E2D73 /* ProductHeaderView.xib in Sources */ = {isa = PBXBuildFile; fileRef = BB2643541B88220E8445DD1A1174760E /* ProductHeaderView.xib */; };
+		850A79036764E76D1C4B4DEA7D600B99 /* ButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341D26064E10C8E451264B82CBEFF454 /* ButtonBarPagerTabStripViewController.swift */; };
+		86CA562A51D29B8854D126A87936399B /* PmzPaymentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7716818AE98692501D0D7DC97E9D1C /* PmzPaymentData.swift */; };
 		879F02C85701A85EB69DF847EFC94277 /* AFIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173D917D628948043240B011AD143F4A /* AFIError.swift */; };
+		87BAD26C08FCF01D9650C96593ED1E59 /* PmzSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65FE477B90204062747B10D1C8F3E4C /* PmzSession.swift */; };
 		8AA937910F87915DE700CAB6C868689E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C19B20B6F6C68E5AE314C08634436 /* Notifications.swift */; };
+		8DAFFD1E751D278D164FABAF576D447E /* PmzMenuFragmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B15F92FC81A72E434786A1425836BB0 /* PmzMenuFragmentVC.swift */; };
+		8E5800D91FAB78848DF65BC13C48F29F /* FXPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DA1EED0EDB0DC4796C424CBE6C807BA /* FXPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E71D75CC0981FB47388FC9F4C84EBE2 /* PmzProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EFCB4DA287484C225E5D7607AE5E30 /* PmzProductViewController.swift */; };
 		911448B2EDA2FF880108F77642797A88 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB230F15B12D1E4A209ABE5D697D51FC /* ResponseSerialization.swift */; };
 		91B837CE0DCD8EDB300FCDFFA1279162 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147E4C1F0375EB1F2B1540E09E84FCCA /* HTTPHeaders.swift */; };
-		933AF163F75DCA3B6CD2642DADFA729E /* PaymentezSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AAA6893156A6FF51FC020C7BD77F4A /* PaymentezSDK-dummy.m */; };
-		952471BC64F5C78CA3FCEA12E89D7B68 /* PmzFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126CD0158B800F4FFAB805BA46AD27C /* PmzFont.swift */; };
+		933A56BFFFF9838997C68CD24EA78E7C /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148D6467609D0F2F4B97485A4AFF23F8 /* BarView.swift */; };
+		943C48419E4CD969857986910D9AC94A /* PmzSponsor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6C5A038ABE96DDDB63F54CD589B274 /* PmzSponsor.swift */; };
 		9B1D8A7798D8A6F518FC9AF9725431D0 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = C516F5049811FAB4F0965A6568344F59 /* URLConvertible+URLRequestConvertible.swift */; };
 		9B966B0E1A805EB1CC23E1436C42DD82 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DFD46AE3ACA63034490F21F4FAD923 /* ImageDownloader.swift */; };
 		9C71798373D74C5058A0A1559D69FFB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CE543281E2BFD6A490853D41D1B0A0 /* Foundation.framework */; };
-		9E7260E34911ECBB9FB0628AE2AFBAFF /* PmzStoresVC.xib in Sources */ = {isa = PBXBuildFile; fileRef = 96C3E29A2DA33A540DE75C490BBBC20D /* PmzStoresVC.xib */; };
-		9F17C0CA0BEEE1264F340B857A8A5CD4 /* PmzMenuFragmentVC.xib in Sources */ = {isa = PBXBuildFile; fileRef = 90728050C1A0C0254395019470FBAD60 /* PmzMenuFragmentVC.xib */; };
 		9FED70D1E1FBFB80E974E999EF732258 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866501E9289795E481108CEA718A4737 /* RetryPolicy.swift */; };
-		A73FED3DBC01AE6CE9BB64A557A7FD7A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399427CA8359CC8C858917B1A642533 /* API.swift */; };
+		A650F4F706280E73AFAEFC525C9B3465 /* PmzItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D581ECF1B88B013BE2AD787A8CAF2B30 /* PmzItem.swift */; };
+		A6660209671AE32C2B0DACF365B8063F /* PmzOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B798E411DDDF0883CF064711EB2C5339 /* PmzOrder.swift */; };
+		A8F4FC9919B8229AEAD75FBF80A1650D /* SegmentedPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776318A2F2386D1ACC34D7C960C80B26 /* SegmentedPagerTabStripViewController.swift */; };
 		A9C7B29D4878F1690BBE3F8195CF0313 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C63541AF82E8C9EA2FA10BA79456E836 /* CFNetwork.framework */; };
 		ABA85887A41495358C83CE3F3030EDEA /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC0BB97BC32B2884A9345AA081D9AB /* CachedResponseHandler.swift */; };
-		AE5D17E2C3097AB0ABA8A0E2E0D133C5 /* PmzCapacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5E9E7EA0EE484303C72B9B61CDF50D /* PmzCapacity.swift */; };
-		AF56C339A45FA47E04F8CDB9955397F8 /* ButtonBarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B41C5B6B04BED30B2A41E7344341761 /* ButtonBarViewCell.swift */; };
+		AC46ABEEE2A2D203AB1848A175276865 /* PaymentezSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E9A621F837E81EAB0E9693855520A /* PaymentezSDK.swift */; };
+		AEB76E49716C57519D259B0731DD82A8 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D17AD7712C4ADB3D5C924EC37E87195A /* Image.xcassets */; };
+		B026DFC54C9856E675DDDD963DAED187 /* PmzMenuVC.xib in Sources */ = {isa = PBXBuildFile; fileRef = 18AEA6C02AC9A461A8DA8F6534ED2F02 /* PmzMenuVC.xib */; };
+		B31572DC17709B321CEDE8DF1BE755D9 /* VirtualCardTabView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 520C7101A5EB33A389BA70EB164BE9A1 /* VirtualCardTabView.xib */; };
+		BA3388FA1857DD354388E9F596A07671 /* CartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9EBD7C1AAB081B94F74ADF3A02BE49 /* CartHeaderView.swift */; };
+		BAF6418FBC430B139CAABB244983FD99 /* PmzEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C354D210D3385DB7B435D0EA820F65 /* PmzEncoder.swift */; };
+		BB85CD0709BBCCB2FA6BCEFA78A3E33A /* PagerTabStripBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859ADB5F1268040250DE04AD8D7DF0F /* PagerTabStripBehaviour.swift */; };
+		BC2FDD0D1139E2FCB312001388EDF173 /* CustomTabItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A7BB26445F342EC9A90BE06349E388 /* CustomTabItemCollectionViewCell.swift */; };
+		BC81807E4E424E926F15F072107F012E /* PmzProductDisplayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954B4CA8EB754B4E843E592AC52B4FDF /* PmzProductDisplayProtocol.swift */; };
 		C0AE89FBE2F0AED45014EAB24A8769F4 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33BA07E82BF52B580D5A6421FF46BF7 /* ImageCache.swift */; };
 		C1C5B050B55C15103ABC81769551A283 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F6ADB7A12581CC9B94FFF067958C59 /* Response.swift */; };
 		C1F1DB6A9CBDE584D09BA1613AAD4F9D /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0796B108BA1FCAC38E1A76E5A6E97FE /* Alamofire.swift */; };
-		C44D29BFFA44EB90C3BAA9214513098D /* PmzCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F3F539EE34FA8595C3155A32B63C5 /* PmzCategory.swift */; };
 		C6D5A4B4028B2C43380C9FA58BD5C8CA /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD19BB03EEC1750E695DF36CDE9F3ED /* Alamofire-dummy.m */; };
 		C95CB7DBF11778B246018ADFEA0715DB /* AlamofireImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47812A4519D350500A6CCF24A2E1AE43 /* AlamofireImage-dummy.m */; };
-		CDF10163F26B974A258327F8FCD1DEB7 /* PaymentezSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32ED93B5DD5BA1395651B5F749A645BD /* PaymentezSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CF956CE4F1CAC1E3F2314CADD22F09E6 /* PmzSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DC28DF19D232C7D2DBE5835E967DE2 /* PmzSummaryViewController.swift */; };
-		CF96CE482583C07F00A762DE /* PmzProductConfigurationGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96CE462583C07D00A762DE /* PmzProductConfigurationGroup.swift */; };
-		CF96CE4B2583C0CF00A762DE /* PmzConfigurationHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96CE492583C0C900A762DE /* PmzConfigurationHolder.swift */; };
-		CF96CE4E2583C11100A762DE /* PmzProductOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96CE4C2583C10F00A762DE /* PmzProductOrganizer.swift */; };
-		CF96CE512583C5D600A762DE /* PmzTitleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96CE4F2583C5A500A762DE /* PmzTitleItem.swift */; };
-		CF96CE542583C6D100A762DE /* PmzProductDisplayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96CE522583C5F300A762DE /* PmzProductDisplayProtocol.swift */; };
-		CF96CE5925840C4900A762DE /* TitleCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF96CE5525840B9B00A762DE /* TitleCellView.xib */; };
-		CF96CE5A25840C4E00A762DE /* TitleCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96CE5725840C3D00A762DE /* TitleCellView.swift */; };
-		CF96CE5D25840D9E00A762DE /* ProductConfigurationItemCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF96CE5B25840D8B00A762DE /* ProductConfigurationItemCellView.xib */; };
-		CF96CE6025840DAF00A762DE /* ProductConfigurationItemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96CE5E25840DA600A762DE /* ProductConfigurationItemCellView.swift */; };
-		CF96CE652584101A00A762DE /* RadioButtonItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF96CE6125840FDC00A762DE /* RadioButtonItem.xib */; };
-		CF96CE662584101E00A762DE /* RadioButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96CE6325840FF700A762DE /* RadioButtonItem.swift */; };
-		CFB688F3257AC465006D3917 /* CustomTabItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB688F0257AC462006D3917 /* CustomTabItemCollectionViewCell.swift */; };
-		CFB688F4257AC469006D3917 /* VirtualCardTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFB688EF257AC462006D3917 /* VirtualCardTabView.xib */; };
-		CFD45E0E2581105000F01462 /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD45E0A25810CDF00F01462 /* ProductCellView.swift */; };
-		CFD45E0F2581105400F01462 /* ProductCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFD45E0C25810CF200F01462 /* ProductCellView.xib */; };
-		CFD45E1225811A0F00F01462 /* CurrencyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD45E10258119CD00F01462 /* CurrencyUtils.swift */; };
-		CFD45E152581538E00F01462 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD45E132581530700F01462 /* CardView.swift */; };
-		CFD45E18258157B300F01462 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD45E16258156ED00F01462 /* UIViewControllerExtension.swift */; };
-		CFDF3DD52587F75000AD5060 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA92E12308E7851B924D77D800758CB5 /* Image.xcassets */; };
-		CFDF3DD62587F75100AD5060 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA92E12308E7851B924D77D800758CB5 /* Image.xcassets */; };
-		CFDF3DDB25895CD300AD5060 /* ProductHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDF3DD925895CC200AD5060 /* ProductHeaderView.swift */; };
-		CFDF3DDC25895CD900AD5060 /* ProductHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFDF3DD725895B9600AD5060 /* ProductHeaderView.xib */; };
-		CFDF3DE1258987C800AD5060 /* ProductFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFDF3DDD2589879D00AD5060 /* ProductFooterView.xib */; };
-		CFDF3DE2258987CC00AD5060 /* ProductFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDF3DDF258987B100AD5060 /* ProductFooterView.swift */; };
-		CFDF3DE5258A763C00AD5060 /* PmzCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDF3DE3258A761400AD5060 /* PmzCartViewController.swift */; };
-		CFDF3DE8258A767300AD5060 /* PmzCartVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFDF3DE6258A765200AD5060 /* PmzCartVC.xib */; };
-		CFDF3DED258A9DA300AD5060 /* CartItemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDF3DEB258A9D9500AD5060 /* CartItemCellView.swift */; };
-		CFDF3DEE258A9DAA00AD5060 /* CartItemCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFDF3DE9258A9C7700AD5060 /* CartItemCellView.xib */; };
-		CFDF3DF1258AA32800AD5060 /* PmzEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDF3DEF258AA2CC00AD5060 /* PmzEncoder.swift */; };
-		CFDF3DF6258AB66D00AD5060 /* CartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDF3DF4258AB66200AD5060 /* CartHeaderView.swift */; };
-		CFDF3DF7258AB67500AD5060 /* CartHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFDF3DF2258AB37600AD5060 /* CartHeaderView.xib */; };
-		CFDF3DFA258BD0F400AD5060 /* CartFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDF3DF8258BD0E800AD5060 /* CartFooterView.swift */; };
-		CFDF3DFD258BD66D00AD5060 /* CartFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFDF3DFB258BD0FE00AD5060 /* CartFooterView.xib */; };
-		CFDF3E02258C0B7400AD5060 /* SummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDF3E00258C0B6900AD5060 /* SummaryHeaderView.swift */; };
-		CFDF3E03258C0B7A00AD5060 /* SummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFDF3DFE258C099500AD5060 /* SummaryHeaderView.xib */; };
-		CFDF3E06258C0D9B00AD5060 /* SummaryFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFDF3E04258C0D2F00AD5060 /* SummaryFooterView.xib */; };
-		CFDF3E09258C0DA700AD5060 /* SummaryFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDF3E07258C0DA500AD5060 /* SummaryFooterView.swift */; };
-		CFF1385F258D32D800126DF6 /* PmzPaymentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF1385D258D321D00126DF6 /* PmzPaymentData.swift */; };
+		CA01CEB2443CD20D602F304D6650C103 /* PmzConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C895DF223D44C9EBDFDC7BA3E1063282 /* PmzConfiguration.swift */; };
+		CAE1E7B6B9CB4AEF2186F3E0E1882C9B /* PmzResultVC.xib in Sources */ = {isa = PBXBuildFile; fileRef = 9096C23C2745119EAEBE31F578F5B6F5 /* PmzResultVC.xib */; };
+		CF60BC2576097BD6FA218189D74D515D /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2035ADAB7A054CD4671E2DFEAACE263 /* ProductCellView.swift */; };
 		D03F1F02DE8606E6057D57866611BEBF /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02446A8C33035E0AD00756179D38016B /* MultipartUpload.swift */; };
-		D0619920F8F1AE94CE4B4AFE693DDBB3 /* PmzAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF57F2F4143C74C720E467591330A7 /* PmzAddress.swift */; };
-		D11694337016D2231B2640B6E1EFBD10 /* PmzStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FEE28B558A3D2168F86612BD5E8E49 /* PmzStyle.swift */; };
 		D14066FAE94E304798E43651E5886D13 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497A643AAD8FF4CF51F679F36C2ADDF4 /* ParameterEncoding.swift */; };
 		D31FC7FDD450C4CDD633ECBAD27C6221 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1B062E8C56FA4A64AD513789128DA /* URLEncodedFormEncoder.swift */; };
-		D3996050DF3D5ECB33355A1344F2BB9C /* PmzImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D279FA5EC523D9D2729E53F61AD4C8 /* PmzImageUtils.swift */; };
+		D3B4B66A15827FC38E9C790A0F4749A3 /* BaseButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFF97553212A35E5560398456126B23 /* BaseButtonBarPagerTabStripViewController.swift */; };
 		D5EAAFB6FAD77A8F0699345149BA3CBB /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6AF1751CB22E7608B457B5EC04BC3 /* URLRequest+Alamofire.swift */; };
-		D6EB16CB96E6CD513D78E32EA3E7A438 /* PmzPayAndPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2BC3E2E940BDCE98EF4B530474831D /* PmzPayAndPlaceViewController.swift */; };
-		DBBD27A684B636709B841E4FA04CD227 /* TwitterPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766833D0FED466EFBE67340659D86B67 /* TwitterPagerTabStripViewController.swift */; };
+		D6E9D3D2D0A9E16D70CB2CEF35C916CC /* SummaryFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F560D6427774D8B3644C1DB4C4DB3A1 /* SummaryFooterView.swift */; };
+		D6F0CB2C35EF7CE9A489F56431D5D47A /* PaymentezViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD618A18EA0C8F56C913E42D9BCD5AAF /* PaymentezViewController.swift */; };
+		D9F18852167AB6F6931C64362C627AC2 /* PmzBuyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F177D3242AECCA7E61FD7DAA622A232 /* PmzBuyer.swift */; };
+		DB3016AAF4E4B558587F3C22831806F3 /* PmzMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACD6FEB56A55022E44D0993FE6D949B /* PmzMenuViewController.swift */; };
+		DC3F6C5D5481523788988B2F3F2E954B /* PmzTitleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AABFE327B6FB46403F3398CB8BC8125 /* PmzTitleItem.swift */; };
 		DC627AFC5B585686898B014184AFCABD /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BE5A35AB4FBA6FB007A8A8BEB70FFC /* AuthenticationInterceptor.swift */; };
-		DDC2C78D6DAF911C8699B05FDACDA2AC /* PagerTabStripError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E701A6C662FCEB03A34F93D741061A /* PagerTabStripError.swift */; };
+		DD9341763D9E413F4B6878A9E0B04D6A /* PmzSummaryVC.xib in Sources */ = {isa = PBXBuildFile; fileRef = 63E4851ACB28FA5A426051724C2A18A7 /* PmzSummaryVC.xib */; };
 		DEE08B6E3A19B52405AEF8E8D9A769C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CE543281E2BFD6A490853D41D1B0A0 /* Foundation.framework */; };
-		DF95A22A5F1A75F47F347F2B12A7491D /* PmzError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24522F57146911763EAE0D070E80D910 /* PmzError.swift */; };
-		E38852530E99BD05BDF1D68CA73B593C /* PmzSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCE8ECF6EC251E060535F39F3D0760 /* PmzSession.swift */; };
-		E447898A2B272B0E666B2E5B679F1CAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CE543281E2BFD6A490853D41D1B0A0 /* Foundation.framework */; };
+		E1752FD5E6FD21E06FE3C03892783B3C /* ProductConfigurationItemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEBAC8B48FCD526FB6A9A0132105BCC /* ProductConfigurationItemCellView.swift */; };
+		E48D431B9EC537528C403329260BAED0 /* XLPagerTabStrip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 14E1EEC50ADF7311E84C98A15442B48E /* XLPagerTabStrip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6F8F0D915F2BC465D8ACE449E349EC6 /* Pods-PaymentezSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1D1CA11A9FBD86990AE70D2D351DC9 /* Pods-PaymentezSDK_Example-dummy.m */; };
+		E728397C79A512C3CA8F4154A642BCCB /* PmzMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB35E6348747E75ED16303E156E72F38 /* PmzMenu.swift */; };
+		E86CD85C296FC5D7F0C491E1964C0094 /* XLPagerTabStrip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32131E784E8D7ED6D215D44F07B88376 /* XLPagerTabStrip-dummy.m */; };
+		E8CA113EA5EFECBF7C88606A4A567C78 /* RadioButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4738918AAA236BEC8DF9F657D7EBC5 /* RadioButtonItem.swift */; };
+		E900EFDEDB23144C3F8A246E89DD9C9A /* ButtonBarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B41C5B6B04BED30B2A41E7344341761 /* ButtonBarViewCell.swift */; };
+		E9EE8CB6A418D5638EE8A6DAFFECD5EC /* PaymentezSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B637E01D476968EE58795DC64DD5648 /* PaymentezSDK-dummy.m */; };
+		EC5EF5D1C622041B94DBF01677F059EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CE543281E2BFD6A490853D41D1B0A0 /* Foundation.framework */; };
+		ECCD28FB90498BA90F6C47588A7306B3 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C121E57607155981456389649608B /* API.swift */; };
 		EDC93BD7B9262119AE145E4C7A9D0212 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF442F0A0E1D6AD175D4C1FE87D74B37 /* Request.swift */; };
+		EDEDC67980323A6DD6CF938A583C8EA1 /* PmzCartVC.xib in Sources */ = {isa = PBXBuildFile; fileRef = 29DB11B96B3FBEB4105F26C402BEC3BF /* PmzCartVC.xib */; };
+		F0A6191A61B2144520732A18EA977901 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F22DB798FDA73DC6810ED8D435A164D /* AlamofireImage.framework */; };
 		F0F3224FF592F9BA2A044A2FC2BD4CCD /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC268B420166F4928AD3541E4270F2E1 /* Validation.swift */; };
+		F1215FD3F336476049604FAED557E7EA /* PmzPayAndPlaceVC.xib in Sources */ = {isa = PBXBuildFile; fileRef = 3C2BD7740E8654F3106E9C9DE0E38740 /* PmzPayAndPlaceVC.xib */; };
+		F15F7D7F2A93E2C0B4093E6F3720FD50 /* PmzImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B97D9EDCC4D3A2007E32B88BA0CE47D /* PmzImageUtils.swift */; };
+		F179B948EEC4C2D1D69A032074CBDF79 /* TitleCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E1C124D57B2973A7296768B575268A /* TitleCellView.swift */; };
 		F70EF854395CDE981A8336E4FF0310FE /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B32D575EA0EEEDA6F03F91EB2624AC /* URLSessionConfiguration+Alamofire.swift */; };
-		FC13FF300A9D565C27B3DB5C90918D78 /* PmzMenuVC.xib in Sources */ = {isa = PBXBuildFile; fileRef = 309F1D6DF764AC52DCED21B9FC06E813 /* PmzMenuVC.xib */; };
-		FC5958F8993A132122A873C7103DE339 /* XLPagerTabStrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B0ACA0B2573D43254AACA0C1885CE2 /* XLPagerTabStrip.framework */; };
-		FD3605E10CD952E8DDF5CA3C4C8F3118 /* PmzStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9CB0A9836E5E636CFD3D73EC1DD7C /* PmzStore.swift */; };
-		FF5AD554FA01F93741FEACE65A020EEA /* PmzResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6355BA3A44D6DD7F7A47E97404317CA3 /* PmzResultViewController.swift */; };
-		FFE0A15E1F50C40E9E2E3539C2480E57 /* SegmentedPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776318A2F2386D1ACC34D7C960C80B26 /* SegmentedPagerTabStripViewController.swift */; };
+		F8134A19BA06A1328BE1E73ECF3D29C0 /* PmzCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E50E94609F3C42242135BB9DE78A79B /* PmzCategory.swift */; };
+		F9ACF7C0CCFCE013C002F995C9F05B2F /* ProductCellView.xib in Sources */ = {isa = PBXBuildFile; fileRef = C814FF3631ADEA9C77627DC90B17B8C1 /* ProductCellView.xib */; };
+		FA89D9086EED5FE62979796525191627 /* ButtonBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FCA3714D416DBDDF2B6D86B92BFF08 /* ButtonBarView.swift */; };
+		FBC4A22F43618DCA4DF1FFF2B7CD9CCC /* PmzStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78139E30A317AE2A225EBA2E8216450 /* PmzStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		45FAE97FA30D4C86CD833248E454075D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DC5C3A7662FFA04D04D29F4657D032CE;
-			remoteInfo = XLPagerTabStrip;
-		};
-		4FC61E3DA7D5302D282F1B2754A23F09 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
-			remoteInfo = Alamofire;
-		};
-		56472858656CABF6E543FBC8AF8848A4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C9778AE8394BE451567650E0B239BA21;
-			remoteInfo = AlamofireImage;
-		};
-		5BF3D9DE96C6EB45E8B628E05575764F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 752AC8AE4873207FF51F394F40CCB2BA;
-			remoteInfo = PaymentezSDK;
-		};
-		6AEA798FB30BDC212275AB56580B0BF2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D78C40ECCC1158393FC7C11669EA7C02;
-			remoteInfo = "Pods-PaymentezSDK_Example";
-		};
-		88315C8CE74B27D8BBD46FE3A8D251F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C9778AE8394BE451567650E0B239BA21;
-			remoteInfo = AlamofireImage;
-		};
-		9094C9F3B4B19DFBDE61D39E35C84813 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
-			remoteInfo = Alamofire;
-		};
-		E73E145EACB4CB505B1D7DEE70A6CB9E /* PBXContainerItemProxy */ = {
+		269C39D7D528C554D209B16F4AD8668B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EBF90A3A56D4C5830C212D000AB67BC1;
 			remoteInfo = "XLPagerTabStrip-XLPagerTabStrip";
 		};
-		F0566092A8B5C05B524E5D64373469A7 /* PBXContainerItemProxy */ = {
+		2BB06DF8B9B678521FFF760AC6389E26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9778AE8394BE451567650E0B239BA21;
+			remoteInfo = AlamofireImage;
+		};
+		796B2C1E903A442BAFDF7D9FEC96A72E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 752AC8AE4873207FF51F394F40CCB2BA;
+			remoteInfo = PaymentezSDK;
+		};
+		835EE3AF1EB5FA9765F73842D871D276 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D78C40ECCC1158393FC7C11669EA7C02;
+			remoteInfo = "Pods-PaymentezSDK_Example";
+		};
+		9621F41E4136CD3F23673BFC9A18D9D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9778AE8394BE451567650E0B239BA21;
+			remoteInfo = AlamofireImage;
+		};
+		A24F580035FD2FDC3577C8DE0F01327C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		E87517CD8F9B5B8FD8ACFC90614CC3B3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DC5C3A7662FFA04D04D29F4657D032CE;
 			remoteInfo = XLPagerTabStrip;
 		};
+		F05E66D0097580492484665E43AF0E9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC5C3A7662FFA04D04D29F4657D032CE;
+			remoteInfo = XLPagerTabStrip;
+		};
+		F3BF717CBEBBA21CE1492E4F9FE615F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0190D9C4520AD4653C91A29387F52926 /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
 		01C392AAFBA0A66B6E1E9D579C319B1C /* ButtonCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ButtonCell.xib; path = Sources/ButtonCell.xib; sourceTree = "<group>"; };
+		01E1C124D57B2973A7296768B575268A /* TitleCellView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TitleCellView.swift; sourceTree = "<group>"; };
 		02446A8C33035E0AD00756179D38016B /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
 		02AE98083E2A42295E099736CB1D073F /* XLPagerTabStrip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLPagerTabStrip-prefix.pch"; sourceTree = "<group>"; };
-		02BE5E215FAB976637995E9FE9A07A01 /* PaymentezSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PaymentezSDK.release.xcconfig; sourceTree = "<group>"; };
-		02DF3658E4E649500CAB5A9CB8C7039F /* PmzBuyer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzBuyer.swift; sourceTree = "<group>"; };
-		03474AE88D05021EC7911DC60B1C5251 /* PmzMenuViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzMenuViewController.swift; sourceTree = "<group>"; };
 		048BAA8AF7D6564D742ACC5564215052 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		0549E6F5252BDD856B4BF0A2D2D5F655 /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
-		0698481C0EA5B62E2A4F93A449DFA723 /* PmzStoresViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzStoresViewController.swift; sourceTree = "<group>"; };
+		073B724397F7471C4531EE6D507167E7 /* ProductConfigurationItemCellView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ProductConfigurationItemCellView.xib; sourceTree = "<group>"; };
 		09EE970ADD97BC314A4494613A17DB10 /* Pods-PaymentezSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PaymentezSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		0A54361AA86996B5E0F3D2BED5FA38EA /* PaymentezSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PaymentezSDK.debug.xcconfig; sourceTree = "<group>"; };
 		0AF5AF7840EBC8841BA99F6E927DCFE7 /* PagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripViewController.swift; path = Sources/PagerTabStripViewController.swift; sourceTree = "<group>"; };
 		0C25A01B28414B7126741555C29D6B4F /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
-		0C5DD896B37C5ABCA99609B1F05EE96B /* StoreCellView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StoreCellView.swift; sourceTree = "<group>"; };
+		0C7716818AE98692501D0D7DC97E9D1C /* PmzPaymentData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzPaymentData.swift; sourceTree = "<group>"; };
 		0EEC0BB97BC32B2884A9345AA081D9AB /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
 		140E94705571B13DD76535392262CD14 /* AlamofireImage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AlamofireImage-Info.plist"; sourceTree = "<group>"; };
 		147E4C1F0375EB1F2B1540E09E84FCCA /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
@@ -259,183 +256,191 @@
 		14FCA3714D416DBDDF2B6D86B92BFF08 /* ButtonBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarView.swift; path = Sources/ButtonBarView.swift; sourceTree = "<group>"; };
 		15C094A7049C8CA06394452FFE378F0B /* UIButton+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+AlamofireImage.swift"; path = "Source/UIButton+AlamofireImage.swift"; sourceTree = "<group>"; };
 		15CE543281E2BFD6A490853D41D1B0A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1720BCED7A025B7028F8C980F810EDBA /* PmzProductConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzProductConfiguration.swift; sourceTree = "<group>"; };
 		173D917D628948043240B011AD143F4A /* AFIError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFIError.swift; path = Source/AFIError.swift; sourceTree = "<group>"; };
 		18255109156293C5A935F061050E1741 /* Pods-PaymentezSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PaymentezSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1859ADB5F1268040250DE04AD8D7DF0F /* PagerTabStripBehaviour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripBehaviour.swift; path = Sources/PagerTabStripBehaviour.swift; sourceTree = "<group>"; };
-		1E3B9295DBC886D0C4240AE31BAE5080 /* PmzConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzConfiguration.swift; sourceTree = "<group>"; };
+		1880A35D6E4EE15B54852778669D69B9 /* PmzError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzError.swift; sourceTree = "<group>"; };
+		18AEA6C02AC9A461A8DA8F6534ED2F02 /* PmzMenuVC.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PmzMenuVC.xib; sourceTree = "<group>"; };
 		1EFF97553212A35E5560398456126B23 /* BaseButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseButtonBarPagerTabStripViewController.swift; path = Sources/BaseButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
 		219DA0CB3B0BF62793DCD11B58A1FAB3 /* Pods-PaymentezSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaymentezSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		24522F57146911763EAE0D070E80D910 /* PmzError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzError.swift; sourceTree = "<group>"; };
-		28FEE28B558A3D2168F86612BD5E8E49 /* PmzStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzStyle.swift; sourceTree = "<group>"; };
+		25741CB68B79F88B788565D6E70EDFED /* CartFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartFooterView.swift; sourceTree = "<group>"; };
+		29DB11B96B3FBEB4105F26C402BEC3BF /* PmzCartVC.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PmzCartVC.xib; sourceTree = "<group>"; };
 		2B552D9A2118DF38B3CD782F02A1FC58 /* FXPageControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FXPageControl.m; path = Sources/FXPageControl.m; sourceTree = "<group>"; };
 		2BCFED1AB387A8F502C465ACE31FBE44 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Source/Image.swift; sourceTree = "<group>"; };
 		2BFDA9765991B7AC32E8406445166A5A /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
-		2E624B27F0588B7D4328C6ABBFD5EEC3 /* PmzMenuFragmentVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzMenuFragmentVC.swift; sourceTree = "<group>"; };
+		2F177D3242AECCA7E61FD7DAA622A232 /* PmzBuyer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzBuyer.swift; sourceTree = "<group>"; };
 		2F22DB798FDA73DC6810ED8D435A164D /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		309F1D6DF764AC52DCED21B9FC06E813 /* PmzMenuVC.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PmzMenuVC.xib; sourceTree = "<group>"; };
+		2F239AD6A7D75428A1376290862087DB /* PmzStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzStyle.swift; sourceTree = "<group>"; };
+		3166F5AC218E998C2F5EAB26A34EEE0E /* StoreCellView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = StoreCellView.xib; sourceTree = "<group>"; };
 		32131E784E8D7ED6D215D44F07B88376 /* XLPagerTabStrip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XLPagerTabStrip-dummy.m"; sourceTree = "<group>"; };
-		32ED93B5DD5BA1395651B5F749A645BD /* PaymentezSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PaymentezSDK-umbrella.h"; sourceTree = "<group>"; };
+		32E650B03D62F789CF9B8928E8427052 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		341D26064E10C8E451264B82CBEFF454 /* ButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarPagerTabStripViewController.swift; path = Sources/ButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
-		36324DE8F49C15191A68216A236D1F0E /* PmzSponsor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzSponsor.swift; sourceTree = "<group>"; };
+		3A77C45872D88D94B31CF11224DA8E62 /* TitleCellView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = TitleCellView.xib; sourceTree = "<group>"; };
 		3ABF51797CD29D7DB618D36CD520140A /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
+		3C2BD7740E8654F3106E9C9DE0E38740 /* PmzPayAndPlaceVC.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PmzPayAndPlaceVC.xib; sourceTree = "<group>"; };
 		3DFC9D40EB8E18CD9497026A13A81915 /* Pods-PaymentezSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PaymentezSDK_Tests.modulemap"; sourceTree = "<group>"; };
-		3E2BC3E2E940BDCE98EF4B530474831D /* PmzPayAndPlaceViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzPayAndPlaceViewController.swift; sourceTree = "<group>"; };
-		4723DB35A1775D218320A881C9ED9F19 /* PaymentezSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PaymentezSDK.modulemap; sourceTree = "<group>"; };
+		41CF51E23334D2D3101109A03304BE5F /* PmzAddress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzAddress.swift; sourceTree = "<group>"; };
+		459E9BC16C58CA943D9CAEA8532A60B2 /* SummaryHeaderView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SummaryHeaderView.xib; sourceTree = "<group>"; };
 		47812A4519D350500A6CCF24A2E1AE43 /* AlamofireImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlamofireImage-dummy.m"; sourceTree = "<group>"; };
 		497A643AAD8FF4CF51F679F36C2ADDF4 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		4B574B1FC4CC9DA5308555A69DCED17D /* StoreCellView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = StoreCellView.xib; sourceTree = "<group>"; };
 		4BEAB7E029FA8995C71B94B43D135447 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		4F560D6427774D8B3644C1DB4C4DB3A1 /* SummaryFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SummaryFooterView.swift; sourceTree = "<group>"; };
+		4FEE3A61CCC6FD419841D584BE3C1168 /* PmzCapacity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzCapacity.swift; sourceTree = "<group>"; };
 		51B32D575EA0EEEDA6F03F91EB2624AC /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
-		51D279FA5EC523D9D2729E53F61AD4C8 /* PmzImageUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzImageUtils.swift; sourceTree = "<group>"; };
+		520C7101A5EB33A389BA70EB164BE9A1 /* VirtualCardTabView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = VirtualCardTabView.xib; sourceTree = "<group>"; };
 		531803306D326847F025179F9064643B /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		53430696D80F0E10319507EFA6760E8F /* Pods_PaymentezSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentezSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		57883CF63BC2983541649AA777E70E94 /* PaymentezSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PaymentezSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		57EEF9558436CF7D2D72D6B340999C36 /* PmzMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzMenu.swift; sourceTree = "<group>"; };
+		53430696D80F0E10319507EFA6760E8F /* Pods_PaymentezSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PaymentezSDK_Example.framework; path = "Pods-PaymentezSDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57883CF63BC2983541649AA777E70E94 /* PaymentezSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PaymentezSDK.framework; path = PaymentezSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57F6ADB7A12581CC9B94FFF067958C59 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58128368D10162DA0E4CA87137C736E5 /* PmzProduct.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzProduct.swift; sourceTree = "<group>"; };
+		59C354D210D3385DB7B435D0EA820F65 /* PmzEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzEncoder.swift; sourceTree = "<group>"; };
+		5B637E01D476968EE58795DC64DD5648 /* PaymentezSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PaymentezSDK-dummy.m"; sourceTree = "<group>"; };
+		5B97D9EDCC4D3A2007E32B88BA0CE47D /* PmzImageUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzImageUtils.swift; sourceTree = "<group>"; };
+		5D5E7AA5BFDDCC378463D60FE978CEF3 /* PmzStoresVC.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PmzStoresVC.xib; sourceTree = "<group>"; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E4A7A7163577DB7534DFC2E85A43195 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		5E5E9E7EA0EE484303C72B9B61CDF50D /* PmzCapacity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzCapacity.swift; sourceTree = "<group>"; };
+		5E50E94609F3C42242135BB9DE78A79B /* PmzCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzCategory.swift; sourceTree = "<group>"; };
 		5E6FAD4D0508DD5AC6546F664A2ADF06 /* UIImageView+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+AlamofireImage.swift"; path = "Source/UIImageView+AlamofireImage.swift"; sourceTree = "<group>"; };
 		5EEA2D91C94592137A14F5437A2837F3 /* Pods-PaymentezSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PaymentezSDK_Tests-Info.plist"; sourceTree = "<group>"; };
 		60B06D15FB510DDB91A90A272436C132 /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
 		623ED7D71CF91D4B72078096718DD96A /* SwipeDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeDirection.swift; path = Sources/SwipeDirection.swift; sourceTree = "<group>"; };
-		6355BA3A44D6DD7F7A47E97404317CA3 /* PmzResultViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzResultViewController.swift; sourceTree = "<group>"; };
+		63E4851ACB28FA5A426051724C2A18A7 /* PmzSummaryVC.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PmzSummaryVC.xib; sourceTree = "<group>"; };
 		64CB5D2FDA915FA5082E9266D48B5D69 /* Pods-PaymentezSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PaymentezSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		65DFD46AE3ACA63034490F21F4FAD923 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Source/ImageDownloader.swift; sourceTree = "<group>"; };
+		68F821DCBF1E933DA36631BA69499D99 /* PmzConfigurationHolder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzConfigurationHolder.swift; sourceTree = "<group>"; };
 		692D21290504124E77BD5C03D10AE6AC /* AlamofireImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlamofireImage.release.xcconfig; sourceTree = "<group>"; };
 		6959B3AD5F6B54BB9A365C270E528484 /* Pods-PaymentezSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PaymentezSDK_Example-umbrella.h"; sourceTree = "<group>"; };
+		6A4E9A621F837E81EAB0E9693855520A /* PaymentezSDK.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentezSDK.swift; sourceTree = "<group>"; };
 		6B4D6A6263BF872FF31E77026F2A7693 /* XLPagerTabStrip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XLPagerTabStrip.modulemap; sourceTree = "<group>"; };
 		6B9F4F437B1C2B340F2D4D27AB68DDF2 /* XLPagerTabStrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XLPagerTabStrip.release.xcconfig; sourceTree = "<group>"; };
 		6BB58CA17B7DD82EF2DFD376492E0BF3 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
+		6BE68CD1226F344328E49F5F9497C3A3 /* PaymentezSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PaymentezSDK-Info.plist"; sourceTree = "<group>"; };
 		6E4CAFEEAC50C5AF02857354A64D40A3 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
+		6F6C5A038ABE96DDDB63F54CD589B274 /* PmzSponsor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzSponsor.swift; sourceTree = "<group>"; };
+		6F78694BA37A8EA5FFDD71711AFE48C8 /* PmzPayAndPlaceViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzPayAndPlaceViewController.swift; sourceTree = "<group>"; };
+		6F8EB68F079133BBD535127C9C7FEF82 /* CartFooterView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = CartFooterView.xib; sourceTree = "<group>"; };
+		6F964E6A000EA84F202AB0F14BFAEAC5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		726616C603547414C7EAE49287FDCCB7 /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
-		727D0762819A351EE27F706EF6EB8CDF /* UIExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 		7534FF2FB6F884B92632CBDE78176D31 /* AlamofireImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-umbrella.h"; sourceTree = "<group>"; };
 		766833D0FED466EFBE67340659D86B67 /* TwitterPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TwitterPagerTabStripViewController.swift; path = Sources/TwitterPagerTabStripViewController.swift; sourceTree = "<group>"; };
 		76BE5A35AB4FBA6FB007A8A8BEB70FFC /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
 		776318A2F2386D1ACC34D7C960C80B26 /* SegmentedPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedPagerTabStripViewController.swift; path = Sources/SegmentedPagerTabStripViewController.swift; sourceTree = "<group>"; };
-		783D6FA87A813B7F5170CBE0458B486C /* PaymentezSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PaymentezSDK-prefix.pch"; sourceTree = "<group>"; };
-		78B51E78B5A21853ABF444FE4D6E9833 /* PaymentezSDK.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentezSDK.swift; sourceTree = "<group>"; };
-		78BA4BB1A553AB4136F879792D99C87D /* XLPagerTabStrip.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XLPagerTabStrip.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		78BA4BB1A553AB4136F879792D99C87D /* XLPagerTabStrip.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = XLPagerTabStrip.bundle; path = "XLPagerTabStrip-XLPagerTabStrip.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79D4756958CF619BC3AD82A5C1302001 /* Pods-PaymentezSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PaymentezSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7AABFE327B6FB46403F3398CB8BC8125 /* PmzTitleItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzTitleItem.swift; sourceTree = "<group>"; };
+		7C7FB97C9D90413EF6B211DCF94D037C /* CardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		7CFA252E6036602C63A97B7E7DEE576A /* XLPagerTabStrip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XLPagerTabStrip.debug.xcconfig; sourceTree = "<group>"; };
 		7F673DA92A769E9C28143B0B31DA83D6 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
-		81DC28DF19D232C7D2DBE5835E967DE2 /* PmzSummaryViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzSummaryViewController.swift; sourceTree = "<group>"; };
 		8275FE1B92B65D9411E84984B305A88D /* Pods-PaymentezSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PaymentezSDK_Example.modulemap"; sourceTree = "<group>"; };
 		829DE8AABEB4C080632793C2CB1F5C21 /* Pods-PaymentezSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PaymentezSDK_Tests-dummy.m"; sourceTree = "<group>"; };
+		83BF3287A82C25F510B4FC94783DC569 /* ProductFooterView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ProductFooterView.xib; sourceTree = "<group>"; };
 		847CA2F2A9FAC29481511890AD4DD737 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
+		853B728EB010EF7498CCF8CE7BFAC4FB /* SummaryHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SummaryHeaderView.swift; sourceTree = "<group>"; };
 		866501E9289795E481108CEA718A4737 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
 		8B3649345B1A4BDBD678049ACC1767CD /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
+		8D1C7EB22060CFF8B255302AD38E3305 /* PaymentezSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PaymentezSDK-prefix.pch"; sourceTree = "<group>"; };
+		8D7EEC494C9CFA0E77BCF5033F864900 /* PmzCartViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzCartViewController.swift; sourceTree = "<group>"; };
 		8DA1EED0EDB0DC4796C424CBE6C807BA /* FXPageControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FXPageControl.h; path = Sources/FXPageControl.h; sourceTree = "<group>"; };
-		8FA2AF51433363D3E22857D14E3E56EB /* PaymentezSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PaymentezSDK.debug.xcconfig; sourceTree = "<group>"; };
-		90728050C1A0C0254395019470FBAD60 /* PmzMenuFragmentVC.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PmzMenuFragmentVC.xib; sourceTree = "<group>"; };
-		91C6EA6FAD1B6D78D433F52850F82475 /* PmzPayAndPlaceVC.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PmzPayAndPlaceVC.xib; sourceTree = "<group>"; };
-		94FF57F2F4143C74C720E467591330A7 /* PmzAddress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzAddress.swift; sourceTree = "<group>"; };
-		96C3E29A2DA33A540DE75C490BBBC20D /* PmzStoresVC.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PmzStoresVC.xib; sourceTree = "<group>"; };
+		8E9A91C7A10EF6DF8D96C48F12D7DEA4 /* ProductHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductHeaderView.swift; sourceTree = "<group>"; };
+		8E9F0F4756096828B7866A7DB31AD768 /* UIExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		9096C23C2745119EAEBE31F578F5B6F5 /* PmzResultVC.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PmzResultVC.xib; sourceTree = "<group>"; };
+		916C925DE26CDF62161E4EE1D075726F /* PaymentezSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PaymentezSDK.modulemap; sourceTree = "<group>"; };
+		954B4CA8EB754B4E843E592AC52B4FDF /* PmzProductDisplayProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzProductDisplayProtocol.swift; sourceTree = "<group>"; };
+		98F7C4058256742037111C77CE707E43 /* CartItemCellView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = CartItemCellView.xib; sourceTree = "<group>"; };
+		9B15F92FC81A72E434786A1425836BB0 /* PmzMenuFragmentVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzMenuFragmentVC.swift; sourceTree = "<group>"; };
 		9B41C5B6B04BED30B2A41E7344341761 /* ButtonBarViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarViewCell.swift; path = Sources/ButtonBarViewCell.swift; sourceTree = "<group>"; };
-		9C5644F7AEBD3ABE298106D7AC8C5C1F /* Pods_PaymentezSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentezSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C79F838187400EB652B77F08301E73D /* PaymentezSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = PaymentezSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9C5644F7AEBD3ABE298106D7AC8C5C1F /* Pods_PaymentezSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PaymentezSDK_Tests.framework; path = "Pods-PaymentezSDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C8C710879458FAF7AD63ADD900CAF10 /* IndicatorInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorInfo.swift; path = Sources/IndicatorInfo.swift; sourceTree = "<group>"; };
 		9C9964324CC094BB023C1FA9909DB099 /* Pods-PaymentezSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PaymentezSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
 		9D1A2ADA7C9CBECD8E8EA8A9C936E325 /* Pods-PaymentezSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaymentezSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E35C283495CB696A21422822321A4A7 /* CartHeaderView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = CartHeaderView.xib; sourceTree = "<group>"; };
 		A0796B108BA1FCAC38E1A76E5A6E97FE /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		A13F9C53533FA7D27B22CAB28B1D852B /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		A2C4FD1AF4BD6220DDBF8DA7CAA57AB1 /* PmzProductViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzProductViewController.swift; sourceTree = "<group>"; };
-		A3E15474CB46A7236A3DFB4A6904EB0B /* PmzProductConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzProductConfiguration.swift; sourceTree = "<group>"; };
 		A3EA8685CAF26BC432A172954385796E /* Pods-PaymentezSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaymentezSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A54F3F539EE34FA8595C3155A32B63C5 /* PmzCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzCategory.swift; sourceTree = "<group>"; };
 		A65FEA9178E8A97BCADBDE55A5808DB6 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
-		AA39D3259623A59D6FDDC18D67307054 /* PmzSummaryVC.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PmzSummaryVC.xib; sourceTree = "<group>"; };
-		AB20B6E2D2F6F186F47F7439EBFE0446 /* PmzProduct.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzProduct.swift; sourceTree = "<group>"; };
+		A78139E30A317AE2A225EBA2E8216450 /* PmzStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzStore.swift; sourceTree = "<group>"; };
+		A8C66EF47ABDBD2FD9B9D8CC616B964D /* CartItemCellView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartItemCellView.swift; sourceTree = "<group>"; };
+		AA722BDF8CEA2AA393F558C75CEDA5C8 /* PaymentezSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PaymentezSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AB230F15B12D1E4A209ABE5D697D51FC /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		AB35E6348747E75ED16303E156E72F38 /* PmzMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzMenu.swift; sourceTree = "<group>"; };
 		AB97973BC7B799C1E51160E90DCFAF16 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B126CD0158B800F4FFAB805BA46AD27C /* PmzFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzFont.swift; sourceTree = "<group>"; };
-		B1AAA6893156A6FF51FC020C7BD77F4A /* PaymentezSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PaymentezSDK-dummy.m"; sourceTree = "<group>"; };
+		ABA07F390CCA1F886B1BC06A4441588F /* SummaryFooterView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SummaryFooterView.xib; sourceTree = "<group>"; };
+		ACEBAC8B48FCD526FB6A9A0132105BCC /* ProductConfigurationItemCellView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductConfigurationItemCellView.swift; sourceTree = "<group>"; };
+		B6A7BB26445F342EC9A90BE06349E388 /* CustomTabItemCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomTabItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		B798E411DDDF0883CF064711EB2C5339 /* PmzOrder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzOrder.swift; sourceTree = "<group>"; };
 		B8A2AFF70959E74F687C50B2F7B1EF32 /* AlamofireImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AlamofireImage.modulemap; sourceTree = "<group>"; };
 		B94BB31704D09F777D58C9B9C13DF34C /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
-		BBA190CBEE8EDB1C096C2D76B550AB52 /* PmzProductVC.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PmzProductVC.xib; sourceTree = "<group>"; };
+		BAF51AD80B233A52F8AA20A7536D97E4 /* PaymentezSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PaymentezSDK-umbrella.h"; sourceTree = "<group>"; };
+		BB2643541B88220E8445DD1A1174760E /* ProductHeaderView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ProductHeaderView.xib; sourceTree = "<group>"; };
 		BCB727269AEC419C79FB5EB6A2A97301 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		BCBDF0EA03D4BFC8620C47DAA620D0AA /* XLPagerTabStrip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XLPagerTabStrip-Info.plist"; sourceTree = "<group>"; };
+		BCF34E0DF6224B7784231ED03F67114B /* PmzProductConfigurationGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzProductConfigurationGroup.swift; sourceTree = "<group>"; };
 		BE3D073FCC1039D3360D0B93A60AB39E /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		C028B4199D43D1ADE13A8C5787A29968 /* AlamofireImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-prefix.pch"; sourceTree = "<group>"; };
+		C072D34C56E6BA8A436F366AAD129891 /* PmzResultViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzResultViewController.swift; sourceTree = "<group>"; };
 		C144439E70BB2283FD3F7BC4BDA027F8 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
 		C3A1B062E8C56FA4A64AD513789128DA /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
 		C3F75C8C53FB8DA179708A4607042A80 /* Request+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Request+AlamofireImage.swift"; path = "Source/Request+AlamofireImage.swift"; sourceTree = "<group>"; };
 		C436441AC4C75F255035837937C677A9 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		C440B08E515C0791184B356733C0A1EA /* PmzFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzFont.swift; sourceTree = "<group>"; };
 		C516F5049811FAB4F0965A6568344F59 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
 		C63541AF82E8C9EA2FA10BA79456E836 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		C6A50140C4F2E3E8334301A2B06057CE /* PmzStoresViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzStoresViewController.swift; sourceTree = "<group>"; };
 		C6F132BBC5010EA39AE86F7A0B8C86D4 /* Pods-PaymentezSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PaymentezSDK_Example-Info.plist"; sourceTree = "<group>"; };
-		C8498160B5D29EF2745E4D41F2D971B5 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD28F35BF7B7402FD01CB56C8D5D8472 /* PaymentezViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentezViewController.swift; sourceTree = "<group>"; };
+		C814FF3631ADEA9C77627DC90B17B8C1 /* ProductCellView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ProductCellView.xib; sourceTree = "<group>"; };
+		C8498160B5D29EF2745E4D41F2D971B5 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AlamofireImage.framework; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C895DF223D44C9EBDFDC7BA3E1063282 /* PmzConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzConfiguration.swift; sourceTree = "<group>"; };
+		CC7C121E57607155981456389649608B /* API.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		CE2A1D6CBDC875E250AD6FCF2E720A04 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		CF442F0A0E1D6AD175D4C1FE87D74B37 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		CF96CE462583C07D00A762DE /* PmzProductConfigurationGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PmzProductConfigurationGroup.swift; sourceTree = "<group>"; };
-		CF96CE492583C0C900A762DE /* PmzConfigurationHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PmzConfigurationHolder.swift; sourceTree = "<group>"; };
-		CF96CE4C2583C10F00A762DE /* PmzProductOrganizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PmzProductOrganizer.swift; sourceTree = "<group>"; };
-		CF96CE4F2583C5A500A762DE /* PmzTitleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PmzTitleItem.swift; sourceTree = "<group>"; };
-		CF96CE522583C5F300A762DE /* PmzProductDisplayProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PmzProductDisplayProtocol.swift; sourceTree = "<group>"; };
-		CF96CE5525840B9B00A762DE /* TitleCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleCellView.xib; sourceTree = "<group>"; };
-		CF96CE5725840C3D00A762DE /* TitleCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCellView.swift; sourceTree = "<group>"; };
-		CF96CE5B25840D8B00A762DE /* ProductConfigurationItemCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductConfigurationItemCellView.xib; sourceTree = "<group>"; };
-		CF96CE5E25840DA600A762DE /* ProductConfigurationItemCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductConfigurationItemCellView.swift; sourceTree = "<group>"; };
-		CF96CE6125840FDC00A762DE /* RadioButtonItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RadioButtonItem.xib; sourceTree = "<group>"; };
-		CF96CE6325840FF700A762DE /* RadioButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonItem.swift; sourceTree = "<group>"; };
-		CFB688EF257AC462006D3917 /* VirtualCardTabView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VirtualCardTabView.xib; path = ../Adapters/VirtualCardTabView.xib; sourceTree = "<group>"; };
-		CFB688F0257AC462006D3917 /* CustomTabItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTabItemCollectionViewCell.swift; path = ../Adapters/CustomTabItemCollectionViewCell.swift; sourceTree = "<group>"; };
-		CFD45E0A25810CDF00F01462 /* ProductCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellView.swift; sourceTree = "<group>"; };
-		CFD45E0C25810CF200F01462 /* ProductCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCellView.xib; sourceTree = "<group>"; };
-		CFD45E10258119CD00F01462 /* CurrencyUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyUtils.swift; sourceTree = "<group>"; };
-		CFD45E132581530700F01462 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		CFD45E16258156ED00F01462 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
-		CFDF3DD725895B9600AD5060 /* ProductHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductHeaderView.xib; sourceTree = "<group>"; };
-		CFDF3DD925895CC200AD5060 /* ProductHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductHeaderView.swift; sourceTree = "<group>"; };
-		CFDF3DDD2589879D00AD5060 /* ProductFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductFooterView.xib; sourceTree = "<group>"; };
-		CFDF3DDF258987B100AD5060 /* ProductFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductFooterView.swift; sourceTree = "<group>"; };
-		CFDF3DE3258A761400AD5060 /* PmzCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PmzCartViewController.swift; sourceTree = "<group>"; };
-		CFDF3DE6258A765200AD5060 /* PmzCartVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PmzCartVC.xib; sourceTree = "<group>"; };
-		CFDF3DE9258A9C7700AD5060 /* CartItemCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartItemCellView.xib; sourceTree = "<group>"; };
-		CFDF3DEB258A9D9500AD5060 /* CartItemCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemCellView.swift; sourceTree = "<group>"; };
-		CFDF3DEF258AA2CC00AD5060 /* PmzEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PmzEncoder.swift; sourceTree = "<group>"; };
-		CFDF3DF2258AB37600AD5060 /* CartHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartHeaderView.xib; sourceTree = "<group>"; };
-		CFDF3DF4258AB66200AD5060 /* CartHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartHeaderView.swift; sourceTree = "<group>"; };
-		CFDF3DF8258BD0E800AD5060 /* CartFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartFooterView.swift; sourceTree = "<group>"; };
-		CFDF3DFB258BD0FE00AD5060 /* CartFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartFooterView.xib; sourceTree = "<group>"; };
-		CFDF3DFE258C099500AD5060 /* SummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SummaryHeaderView.xib; sourceTree = "<group>"; };
-		CFDF3E00258C0B6900AD5060 /* SummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryHeaderView.swift; sourceTree = "<group>"; };
-		CFDF3E04258C0D2F00AD5060 /* SummaryFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SummaryFooterView.xib; sourceTree = "<group>"; };
-		CFDF3E07258C0DA500AD5060 /* SummaryFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryFooterView.swift; sourceTree = "<group>"; };
-		CFF1385D258D321D00126DF6 /* PmzPaymentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PmzPaymentData.swift; sourceTree = "<group>"; };
-		D0DCE8ECF6EC251E060535F39F3D0760 /* PmzSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzSession.swift; sourceTree = "<group>"; };
+		CF9EBD7C1AAB081B94F74ADF3A02BE49 /* CartHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartHeaderView.swift; sourceTree = "<group>"; };
+		CFA71546EB6098FEB4B839F26912632E /* PaymentezSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PaymentezSDK.release.xcconfig; sourceTree = "<group>"; };
+		D17AD7712C4ADB3D5C924EC37E87195A /* Image.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Image.xcassets; path = Source/Controllers/Resources/Image.xcassets; sourceTree = "<group>"; };
 		D2073433B225F8B0882756758B359050 /* Pods-PaymentezSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaymentezSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D7B9CB0A9836E5E636CFD3D73EC1DD7C /* PmzStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzStore.swift; sourceTree = "<group>"; };
-		D8797EFA5D1FC851ADFB3AC6284E1354 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		DE1F3D8928EE06E6CBB5458DDD5A701F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D22392B860D0E02FDDFDA6B948DDE1FE /* StoreCellView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StoreCellView.swift; sourceTree = "<group>"; };
+		D2E5FDD257EDB9DD31B68DA7E07A3AC9 /* PmzSummaryViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzSummaryViewController.swift; sourceTree = "<group>"; };
+		D581ECF1B88B013BE2AD787A8CAF2B30 /* PmzItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzItem.swift; sourceTree = "<group>"; };
+		D6B2D4414E372A9C1307424BA1B6D33F /* ProductFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductFooterView.swift; sourceTree = "<group>"; };
+		D6B436001599A64F48F58D3BFB34E997 /* RadioButtonItem.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = RadioButtonItem.xib; sourceTree = "<group>"; };
+		DACD6FEB56A55022E44D0993FE6D949B /* PmzMenuViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzMenuViewController.swift; sourceTree = "<group>"; };
+		DF60590E944EA1818359E148CFCB2E70 /* PmzMenuFragmentVC.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PmzMenuFragmentVC.xib; sourceTree = "<group>"; };
 		DF9445D23B4F17DD6C4B8184F0EEB11E /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		E0107830DF05CA0F8D69A39955A40371 /* PaymentezSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PaymentezSDK-Info.plist"; sourceTree = "<group>"; };
-		E20699885A01D8AE414A4D646B84F682 /* PmzResultVC.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PmzResultVC.xib; sourceTree = "<group>"; };
+		E1AACE0E2F7D47346E07C53D079B105C /* PmzProductOrganizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzProductOrganizer.swift; sourceTree = "<group>"; };
 		E2D6AF1751CB22E7608B457B5EC04BC3 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
 		E3B0ACA0B2573D43254AACA0C1885CE2 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XLPagerTabStrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3EFCB4DA287484C225E5D7607AE5E30 /* PmzProductViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzProductViewController.swift; sourceTree = "<group>"; };
+		E5AFE310A55287B6F69F8213E727C597 /* PmzProductVC.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PmzProductVC.xib; sourceTree = "<group>"; };
+		E65FE477B90204062747B10D1C8F3E4C /* PmzSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzSession.swift; sourceTree = "<group>"; };
 		E715563EB56041CB424ACF998207CEBD /* ImageFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFilter.swift; path = Source/ImageFilter.swift; sourceTree = "<group>"; };
 		E7E6B0890EAC53F32050F851BB663ADA /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
 		E836AD670FC1CBCA4D4AA962CD458C55 /* BarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarPagerTabStripViewController.swift; path = Sources/BarPagerTabStripViewController.swift; sourceTree = "<group>"; };
-		EA311D6A3DB2500ABFD821D680B54EF2 /* PmzOrder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzOrder.swift; sourceTree = "<group>"; };
-		EA92E12308E7851B924D77D800758CB5 /* Image.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Image.xcassets; path = Source/Controllers/Resources/Image.xcassets; sourceTree = "<group>"; };
 		EB57D04126563116577154EF5023B85E /* Pods-PaymentezSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PaymentezSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
 		EB9B88C743922CD8AE0C72856C78BDEB /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		EE4738918AAA236BEC8DF9F657D7EBC5 /* RadioButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RadioButtonItem.swift; sourceTree = "<group>"; };
 		EE75AF2E7C95DCDEDD21D420D14A0F9B /* AlamofireImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlamofireImage.debug.xcconfig; sourceTree = "<group>"; };
 		F05C19B20B6F6C68E5AE314C08634436 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		F1DDEA945255A18F0B9913AB1C2AB718 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XLPagerTabStrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1DDEA945255A18F0B9913AB1C2AB718 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XLPagerTabStrip.framework; path = XLPagerTabStrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2035ADAB7A054CD4671E2DFEAACE263 /* ProductCellView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductCellView.swift; sourceTree = "<group>"; };
 		F23E149FC93DFAACCF29738BD500B3C5 /* ResourceBundle-XLPagerTabStrip-XLPagerTabStrip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-XLPagerTabStrip-XLPagerTabStrip-Info.plist"; sourceTree = "<group>"; };
 		F33BA07E82BF52B580D5A6421FF46BF7 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Source/ImageCache.swift; sourceTree = "<group>"; };
-		F399427CA8359CC8C858917B1A642533 /* API.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		F47ACF60221979DA6AFDC3D935290CF1 /* PmzItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PmzItem.swift; sourceTree = "<group>"; };
 		FA1D1CA11A9FBD86990AE70D2D351DC9 /* Pods-PaymentezSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PaymentezSDK_Example-dummy.m"; sourceTree = "<group>"; };
+		FA39420CBC3807E01899CD3229B27A16 /* CurrencyUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CurrencyUtils.swift; sourceTree = "<group>"; };
 		FC268B420166F4928AD3541E4270F2E1 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		FD618A18EA0C8F56C913E42D9BCD5AAF /* PaymentezViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentezViewController.swift; sourceTree = "<group>"; };
 		FE38F3CC9DD6AF47883110C016860FB2 /* UIImage+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+AlamofireImage.swift"; path = "Source/UIImage+AlamofireImage.swift"; sourceTree = "<group>"; };
 		FFD19BB03EEC1750E695DF36CDE9F3ED /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0CDA010832CEBB2B72CA1AACC1FFE540 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0DFEB2B68622C1885E3767B1D9351705 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -444,19 +449,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4868DEA3BCB36CEF04B8C7A06854BDE6 /* Frameworks */ = {
+		4BD977D3CC025840FB8529977359E335 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5A6B3C4DF5AF16FD47874A664154BC1A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E447898A2B272B0E666B2E5B679F1CAB /* Foundation.framework in Frameworks */,
-				26A5E031CF8C55E8A6BE19047F80CC69 /* UIKit.framework in Frameworks */,
+				45F697FBEB2C893BAD4FB495A785FE3D /* Foundation.framework in Frameworks */,
+				0DA9C803B227F1995D3254BE649778FD /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,16 +476,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AFD0D83BEEAD6C23FA758760E167A6FC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				33487FF6FAAF7B32A7360918047F8EFC /* AlamofireImage.framework in Frameworks */,
-				3B8E6B92F9E2C971138E09BF7C4FDDD5 /* Foundation.framework in Frameworks */,
-				FC5958F8993A132122A873C7103DE339 /* XLPagerTabStrip.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C18AD5FD13C148F76F2162EC651BA044 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -496,19 +484,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E124A297EE0939C163745F6DCDB59E58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A6191A61B2144520732A18EA977901 /* AlamofireImage.framework in Frameworks */,
+				EC5EF5D1C622041B94DBF01677F059EF /* Foundation.framework in Frameworks */,
+				7B9528FF26CE74C0055792BBFE0500C8 /* XLPagerTabStrip.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01D0543014C71981FB71FA0BE5645CFB /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				DE1F3D8928EE06E6CBB5458DDD5A701F /* LICENSE */,
-				9C79F838187400EB652B77F08301E73D /* PaymentezSDK.podspec */,
-				D8797EFA5D1FC851ADFB3AC6284E1354 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		16E7636ECEE081CC01FCBF45AF1705AE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -517,6 +505,33 @@
 				E3C56476D89319DE785D1EF1218230B8 /* XLPagerTabStrip */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		1B010E4CE6F95D06D6F1E10817A91CC2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6A4E9A621F837E81EAB0E9693855520A /* PaymentezSDK.swift */,
+			);
+			name = Presenter;
+			path = Source/Presenter;
+			sourceTree = "<group>";
+		};
+		2BC1222933CBD472D402AF7E2D52EEF0 /* PaymentezSDK */ = {
+			isa = PBXGroup;
+			children = (
+				D17AD7712C4ADB3D5C924EC37E87195A /* Image.xcassets */,
+				738253B60C5B44F8E7E98D15315E4074 /* Adapters */,
+				B5646A839595E13458595778B0B612BC /* API */,
+				ED29AAFA9566D2FB2F26305EE2F1B7E2 /* Controllers */,
+				673EF7A7639D8C575E0C83B0D502A736 /* Models */,
+				5394C689602BB0560A3DD4994C37B5D7 /* Pod */,
+				1B010E4CE6F95D06D6F1E10817A91CC2 /* Presenter */,
+				F1CD6D45AC3CE39D0FFD9A60D536C1C3 /* Support Files */,
+				53A1CAECFA1E033AA5ABA831200D41DC /* Utils */,
+				5AE03B5CE4913554412B6C5073210B3C /* Views */,
+			);
+			name = PaymentezSDK;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		2F5462C6D3C699CDB932FFAA9039690B /* Support Files */ = {
@@ -535,21 +550,20 @@
 			path = "../Target Support Files/XLPagerTabStrip";
 			sourceTree = "<group>";
 		};
-		42D7003810CA461CD109B8E8202064F4 /* API */ = {
+		4D1F9A0F43FD00B4D6EC04D7C3D10C2F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F399427CA8359CC8C858917B1A642533 /* API.swift */,
+				29DB11B96B3FBEB4105F26C402BEC3BF /* PmzCartVC.xib */,
+				DF60590E944EA1818359E148CFCB2E70 /* PmzMenuFragmentVC.xib */,
+				18AEA6C02AC9A461A8DA8F6534ED2F02 /* PmzMenuVC.xib */,
+				3C2BD7740E8654F3106E9C9DE0E38740 /* PmzPayAndPlaceVC.xib */,
+				E5AFE310A55287B6F69F8213E727C597 /* PmzProductVC.xib */,
+				9096C23C2745119EAEBE31F578F5B6F5 /* PmzResultVC.xib */,
+				5D5E7AA5BFDDCC378463D60FE978CEF3 /* PmzStoresVC.xib */,
+				63E4851ACB28FA5A426051724C2A18A7 /* PmzSummaryVC.xib */,
 			);
-			name = API;
-			path = Source/API;
-			sourceTree = "<group>";
-		};
-		434FFB26D4E88DABB31D32806A530014 /* Fragments */ = {
-			isa = PBXGroup;
-			children = (
-				2E624B27F0588B7D4328C6ABBFD5EEC3 /* PmzMenuFragmentVC.swift */,
-			);
-			path = Fragments;
+			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		5365E4FF3AED89B31834E4334CBAF1AA /* Pods-PaymentezSDK_Tests */ = {
@@ -568,40 +582,89 @@
 			path = "Target Support Files/Pods-PaymentezSDK_Tests";
 			sourceTree = "<group>";
 		};
-		5599FA7F6A3A56145FF46B79B01BF632 /* PaymentezSDK */ = {
+		5394C689602BB0560A3DD4994C37B5D7 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				EA92E12308E7851B924D77D800758CB5 /* Image.xcassets */,
-				42D7003810CA461CD109B8E8202064F4 /* API */,
-				5B9ABD849F83DA7C9BD76A22C3188B91 /* Controllers */,
-				CBC28297117A72C1B11D4DDBC33FA523 /* Models */,
-				01D0543014C71981FB71FA0BE5645CFB /* Pod */,
-				CE6ABC4E17A78CE925E6A21714525BD3 /* Presenter */,
-				E1FC070701E6E9B4FBF656CE84A7D0AD /* Support Files */,
-				CE5C833CB78E6DE78EE4B21EC87164D0 /* Utils */,
-				CD43EE68A7D99005DA9D7B20FD13D4D7 /* Views */,
+				32E650B03D62F789CF9B8928E8427052 /* LICENSE */,
+				AA722BDF8CEA2AA393F558C75CEDA5C8 /* PaymentezSDK.podspec */,
+				6F964E6A000EA84F202AB0F14BFAEAC5 /* README.md */,
 			);
-			name = PaymentezSDK;
-			path = ../..;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		5B9ABD849F83DA7C9BD76A22C3188B91 /* Controllers */ = {
+		53A1CAECFA1E033AA5ABA831200D41DC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				CD28F35BF7B7402FD01CB56C8D5D8472 /* PaymentezViewController.swift */,
-				0698481C0EA5B62E2A4F93A449DFA723 /* PmzStoresViewController.swift */,
-				03474AE88D05021EC7911DC60B1C5251 /* PmzMenuViewController.swift */,
-				A2C4FD1AF4BD6220DDBF8DA7CAA57AB1 /* PmzProductViewController.swift */,
-				CFDF3DE3258A761400AD5060 /* PmzCartViewController.swift */,
-				81DC28DF19D232C7D2DBE5835E967DE2 /* PmzSummaryViewController.swift */,
-				3E2BC3E2E940BDCE98EF4B530474831D /* PmzPayAndPlaceViewController.swift */,
-				6355BA3A44D6DD7F7A47E97404317CA3 /* PmzResultViewController.swift */,
-				727D0762819A351EE27F706EF6EB8CDF /* UIExtension.swift */,
-				434FFB26D4E88DABB31D32806A530014 /* Fragments */,
-				8827E29679891D2172B37EA075F9FCF7 /* Resources */,
+				7C7FB97C9D90413EF6B211DCF94D037C /* CardView.swift */,
+				FA39420CBC3807E01899CD3229B27A16 /* CurrencyUtils.swift */,
+				59C354D210D3385DB7B435D0EA820F65 /* PmzEncoder.swift */,
+				5B97D9EDCC4D3A2007E32B88BA0CE47D /* PmzImageUtils.swift */,
+				CE2A1D6CBDC875E250AD6FCF2E720A04 /* UIViewControllerExtension.swift */,
 			);
-			name = Controllers;
-			path = Source/Controllers;
+			name = Utils;
+			path = Source/Utils;
+			sourceTree = "<group>";
+		};
+		5AE03B5CE4913554412B6C5073210B3C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25741CB68B79F88B788565D6E70EDFED /* CartFooterView.swift */,
+				6F8EB68F079133BBD535127C9C7FEF82 /* CartFooterView.xib */,
+				CF9EBD7C1AAB081B94F74ADF3A02BE49 /* CartHeaderView.swift */,
+				9E35C283495CB696A21422822321A4A7 /* CartHeaderView.xib */,
+				A8C66EF47ABDBD2FD9B9D8CC616B964D /* CartItemCellView.swift */,
+				98F7C4058256742037111C77CE707E43 /* CartItemCellView.xib */,
+				F2035ADAB7A054CD4671E2DFEAACE263 /* ProductCellView.swift */,
+				C814FF3631ADEA9C77627DC90B17B8C1 /* ProductCellView.xib */,
+				ACEBAC8B48FCD526FB6A9A0132105BCC /* ProductConfigurationItemCellView.swift */,
+				073B724397F7471C4531EE6D507167E7 /* ProductConfigurationItemCellView.xib */,
+				D6B2D4414E372A9C1307424BA1B6D33F /* ProductFooterView.swift */,
+				83BF3287A82C25F510B4FC94783DC569 /* ProductFooterView.xib */,
+				8E9A91C7A10EF6DF8D96C48F12D7DEA4 /* ProductHeaderView.swift */,
+				BB2643541B88220E8445DD1A1174760E /* ProductHeaderView.xib */,
+				EE4738918AAA236BEC8DF9F657D7EBC5 /* RadioButtonItem.swift */,
+				D6B436001599A64F48F58D3BFB34E997 /* RadioButtonItem.xib */,
+				D22392B860D0E02FDDFDA6B948DDE1FE /* StoreCellView.swift */,
+				3166F5AC218E998C2F5EAB26A34EEE0E /* StoreCellView.xib */,
+				4F560D6427774D8B3644C1DB4C4DB3A1 /* SummaryFooterView.swift */,
+				ABA07F390CCA1F886B1BC06A4441588F /* SummaryFooterView.xib */,
+				853B728EB010EF7498CCF8CE7BFAC4FB /* SummaryHeaderView.swift */,
+				459E9BC16C58CA943D9CAEA8532A60B2 /* SummaryHeaderView.xib */,
+				01E1C124D57B2973A7296768B575268A /* TitleCellView.swift */,
+				3A77C45872D88D94B31CF11224DA8E62 /* TitleCellView.xib */,
+			);
+			name = Views;
+			path = Source/Views;
+			sourceTree = "<group>";
+		};
+		673EF7A7639D8C575E0C83B0D502A736 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				41CF51E23334D2D3101109A03304BE5F /* PmzAddress.swift */,
+				2F177D3242AECCA7E61FD7DAA622A232 /* PmzBuyer.swift */,
+				4FEE3A61CCC6FD419841D584BE3C1168 /* PmzCapacity.swift */,
+				5E50E94609F3C42242135BB9DE78A79B /* PmzCategory.swift */,
+				C895DF223D44C9EBDFDC7BA3E1063282 /* PmzConfiguration.swift */,
+				68F821DCBF1E933DA36631BA69499D99 /* PmzConfigurationHolder.swift */,
+				1880A35D6E4EE15B54852778669D69B9 /* PmzError.swift */,
+				C440B08E515C0791184B356733C0A1EA /* PmzFont.swift */,
+				D581ECF1B88B013BE2AD787A8CAF2B30 /* PmzItem.swift */,
+				AB35E6348747E75ED16303E156E72F38 /* PmzMenu.swift */,
+				B798E411DDDF0883CF064711EB2C5339 /* PmzOrder.swift */,
+				0C7716818AE98692501D0D7DC97E9D1C /* PmzPaymentData.swift */,
+				58128368D10162DA0E4CA87137C736E5 /* PmzProduct.swift */,
+				1720BCED7A025B7028F8C980F810EDBA /* PmzProductConfiguration.swift */,
+				BCF34E0DF6224B7784231ED03F67114B /* PmzProductConfigurationGroup.swift */,
+				954B4CA8EB754B4E843E592AC52B4FDF /* PmzProductDisplayProtocol.swift */,
+				E1AACE0E2F7D47346E07C53D079B105C /* PmzProductOrganizer.swift */,
+				E65FE477B90204062747B10D1C8F3E4C /* PmzSession.swift */,
+				6F6C5A038ABE96DDDB63F54CD589B274 /* PmzSponsor.swift */,
+				A78139E30A317AE2A225EBA2E8216450 /* PmzStore.swift */,
+				2F239AD6A7D75428A1376290862087DB /* PmzStyle.swift */,
+				7AABFE327B6FB46403F3398CB8BC8125 /* PmzTitleItem.swift */,
+			);
+			name = Models;
+			path = Source/Models;
 			sourceTree = "<group>";
 		};
 		6B7C27A0A59E8B8D3CA3F6E0DCA09F32 /* Support Files */ = {
@@ -617,6 +680,16 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AlamofireImage";
+			sourceTree = "<group>";
+		};
+		738253B60C5B44F8E7E98D15315E4074 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				B6A7BB26445F342EC9A90BE06349E388 /* CustomTabItemCollectionViewCell.swift */,
+				520C7101A5EB33A389BA70EB164BE9A1 /* VirtualCardTabView.xib */,
+			);
+			name = Adapters;
+			path = Source/Adapters;
 			sourceTree = "<group>";
 		};
 		73CD626082694A323388A0C9ADFDEB62 /* Support Files */ = {
@@ -645,6 +718,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7A05F9622619CDA0C51853AD7ABEF421 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BC1222933CBD472D402AF7E2D52EEF0 /* PaymentezSDK */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		80DED7E5F943116300ECD65A2D7015FF /* AlamofireImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -659,22 +740,8 @@
 				5E6FAD4D0508DD5AC6546F664A2ADF06 /* UIImageView+AlamofireImage.swift */,
 				6B7C27A0A59E8B8D3CA3F6E0DCA09F32 /* Support Files */,
 			);
+			name = AlamofireImage;
 			path = AlamofireImage;
-			sourceTree = "<group>";
-		};
-		8827E29679891D2172B37EA075F9FCF7 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				90728050C1A0C0254395019470FBAD60 /* PmzMenuFragmentVC.xib */,
-				309F1D6DF764AC52DCED21B9FC06E813 /* PmzMenuVC.xib */,
-				91C6EA6FAD1B6D78D433F52850F82475 /* PmzPayAndPlaceVC.xib */,
-				BBA190CBEE8EDB1C096C2D76B550AB52 /* PmzProductVC.xib */,
-				E20699885A01D8AE414A4D646B84F682 /* PmzResultVC.xib */,
-				96C3E29A2DA33A540DE75C490BBBC20D /* PmzStoresVC.xib */,
-				CFDF3DE6258A765200AD5060 /* PmzCartVC.xib */,
-				AA39D3259623A59D6FDDC18D67307054 /* PmzSummaryVC.xib */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		8AF0DA5692B91B16AEADCA5240752CA2 /* Alamofire */ = {
@@ -717,6 +784,7 @@
 				FC268B420166F4928AD3541E4270F2E1 /* Validation.swift */,
 				73CD626082694A323388A0C9ADFDEB62 /* Support Files */,
 			);
+			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -778,105 +846,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B87CA984ED2198D9CB11DEF27DB61DE5 /* Development Pods */ = {
+		B5646A839595E13458595778B0B612BC /* API */ = {
 			isa = PBXGroup;
 			children = (
-				5599FA7F6A3A56145FF46B79B01BF632 /* PaymentezSDK */,
+				CC7C121E57607155981456389649608B /* API.swift */,
 			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		CBC28297117A72C1B11D4DDBC33FA523 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				94FF57F2F4143C74C720E467591330A7 /* PmzAddress.swift */,
-				02DF3658E4E649500CAB5A9CB8C7039F /* PmzBuyer.swift */,
-				5E5E9E7EA0EE484303C72B9B61CDF50D /* PmzCapacity.swift */,
-				A54F3F539EE34FA8595C3155A32B63C5 /* PmzCategory.swift */,
-				1E3B9295DBC886D0C4240AE31BAE5080 /* PmzConfiguration.swift */,
-				24522F57146911763EAE0D070E80D910 /* PmzError.swift */,
-				B126CD0158B800F4FFAB805BA46AD27C /* PmzFont.swift */,
-				F47ACF60221979DA6AFDC3D935290CF1 /* PmzItem.swift */,
-				57EEF9558436CF7D2D72D6B340999C36 /* PmzMenu.swift */,
-				EA311D6A3DB2500ABFD821D680B54EF2 /* PmzOrder.swift */,
-				AB20B6E2D2F6F186F47F7439EBFE0446 /* PmzProduct.swift */,
-				A3E15474CB46A7236A3DFB4A6904EB0B /* PmzProductConfiguration.swift */,
-				D0DCE8ECF6EC251E060535F39F3D0760 /* PmzSession.swift */,
-				36324DE8F49C15191A68216A236D1F0E /* PmzSponsor.swift */,
-				D7B9CB0A9836E5E636CFD3D73EC1DD7C /* PmzStore.swift */,
-				28FEE28B558A3D2168F86612BD5E8E49 /* PmzStyle.swift */,
-				CF96CE462583C07D00A762DE /* PmzProductConfigurationGroup.swift */,
-				CF96CE492583C0C900A762DE /* PmzConfigurationHolder.swift */,
-				CF96CE4C2583C10F00A762DE /* PmzProductOrganizer.swift */,
-				CF96CE4F2583C5A500A762DE /* PmzTitleItem.swift */,
-				CF96CE522583C5F300A762DE /* PmzProductDisplayProtocol.swift */,
-				CFF1385D258D321D00126DF6 /* PmzPaymentData.swift */,
-			);
-			name = Models;
-			path = Source/Models;
-			sourceTree = "<group>";
-		};
-		CD43EE68A7D99005DA9D7B20FD13D4D7 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				CFB688F0257AC462006D3917 /* CustomTabItemCollectionViewCell.swift */,
-				CFB688EF257AC462006D3917 /* VirtualCardTabView.xib */,
-				0C5DD896B37C5ABCA99609B1F05EE96B /* StoreCellView.swift */,
-				4B574B1FC4CC9DA5308555A69DCED17D /* StoreCellView.xib */,
-				CFD45E0A25810CDF00F01462 /* ProductCellView.swift */,
-				CFD45E0C25810CF200F01462 /* ProductCellView.xib */,
-				CF96CE5525840B9B00A762DE /* TitleCellView.xib */,
-				CF96CE5725840C3D00A762DE /* TitleCellView.swift */,
-				CF96CE5B25840D8B00A762DE /* ProductConfigurationItemCellView.xib */,
-				CF96CE5E25840DA600A762DE /* ProductConfigurationItemCellView.swift */,
-				CF96CE6125840FDC00A762DE /* RadioButtonItem.xib */,
-				CF96CE6325840FF700A762DE /* RadioButtonItem.swift */,
-				CFDF3DD725895B9600AD5060 /* ProductHeaderView.xib */,
-				CFDF3DD925895CC200AD5060 /* ProductHeaderView.swift */,
-				CFDF3DDD2589879D00AD5060 /* ProductFooterView.xib */,
-				CFDF3DDF258987B100AD5060 /* ProductFooterView.swift */,
-				CFDF3DE9258A9C7700AD5060 /* CartItemCellView.xib */,
-				CFDF3DEB258A9D9500AD5060 /* CartItemCellView.swift */,
-				CFDF3DF2258AB37600AD5060 /* CartHeaderView.xib */,
-				CFDF3DF4258AB66200AD5060 /* CartHeaderView.swift */,
-				CFDF3DF8258BD0E800AD5060 /* CartFooterView.swift */,
-				CFDF3DFB258BD0FE00AD5060 /* CartFooterView.xib */,
-				CFDF3DFE258C099500AD5060 /* SummaryHeaderView.xib */,
-				CFDF3E00258C0B6900AD5060 /* SummaryHeaderView.swift */,
-				CFDF3E04258C0D2F00AD5060 /* SummaryFooterView.xib */,
-				CFDF3E07258C0DA500AD5060 /* SummaryFooterView.swift */,
-			);
-			name = Views;
-			path = Source/Views;
-			sourceTree = "<group>";
-		};
-		CE5C833CB78E6DE78EE4B21EC87164D0 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				51D279FA5EC523D9D2729E53F61AD4C8 /* PmzImageUtils.swift */,
-				CFD45E10258119CD00F01462 /* CurrencyUtils.swift */,
-				CFD45E132581530700F01462 /* CardView.swift */,
-				CFD45E16258156ED00F01462 /* UIViewControllerExtension.swift */,
-				CFDF3DEF258AA2CC00AD5060 /* PmzEncoder.swift */,
-			);
-			name = Utils;
-			path = Source/Utils;
-			sourceTree = "<group>";
-		};
-		CE6ABC4E17A78CE925E6A21714525BD3 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				78B51E78B5A21853ABF444FE4D6E9833 /* PaymentezSDK.swift */,
-			);
-			name = Presenter;
-			path = Source/Presenter;
+			name = API;
+			path = Source/API;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				B87CA984ED2198D9CB11DEF27DB61DE5 /* Development Pods */,
+				7A05F9622619CDA0C51853AD7ABEF421 /* Development Pods */,
 				747258FF125375C050C8DD7F3B6506F3 /* Frameworks */,
 				16E7636ECEE081CC01FCBF45AF1705AE /* Pods */,
 				B4821CD94AA6BE04C3CA042FD95589D1 /* Products */,
@@ -884,19 +867,13 @@
 			);
 			sourceTree = "<group>";
 		};
-		E1FC070701E6E9B4FBF656CE84A7D0AD /* Support Files */ = {
+		D328BB9D9B3B9ADF0E87665754EE4966 /* Fragments */ = {
 			isa = PBXGroup;
 			children = (
-				4723DB35A1775D218320A881C9ED9F19 /* PaymentezSDK.modulemap */,
-				B1AAA6893156A6FF51FC020C7BD77F4A /* PaymentezSDK-dummy.m */,
-				E0107830DF05CA0F8D69A39955A40371 /* PaymentezSDK-Info.plist */,
-				783D6FA87A813B7F5170CBE0458B486C /* PaymentezSDK-prefix.pch */,
-				32ED93B5DD5BA1395651B5F749A645BD /* PaymentezSDK-umbrella.h */,
-				8FA2AF51433363D3E22857D14E3E56EB /* PaymentezSDK.debug.xcconfig */,
-				02BE5E215FAB976637995E9FE9A07A01 /* PaymentezSDK.release.xcconfig */,
+				9B15F92FC81A72E434786A1425836BB0 /* PmzMenuFragmentVC.swift */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/PaymentezSDK";
+			name = Fragments;
+			path = Fragments;
 			sourceTree = "<group>";
 		};
 		E3C56476D89319DE785D1EF1218230B8 /* XLPagerTabStrip */ = {
@@ -920,12 +897,55 @@
 				B204DBB5C3375B731D4B9C3DFF017DA6 /* Resources */,
 				2F5462C6D3C699CDB932FFAA9039690B /* Support Files */,
 			);
+			name = XLPagerTabStrip;
 			path = XLPagerTabStrip;
+			sourceTree = "<group>";
+		};
+		ED29AAFA9566D2FB2F26305EE2F1B7E2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FD618A18EA0C8F56C913E42D9BCD5AAF /* PaymentezViewController.swift */,
+				8D7EEC494C9CFA0E77BCF5033F864900 /* PmzCartViewController.swift */,
+				DACD6FEB56A55022E44D0993FE6D949B /* PmzMenuViewController.swift */,
+				6F78694BA37A8EA5FFDD71711AFE48C8 /* PmzPayAndPlaceViewController.swift */,
+				E3EFCB4DA287484C225E5D7607AE5E30 /* PmzProductViewController.swift */,
+				C072D34C56E6BA8A436F366AAD129891 /* PmzResultViewController.swift */,
+				C6A50140C4F2E3E8334301A2B06057CE /* PmzStoresViewController.swift */,
+				D2E5FDD257EDB9DD31B68DA7E07A3AC9 /* PmzSummaryViewController.swift */,
+				8E9F0F4756096828B7866A7DB31AD768 /* UIExtension.swift */,
+				D328BB9D9B3B9ADF0E87665754EE4966 /* Fragments */,
+				4D1F9A0F43FD00B4D6EC04D7C3D10C2F /* Resources */,
+			);
+			name = Controllers;
+			path = Source/Controllers;
+			sourceTree = "<group>";
+		};
+		F1CD6D45AC3CE39D0FFD9A60D536C1C3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				916C925DE26CDF62161E4EE1D075726F /* PaymentezSDK.modulemap */,
+				5B637E01D476968EE58795DC64DD5648 /* PaymentezSDK-dummy.m */,
+				6BE68CD1226F344328E49F5F9497C3A3 /* PaymentezSDK-Info.plist */,
+				8D1C7EB22060CFF8B255302AD38E3305 /* PaymentezSDK-prefix.pch */,
+				BAF51AD80B233A52F8AA20A7536D97E4 /* PaymentezSDK-umbrella.h */,
+				0A54361AA86996B5E0F3D2BED5FA38EA /* PaymentezSDK.debug.xcconfig */,
+				CFA71546EB6098FEB4B839F26912632E /* PaymentezSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PaymentezSDK";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		056ACADBD540B90EC155F7BD4A3A1608 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D22D0408A4A435FCF0E36C7B17EF869 /* PaymentezSDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C05A3D125E7C401BE14DAE647A55F1C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -934,20 +954,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2ECE5E394AE25F50B371567B28E26CB7 /* Headers */ = {
+		5AD811BDD1F2EDB82659471978E29CA7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				293D9F50AF9819341A243CFB750B922A /* FXPageControl.h in Headers */,
-				5C3CB764EDF309DF23F6F8C59BC14BEF /* XLPagerTabStrip-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3E644DB3882FD87C11B7513370F3C6D2 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CDF10163F26B974A258327F8FCD1DEB7 /* PaymentezSDK-umbrella.h in Headers */,
+				8E5800D91FAB78848DF65BC13C48F29F /* FXPageControl.h in Headers */,
+				E48D431B9EC537528C403329260BAED0 /* XLPagerTabStrip-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -990,7 +1002,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				135FE34860EEEEAC2835B5A33689AE6E /* PBXTargetDependency */,
+				5D45D91416450B0913CAA4150AD343E9 /* PBXTargetDependency */,
 			);
 			name = "Pods-PaymentezSDK_Tests";
 			productName = "Pods-PaymentezSDK_Tests";
@@ -999,18 +1011,18 @@
 		};
 		752AC8AE4873207FF51F394F40CCB2BA /* PaymentezSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 26DEA758A8E49D0EB8A19DAC6F18D920 /* Build configuration list for PBXNativeTarget "PaymentezSDK" */;
+			buildConfigurationList = 8F07A13BAA1B99E0819AB6392B949F8D /* Build configuration list for PBXNativeTarget "PaymentezSDK" */;
 			buildPhases = (
-				3E644DB3882FD87C11B7513370F3C6D2 /* Headers */,
-				2788A9771F4F2052EACBB33CCF0E978B /* Sources */,
-				AFD0D83BEEAD6C23FA758760E167A6FC /* Frameworks */,
-				337655B96F7AD24BCFD66C1B7D8B0929 /* Resources */,
+				056ACADBD540B90EC155F7BD4A3A1608 /* Headers */,
+				C2AD7C65B43CCD351DAE879FABFC8BFE /* Sources */,
+				E124A297EE0939C163745F6DCDB59E58 /* Frameworks */,
+				FD753DC0952691705C89B791868E2B30 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				82D16D085C674CC96B25AB648C3E4C15 /* PBXTargetDependency */,
-				14CE8EFFD5C64D3A6E52CE0B32AFD23D /* PBXTargetDependency */,
+				ABF8394F2C164CB1AEB87A03584CB5F7 /* PBXTargetDependency */,
+				D0F38C6B2C32776868B5529ED6FB6640 /* PBXTargetDependency */,
 			);
 			name = PaymentezSDK;
 			productName = PaymentezSDK;
@@ -1029,7 +1041,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				BF2B88F6C6E9A9C560D5E789E395F9BF /* PBXTargetDependency */,
+				5986D1F2CCD59E589450A713F80652ED /* PBXTargetDependency */,
 			);
 			name = AlamofireImage;
 			productName = AlamofireImage;
@@ -1048,10 +1060,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				1E3F0FCF2B6A3A62C89B49F258033C01 /* PBXTargetDependency */,
-				68A45FF7D359F2BD74C64725C599786A /* PBXTargetDependency */,
-				108C8FCD3FD9BB6DE509FD6B7BC3C7A9 /* PBXTargetDependency */,
-				F5C91568942E131A89D5A887831E2AA2 /* PBXTargetDependency */,
+				3EFC3BBC49521A97FD1BA1D4CFCD5C0A /* PBXTargetDependency */,
+				EDC11EA0AB0F8828A878CED73B064C4C /* PBXTargetDependency */,
+				DACFAD129C4F195C0F8F6B44359D432C /* PBXTargetDependency */,
+				66C94D1602ACE1E0003F542CC96B7AE6 /* PBXTargetDependency */,
 			);
 			name = "Pods-PaymentezSDK_Example";
 			productName = "Pods-PaymentezSDK_Example";
@@ -1060,17 +1072,17 @@
 		};
 		DC5C3A7662FFA04D04D29F4657D032CE /* XLPagerTabStrip */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46FB386B0A84DAF57575A7DB6FE35307 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip" */;
+			buildConfigurationList = 91D79E0578E52E5819E505EDDA9F9069 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip" */;
 			buildPhases = (
-				2ECE5E394AE25F50B371567B28E26CB7 /* Headers */,
-				60A57E1D8E9897C98A43568D0CC5CF89 /* Sources */,
-				5A6B3C4DF5AF16FD47874A664154BC1A /* Frameworks */,
-				AFAC13A6FFAC722C28F09C7484E416D8 /* Resources */,
+				5AD811BDD1F2EDB82659471978E29CA7 /* Headers */,
+				5F49F44EA875EF77380C576C373E2488 /* Sources */,
+				4BD977D3CC025840FB8529977359E335 /* Frameworks */,
+				28FA21AA5659C2F68937D12CEFADB65D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B438251737A309D16B713F4A6FB1FB5C /* PBXTargetDependency */,
+				ECEA34F5752CE33BC5148BDC3A08EC78 /* PBXTargetDependency */,
 			);
 			name = XLPagerTabStrip;
 			productName = XLPagerTabStrip;
@@ -1097,11 +1109,11 @@
 		};
 		EBF90A3A56D4C5830C212D000AB67BC1 /* XLPagerTabStrip-XLPagerTabStrip */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3224B74FC3074F5D4CED24BA2773AA5B /* Build configuration list for PBXNativeTarget "XLPagerTabStrip-XLPagerTabStrip" */;
+			buildConfigurationList = 044F2BA0A22128850B6B27D1F1CB3143 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip-XLPagerTabStrip" */;
 			buildPhases = (
-				D693B603771CF4388341A8531D4F87CA /* Sources */,
-				4868DEA3BCB36CEF04B8C7A06854BDE6 /* Frameworks */,
-				FEE1DC0B50E9D095962B67A9ABFF23F4 /* Resources */,
+				435B4A0E036F94EAB6875CF3D5948CAD /* Sources */,
+				0CDA010832CEBB2B72CA1AACC1FFE540 /* Frameworks */,
+				D1E7FAA52EF4644A014D162563D3089D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -1150,28 +1162,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFDF3DD62587F75100AD5060 /* Image.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		337655B96F7AD24BCFD66C1B7D8B0929 /* Resources */ = {
+		28FA21AA5659C2F68937D12CEFADB65D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFDF3E06258C0D9B00AD5060 /* SummaryFooterView.xib in Resources */,
-				CFDF3DDC25895CD900AD5060 /* ProductHeaderView.xib in Resources */,
-				CFDF3DE1258987C800AD5060 /* ProductFooterView.xib in Resources */,
-				CFDF3E03258C0B7A00AD5060 /* SummaryHeaderView.xib in Resources */,
-				CFDF3DF7258AB67500AD5060 /* CartHeaderView.xib in Resources */,
-				CF96CE652584101A00A762DE /* RadioButtonItem.xib in Resources */,
-				CFB688F4257AC469006D3917 /* VirtualCardTabView.xib in Resources */,
-				CF96CE5D25840D9E00A762DE /* ProductConfigurationItemCellView.xib in Resources */,
-				CFDF3DEE258A9DAA00AD5060 /* CartItemCellView.xib in Resources */,
-				CFDF3DE8258A767300AD5060 /* PmzCartVC.xib in Resources */,
-				3BC219DCD319EDC87D1B63B8DA925508 /* Image.xcassets in Resources */,
-				CFD45E0F2581105400F01462 /* ProductCellView.xib in Resources */,
-				CF96CE5925840C4900A762DE /* TitleCellView.xib in Resources */,
-				CFDF3DFD258BD66D00AD5060 /* CartFooterView.xib in Resources */,
+				33E3187F8CF5E8EF3F69F18ABBBF6817 /* XLPagerTabStrip.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1189,27 +1187,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AFAC13A6FFAC722C28F09C7484E416D8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5ABADCA1D828E681B91124D707A9FECF /* XLPagerTabStrip.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CD3AD6A588474AD85DD5A64C07B9422A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFDF3DD52587F75000AD5060 /* Image.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FEE1DC0B50E9D095962B67A9ABFF23F4 /* Resources */ = {
+		D1E7FAA52EF4644A014D162563D3089D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FD435E3A793F50243469BA77EA4534F /* ButtonCell.xib in Resources */,
+				65E9A2DE9C9B8D7E3655A139162D073C /* ButtonCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD753DC0952691705C89B791868E2B30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEB76E49716C57519D259B0731DD82A8 /* Image.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1230,74 +1227,6 @@
 				11EB2DF28DA884182306B439B8983BE8 /* UIButton+AlamofireImage.swift in Sources */,
 				20743FEA683F40FDB4B50D3DA11875EB /* UIImage+AlamofireImage.swift in Sources */,
 				37E04DC7A8A99B2AA82B6318805D1473 /* UIImageView+AlamofireImage.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2788A9771F4F2052EACBB33CCF0E978B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CF96CE512583C5D600A762DE /* PmzTitleItem.swift in Sources */,
-				CFDF3DED258A9DA300AD5060 /* CartItemCellView.swift in Sources */,
-				A73FED3DBC01AE6CE9BB64A557A7FD7A /* API.swift in Sources */,
-				CF96CE6025840DAF00A762DE /* ProductConfigurationItemCellView.swift in Sources */,
-				CF96CE4E2583C11100A762DE /* PmzProductOrganizer.swift in Sources */,
-				933AF163F75DCA3B6CD2642DADFA729E /* PaymentezSDK-dummy.m in Sources */,
-				36D27F9C04BDEBF900973C642432F69C /* PaymentezSDK.swift in Sources */,
-				2B8844EF2681EC14F39D52D69E191705 /* PaymentezViewController.swift in Sources */,
-				CFDF3DDB25895CD300AD5060 /* ProductHeaderView.swift in Sources */,
-				CFD45E0E2581105000F01462 /* ProductCellView.swift in Sources */,
-				D0619920F8F1AE94CE4B4AFE693DDBB3 /* PmzAddress.swift in Sources */,
-				67D0251F2F8B7CBF82C1761D965886AD /* PmzBuyer.swift in Sources */,
-				AE5D17E2C3097AB0ABA8A0E2E0D133C5 /* PmzCapacity.swift in Sources */,
-				CF96CE542583C6D100A762DE /* PmzProductDisplayProtocol.swift in Sources */,
-				C44D29BFFA44EB90C3BAA9214513098D /* PmzCategory.swift in Sources */,
-				20CF08A51D672264A9BB838518DD3F1B /* PmzConfiguration.swift in Sources */,
-				DF95A22A5F1A75F47F347F2B12A7491D /* PmzError.swift in Sources */,
-				952471BC64F5C78CA3FCEA12E89D7B68 /* PmzFont.swift in Sources */,
-				CFDF3E09258C0DA700AD5060 /* SummaryFooterView.swift in Sources */,
-				D3996050DF3D5ECB33355A1344F2BB9C /* PmzImageUtils.swift in Sources */,
-				CF96CE4B2583C0CF00A762DE /* PmzConfigurationHolder.swift in Sources */,
-				28148521F929F2609FCCE91DA6265C01 /* PmzItem.swift in Sources */,
-				08A95F3C7659C17B1831FB8C59DE8DB1 /* PmzMenu.swift in Sources */,
-				14ED0FFB5067D521198D7F6EB8800296 /* PmzMenuFragmentVC.swift in Sources */,
-				9F17C0CA0BEEE1264F340B857A8A5CD4 /* PmzMenuFragmentVC.xib in Sources */,
-				FC13FF300A9D565C27B3DB5C90918D78 /* PmzMenuVC.xib in Sources */,
-				CFDF3DE2258987CC00AD5060 /* ProductFooterView.swift in Sources */,
-				CFDF3DF1258AA32800AD5060 /* PmzEncoder.swift in Sources */,
-				618C9C4E8B01FE886FFF22FAAE9CF09D /* PmzMenuViewController.swift in Sources */,
-				5C913BA34AB6B5BD4B4021B5F26A24DB /* PmzOrder.swift in Sources */,
-				01DCE3E8EB9C16ECFCD03970D224B874 /* PmzPayAndPlaceVC.xib in Sources */,
-				D6EB16CB96E6CD513D78E32EA3E7A438 /* PmzPayAndPlaceViewController.swift in Sources */,
-				CFB688F3257AC465006D3917 /* CustomTabItemCollectionViewCell.swift in Sources */,
-				66A6AA49D646FC6C19409CF377CA651D /* PmzProduct.swift in Sources */,
-				683438CA7A4B917A23AED517B7F784F7 /* PmzProductConfiguration.swift in Sources */,
-				CFDF3DF6258AB66D00AD5060 /* CartHeaderView.swift in Sources */,
-				25F68F8072977B469D2E91376439522F /* PmzProductVC.xib in Sources */,
-				32AE99F74337D119F0C6BF6644AC0871 /* PmzProductViewController.swift in Sources */,
-				CF96CE662584101E00A762DE /* RadioButtonItem.swift in Sources */,
-				CFD45E1225811A0F00F01462 /* CurrencyUtils.swift in Sources */,
-				CFD45E18258157B300F01462 /* UIViewControllerExtension.swift in Sources */,
-				CFD45E152581538E00F01462 /* CardView.swift in Sources */,
-				CF96CE482583C07F00A762DE /* PmzProductConfigurationGroup.swift in Sources */,
-				348DB23695850D4A2041CA3F94D80328 /* PmzResultVC.xib in Sources */,
-				FF5AD554FA01F93741FEACE65A020EEA /* PmzResultViewController.swift in Sources */,
-				E38852530E99BD05BDF1D68CA73B593C /* PmzSession.swift in Sources */,
-				3F8752DBC8D82ADB9A052A250D6871FF /* PmzSponsor.swift in Sources */,
-				FD3605E10CD952E8DDF5CA3C4C8F3118 /* PmzStore.swift in Sources */,
-				CFDF3DE5258A763C00AD5060 /* PmzCartViewController.swift in Sources */,
-				9E7260E34911ECBB9FB0628AE2AFBAFF /* PmzStoresVC.xib in Sources */,
-				CFDF3E02258C0B7400AD5060 /* SummaryHeaderView.swift in Sources */,
-				80C8418F3EF3399D923F9C090F2BA5C0 /* PmzStoresViewController.swift in Sources */,
-				CF96CE5A25840C4E00A762DE /* TitleCellView.swift in Sources */,
-				D11694337016D2231B2640B6E1EFBD10 /* PmzStyle.swift in Sources */,
-				CFF1385F258D32D800126DF6 /* PmzPaymentData.swift in Sources */,
-				802CDF63346C82297E6BD67194CDB3B1 /* PmzSummaryVC.xib in Sources */,
-				CF956CE4F1CAC1E3F2314CADD22F09E6 /* PmzSummaryViewController.swift in Sources */,
-				6364F3E1B168B66E65476F00624B8A6E /* StoreCellView.swift in Sources */,
-				261328C44178CB26F822DADD40AA9990 /* StoreCellView.xib in Sources */,
-				33FD38B7DFAB48163A7C78E1CC9C6E93 /* UIExtension.swift in Sources */,
-				CFDF3DFA258BD0F400AD5060 /* CartFooterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1344,25 +1273,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		60A57E1D8E9897C98A43568D0CC5CF89 /* Sources */ = {
+		435B4A0E036F94EAB6875CF3D5948CAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40AEF0E0F0522E139634C4C496E02EEA /* BarPagerTabStripViewController.swift in Sources */,
-				11C9FB95B054823B097110F9D731CFC1 /* BarView.swift in Sources */,
-				5BBBFE7FD0FCE170276EE3332A6018D2 /* BaseButtonBarPagerTabStripViewController.swift in Sources */,
-				265F165CC6413100FA9B44BE3880279C /* ButtonBarPagerTabStripViewController.swift in Sources */,
-				48D520C69E173F506E659D61EEA6163F /* ButtonBarView.swift in Sources */,
-				AF56C339A45FA47E04F8CDB9955397F8 /* ButtonBarViewCell.swift in Sources */,
-				538DDE051357D455E55D0AFF7A465C9C /* FXPageControl.m in Sources */,
-				6C55ABC445FBB390C56E3447A95EFCE9 /* IndicatorInfo.swift in Sources */,
-				2EE628AC3413CECE0B9BAC5E466A7638 /* PagerTabStripBehaviour.swift in Sources */,
-				DDC2C78D6DAF911C8699B05FDACDA2AC /* PagerTabStripError.swift in Sources */,
-				70CE5855861389DCBEB96037197F78F9 /* PagerTabStripViewController.swift in Sources */,
-				FFE0A15E1F50C40E9E2E3539C2480E57 /* SegmentedPagerTabStripViewController.swift in Sources */,
-				012F79EA1B81C951252678EC93237816 /* SwipeDirection.swift in Sources */,
-				DBBD27A684B636709B841E4FA04CD227 /* TwitterPagerTabStripViewController.swift in Sources */,
-				83EF6D7107E5316B7D11DD70593C1D48 /* XLPagerTabStrip-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F49F44EA875EF77380C576C373E2488 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A7FD9FBFCB4EAEE221D55564675A245 /* BarPagerTabStripViewController.swift in Sources */,
+				933A56BFFFF9838997C68CD24EA78E7C /* BarView.swift in Sources */,
+				D3B4B66A15827FC38E9C790A0F4749A3 /* BaseButtonBarPagerTabStripViewController.swift in Sources */,
+				850A79036764E76D1C4B4DEA7D600B99 /* ButtonBarPagerTabStripViewController.swift in Sources */,
+				FA89D9086EED5FE62979796525191627 /* ButtonBarView.swift in Sources */,
+				E900EFDEDB23144C3F8A246E89DD9C9A /* ButtonBarViewCell.swift in Sources */,
+				3B6925DE5F8CB68E9B6A9978B7C3B3E4 /* FXPageControl.m in Sources */,
+				58FD4BD643AE872B7FE2E7491F0E77C1 /* IndicatorInfo.swift in Sources */,
+				BB85CD0709BBCCB2FA6BCEFA78A3E33A /* PagerTabStripBehaviour.swift in Sources */,
+				12C6F7E58F1BD8445A3B9EF47336FC39 /* PagerTabStripError.swift in Sources */,
+				74A03EAE080AB4876DBA563ED938B78B /* PagerTabStripViewController.swift in Sources */,
+				A8F4FC9919B8229AEAD75FBF80A1650D /* SegmentedPagerTabStripViewController.swift in Sources */,
+				798C4CA5612A7ECC99473C439AC87B71 /* SwipeDirection.swift in Sources */,
+				48B5B63B51D02D46CC76B74B2559F62C /* TwitterPagerTabStripViewController.swift in Sources */,
+				E86CD85C296FC5D7F0C491E1964C0094 /* XLPagerTabStrip-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1374,10 +1310,84 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D693B603771CF4388341A8531D4F87CA /* Sources */ = {
+		C2AD7C65B43CCD351DAE879FABFC8BFE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECCD28FB90498BA90F6C47588A7306B3 /* API.swift in Sources */,
+				677773015A08DDD0C4C064E72919BF53 /* CardView.swift in Sources */,
+				1B6CACFF82C06224E92A6449DDD45202 /* CartFooterView.swift in Sources */,
+				7E82BDF3BCA4FDB2F65065C3EB0D227B /* CartFooterView.xib in Sources */,
+				BA3388FA1857DD354388E9F596A07671 /* CartHeaderView.swift in Sources */,
+				401E4271EA678FB496D29F174AB60B20 /* CartHeaderView.xib in Sources */,
+				0D5CDB68853898364633E3A7AB7A80F2 /* CartItemCellView.swift in Sources */,
+				378D09B93A0F3DD08F426AE2E338F6EF /* CartItemCellView.xib in Sources */,
+				2904F7FA79A1C82D81408105EA24FD5A /* CurrencyUtils.swift in Sources */,
+				BC2FDD0D1139E2FCB312001388EDF173 /* CustomTabItemCollectionViewCell.swift in Sources */,
+				E9EE8CB6A418D5638EE8A6DAFFECD5EC /* PaymentezSDK-dummy.m in Sources */,
+				AC46ABEEE2A2D203AB1848A175276865 /* PaymentezSDK.swift in Sources */,
+				D6F0CB2C35EF7CE9A489F56431D5D47A /* PaymentezViewController.swift in Sources */,
+				7BAC3D4EEE244C532ACE5EBA13FF01A3 /* PmzAddress.swift in Sources */,
+				D9F18852167AB6F6931C64362C627AC2 /* PmzBuyer.swift in Sources */,
+				6C3CFF013E73C863AC9A211A38446876 /* PmzCapacity.swift in Sources */,
+				EDEDC67980323A6DD6CF938A583C8EA1 /* PmzCartVC.xib in Sources */,
+				0CEAD7C395FFCE058C64803B52E7C924 /* PmzCartViewController.swift in Sources */,
+				F8134A19BA06A1328BE1E73ECF3D29C0 /* PmzCategory.swift in Sources */,
+				CA01CEB2443CD20D602F304D6650C103 /* PmzConfiguration.swift in Sources */,
+				23AED85CC4E7344ADDA1B1F39C39544F /* PmzConfigurationHolder.swift in Sources */,
+				BAF6418FBC430B139CAABB244983FD99 /* PmzEncoder.swift in Sources */,
+				2EE7F3297C54CE04C9598A24E35CDFD5 /* PmzError.swift in Sources */,
+				49599233703F4C311DAE7EF02244A7D8 /* PmzFont.swift in Sources */,
+				F15F7D7F2A93E2C0B4093E6F3720FD50 /* PmzImageUtils.swift in Sources */,
+				A650F4F706280E73AFAEFC525C9B3465 /* PmzItem.swift in Sources */,
+				E728397C79A512C3CA8F4154A642BCCB /* PmzMenu.swift in Sources */,
+				8DAFFD1E751D278D164FABAF576D447E /* PmzMenuFragmentVC.swift in Sources */,
+				2831F9B40F6A10E84696106CD4AFFD24 /* PmzMenuFragmentVC.xib in Sources */,
+				B026DFC54C9856E675DDDD963DAED187 /* PmzMenuVC.xib in Sources */,
+				DB3016AAF4E4B558587F3C22831806F3 /* PmzMenuViewController.swift in Sources */,
+				A6660209671AE32C2B0DACF365B8063F /* PmzOrder.swift in Sources */,
+				F1215FD3F336476049604FAED557E7EA /* PmzPayAndPlaceVC.xib in Sources */,
+				6867925EEFD066ED98AEEFF03A84447F /* PmzPayAndPlaceViewController.swift in Sources */,
+				86CA562A51D29B8854D126A87936399B /* PmzPaymentData.swift in Sources */,
+				168C792B09B7AF3B47A51E5D1ACECB84 /* PmzProduct.swift in Sources */,
+				0184E57E9F3AA5B56C112A369908CA2D /* PmzProductConfiguration.swift in Sources */,
+				55E5F2CAD916594AD559CCCCE91DEB1A /* PmzProductConfigurationGroup.swift in Sources */,
+				BC81807E4E424E926F15F072107F012E /* PmzProductDisplayProtocol.swift in Sources */,
+				56BDF85EB2E7F4954013CE276F31352F /* PmzProductOrganizer.swift in Sources */,
+				5BC1D49B4672460CBDE6353F1C37EA71 /* PmzProductVC.xib in Sources */,
+				8E71D75CC0981FB47388FC9F4C84EBE2 /* PmzProductViewController.swift in Sources */,
+				CAE1E7B6B9CB4AEF2186F3E0E1882C9B /* PmzResultVC.xib in Sources */,
+				51AA4C6E3E484C117DEB02AFC3FCAB5D /* PmzResultViewController.swift in Sources */,
+				87BAD26C08FCF01D9650C96593ED1E59 /* PmzSession.swift in Sources */,
+				943C48419E4CD969857986910D9AC94A /* PmzSponsor.swift in Sources */,
+				FBC4A22F43618DCA4DF1FFF2B7CD9CCC /* PmzStore.swift in Sources */,
+				5D80263914A8AC1E0F89758AB63883EC /* PmzStoresVC.xib in Sources */,
+				638592CFC00D05BC9FAD9725E20C42B1 /* PmzStoresViewController.swift in Sources */,
+				74EE7BE635F71AC5EA671433C20FBFB9 /* PmzStyle.swift in Sources */,
+				DD9341763D9E413F4B6878A9E0B04D6A /* PmzSummaryVC.xib in Sources */,
+				274DE4F128DD46EE31A183F48710735A /* PmzSummaryViewController.swift in Sources */,
+				DC3F6C5D5481523788988B2F3F2E954B /* PmzTitleItem.swift in Sources */,
+				CF60BC2576097BD6FA218189D74D515D /* ProductCellView.swift in Sources */,
+				F9ACF7C0CCFCE013C002F995C9F05B2F /* ProductCellView.xib in Sources */,
+				E1752FD5E6FD21E06FE3C03892783B3C /* ProductConfigurationItemCellView.swift in Sources */,
+				030B9CECAACACCF88A9646D16F78A57C /* ProductConfigurationItemCellView.xib in Sources */,
+				7BFC7B8BCEE504FEB1E3B18B278AD01F /* ProductFooterView.swift in Sources */,
+				0C8C38806B5305731D0E4F54B1379037 /* ProductFooterView.xib in Sources */,
+				279E899B3B0C9C3D263A7E2D5A314E31 /* ProductHeaderView.swift in Sources */,
+				804FF21D71915D9CD8B03AA5748E2D73 /* ProductHeaderView.xib in Sources */,
+				E8CA113EA5EFECBF7C88606A4A567C78 /* RadioButtonItem.swift in Sources */,
+				01EF29CF7D1AADCBA1A65D13F3A52CAA /* RadioButtonItem.xib in Sources */,
+				72192172432F5EAE5841A5BBBCBC9AB6 /* StoreCellView.swift in Sources */,
+				15C7FF3EF9DFEE57EAC78AA60ED5E22D /* StoreCellView.xib in Sources */,
+				D6E9D3D2D0A9E16D70CB2CEF35C916CC /* SummaryFooterView.swift in Sources */,
+				51C45CD74334E5670B7C57FF24F6524A /* SummaryFooterView.xib in Sources */,
+				2D9ECAB24366BDEDE966154D27024124 /* SummaryHeaderView.swift in Sources */,
+				1858A1A9E3E2B26EDEB6F63A110FA438 /* SummaryHeaderView.xib in Sources */,
+				F179B948EEC4C2D1D69A032074CBDF79 /* TitleCellView.swift in Sources */,
+				5790EE66BC4A3319BF613723EC24A029 /* TitleCellView.xib in Sources */,
+				43039868C980F9832E701ECFE2DD2004 /* UIExtension.swift in Sources */,
+				3AEEA6D68409F3DB5804353F28A46706 /* UIViewControllerExtension.swift in Sources */,
+				B31572DC17709B321CEDE8DF1BE755D9 /* VirtualCardTabView.xib in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1392,59 +1402,59 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		108C8FCD3FD9BB6DE509FD6B7BC3C7A9 /* PBXTargetDependency */ = {
+		3EFC3BBC49521A97FD1BA1D4CFCD5C0A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = PaymentezSDK;
-			target = 752AC8AE4873207FF51F394F40CCB2BA /* PaymentezSDK */;
-			targetProxy = 5BF3D9DE96C6EB45E8B628E05575764F /* PBXContainerItemProxy */;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = A24F580035FD2FDC3577C8DE0F01327C /* PBXContainerItemProxy */;
 		};
-		135FE34860EEEEAC2835B5A33689AE6E /* PBXTargetDependency */ = {
+		5986D1F2CCD59E589450A713F80652ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = F3BF717CBEBBA21CE1492E4F9FE615F6 /* PBXContainerItemProxy */;
+		};
+		5D45D91416450B0913CAA4150AD343E9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-PaymentezSDK_Example";
 			target = D78C40ECCC1158393FC7C11669EA7C02 /* Pods-PaymentezSDK_Example */;
-			targetProxy = 6AEA798FB30BDC212275AB56580B0BF2 /* PBXContainerItemProxy */;
+			targetProxy = 835EE3AF1EB5FA9765F73842D871D276 /* PBXContainerItemProxy */;
 		};
-		14CE8EFFD5C64D3A6E52CE0B32AFD23D /* PBXTargetDependency */ = {
+		66C94D1602ACE1E0003F542CC96B7AE6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = XLPagerTabStrip;
 			target = DC5C3A7662FFA04D04D29F4657D032CE /* XLPagerTabStrip */;
-			targetProxy = 45FAE97FA30D4C86CD833248E454075D /* PBXContainerItemProxy */;
+			targetProxy = E87517CD8F9B5B8FD8ACFC90614CC3B3 /* PBXContainerItemProxy */;
 		};
-		1E3F0FCF2B6A3A62C89B49F258033C01 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
-			targetProxy = 4FC61E3DA7D5302D282F1B2754A23F09 /* PBXContainerItemProxy */;
-		};
-		68A45FF7D359F2BD74C64725C599786A /* PBXTargetDependency */ = {
+		ABF8394F2C164CB1AEB87A03584CB5F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AlamofireImage;
 			target = C9778AE8394BE451567650E0B239BA21 /* AlamofireImage */;
-			targetProxy = 88315C8CE74B27D8BBD46FE3A8D251F1 /* PBXContainerItemProxy */;
+			targetProxy = 2BB06DF8B9B678521FFF760AC6389E26 /* PBXContainerItemProxy */;
 		};
-		82D16D085C674CC96B25AB648C3E4C15 /* PBXTargetDependency */ = {
+		D0F38C6B2C32776868B5529ED6FB6640 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = AlamofireImage;
-			target = C9778AE8394BE451567650E0B239BA21 /* AlamofireImage */;
-			targetProxy = 56472858656CABF6E543FBC8AF8848A4 /* PBXContainerItemProxy */;
+			name = XLPagerTabStrip;
+			target = DC5C3A7662FFA04D04D29F4657D032CE /* XLPagerTabStrip */;
+			targetProxy = F05E66D0097580492484665E43AF0E9D /* PBXContainerItemProxy */;
 		};
-		B438251737A309D16B713F4A6FB1FB5C /* PBXTargetDependency */ = {
+		DACFAD129C4F195C0F8F6B44359D432C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PaymentezSDK;
+			target = 752AC8AE4873207FF51F394F40CCB2BA /* PaymentezSDK */;
+			targetProxy = 796B2C1E903A442BAFDF7D9FEC96A72E /* PBXContainerItemProxy */;
+		};
+		ECEA34F5752CE33BC5148BDC3A08EC78 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "XLPagerTabStrip-XLPagerTabStrip";
 			target = EBF90A3A56D4C5830C212D000AB67BC1 /* XLPagerTabStrip-XLPagerTabStrip */;
-			targetProxy = E73E145EACB4CB505B1D7DEE70A6CB9E /* PBXContainerItemProxy */;
+			targetProxy = 269C39D7D528C554D209B16F4AD8668B /* PBXContainerItemProxy */;
 		};
-		BF2B88F6C6E9A9C560D5E789E395F9BF /* PBXTargetDependency */ = {
+		EDC11EA0AB0F8828A878CED73B064C4C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
-			targetProxy = 9094C9F3B4B19DFBDE61D39E35C84813 /* PBXContainerItemProxy */;
-		};
-		F5C91568942E131A89D5A887831E2AA2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = XLPagerTabStrip;
-			target = DC5C3A7662FFA04D04D29F4657D032CE /* XLPagerTabStrip */;
-			targetProxy = F0566092A8B5C05B524E5D64373469A7 /* PBXContainerItemProxy */;
+			name = AlamofireImage;
+			target = C9778AE8394BE451567650E0B239BA21 /* AlamofireImage */;
+			targetProxy = 9621F41E4136CD3F23673BFC9A18D9D8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1482,22 +1492,6 @@
 			};
 			name = Release;
 		};
-		0F3B6435463EC9ABCF8848AFA41255DF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B9F4F437B1C2B340F2D4D27AB68DDF2 /* XLPagerTabStrip.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLPagerTabStrip";
-				IBSC_MODULE = XLPagerTabStrip;
-				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/ResourceBundle-XLPagerTabStrip-XLPagerTabStrip-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				PRODUCT_NAME = XLPagerTabStrip;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		11A55B97DA3A5AB8CA60C322E78B6A33 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 726616C603547414C7EAE49287FDCCB7 /* Alamofire.debug.xcconfig */;
@@ -1530,9 +1524,25 @@
 			};
 			name = Debug;
 		};
-		59C91935ACC577884B157122A07546BF /* Debug */ = {
+		15245FF5B2D034CD6F3B7D79B942F924 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FA2AF51433363D3E22857D14E3E56EB /* PaymentezSDK.debug.xcconfig */;
+			baseConfigurationReference = 6B9F4F437B1C2B340F2D4D27AB68DDF2 /* XLPagerTabStrip.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLPagerTabStrip";
+				IBSC_MODULE = XLPagerTabStrip;
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/ResourceBundle-XLPagerTabStrip-XLPagerTabStrip-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		3084235EA8511770B8B8582FB67C0596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A54361AA86996B5E0F3D2BED5FA38EA /* PaymentezSDK.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1561,6 +1571,39 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		3D22F536CE06844D210AEFD08D1908B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFA71546EB6098FEB4B839F26912632E /* PaymentezSDK.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PaymentezSDK/PaymentezSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PaymentezSDK/PaymentezSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PaymentezSDK/PaymentezSDK.modulemap";
+				PRODUCT_MODULE_NAME = PaymentezSDK;
+				PRODUCT_NAME = PaymentezSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		6B58DB926E40853F250779F17744D83B /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1650,13 +1693,14 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		6F91863AD75EA566886F570E622E42BD /* Debug */ = {
+		73BF034035B91CFDCCF3B78238C2A638 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7CFA252E6036602C63A97B7E7DEE576A /* XLPagerTabStrip.debug.xcconfig */;
 			buildSettings = {
@@ -1669,37 +1713,6 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		7C08C1F28876613813F22AA3552EB34F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CFA252E6036602C63A97B7E7DEE576A /* XLPagerTabStrip.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip.modulemap";
-				PRODUCT_MODULE_NAME = XLPagerTabStrip;
-				PRODUCT_NAME = XLPagerTabStrip;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -1769,42 +1782,9 @@
 			};
 			name = Debug;
 		};
-		A92D7D5218CFE2DA3C65A8862FC101A2 /* Release */ = {
+		91EE0CBD57E0EE95BD27FC39F34DC73F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02BE5E215FAB976637995E9FE9A07A01 /* PaymentezSDK.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PaymentezSDK/PaymentezSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PaymentezSDK/PaymentezSDK-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PaymentezSDK/PaymentezSDK.modulemap";
-				PRODUCT_MODULE_NAME = PaymentezSDK;
-				PRODUCT_NAME = PaymentezSDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A9780CB6E92E895D2C6C48A7FFF93704 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B9F4F437B1C2B340F2D4D27AB68DDF2 /* XLPagerTabStrip.release.xcconfig */;
+			baseConfigurationReference = 7CFA252E6036602C63A97B7E7DEE576A /* XLPagerTabStrip.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1828,11 +1808,10 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		BDA7B3B629DC123D4382011BE3C6CCFE /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1972,6 +1951,38 @@
 			};
 			name = Debug;
 		};
+		DE0CF7032735619A3DFA6716739DB796 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B9F4F437B1C2B340F2D4D27AB68DDF2 /* XLPagerTabStrip.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip.modulemap";
+				PRODUCT_MODULE_NAME = XLPagerTabStrip;
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		E0A48FCE342A552B68C16D17E6E0C242 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EE75AF2E7C95DCDEDD21D420D14A0F9B /* AlamofireImage.debug.xcconfig */;
@@ -2007,29 +2018,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		26DEA758A8E49D0EB8A19DAC6F18D920 /* Build configuration list for PBXNativeTarget "PaymentezSDK" */ = {
+		044F2BA0A22128850B6B27D1F1CB3143 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip-XLPagerTabStrip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				59C91935ACC577884B157122A07546BF /* Debug */,
-				A92D7D5218CFE2DA3C65A8862FC101A2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3224B74FC3074F5D4CED24BA2773AA5B /* Build configuration list for PBXNativeTarget "XLPagerTabStrip-XLPagerTabStrip" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6F91863AD75EA566886F570E622E42BD /* Debug */,
-				0F3B6435463EC9ABCF8848AFA41255DF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		46FB386B0A84DAF57575A7DB6FE35307 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7C08C1F28876613813F22AA3552EB34F /* Debug */,
-				A9780CB6E92E895D2C6C48A7FFF93704 /* Release */,
+				73BF034035B91CFDCCF3B78238C2A638 /* Debug */,
+				15245FF5B2D034CD6F3B7D79B942F924 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2066,6 +2059,24 @@
 			buildConfigurations = (
 				11A55B97DA3A5AB8CA60C322E78B6A33 /* Debug */,
 				6B58DB926E40853F250779F17744D83B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F07A13BAA1B99E0819AB6392B949F8D /* Build configuration list for PBXNativeTarget "PaymentezSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3084235EA8511770B8B8582FB67C0596 /* Debug */,
+				3D22F536CE06844D210AEFD08D1908B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91D79E0578E52E5819E505EDDA9F9069 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91EE0CBD57E0EE95BD27FC39F34DC73F /* Debug */,
+				DE0CF7032735619A3DFA6716739DB796 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
